@@ -1,0 +1,1056 @@
+Temporal Data Mining Using Hidden Markov-Local Polynomial Model
+
+  
+
+¡
+
+Weiqiang Lin , Mehmet A. Orgun , and Graham J. Williams
+
+¢
+Department of Computing, Macquarie University Sydney, NSW 2109, Australia, Email:
+£
+wlin,mehmet @ics.mq.edu.au ¤
+¥
+CSIRO Mathematical and Information Sciences, GPO Box 664, Canberra ACT 2601,
+Australia, Email: Graham.Williams@cmis.csiro.au
+
+Abstract. This study proposes a data mining framework to discover qualitative and quantitative patterns in discrete-valued time series (DTS). In our method, there are three levels for mining similarity and periodicity patterns. At the first level, a structuralbased search based on distance measure models is employed to find pattern structures; the second level performs a value-based search on the discovered patterns using local polynomial analysis; and then the third level based on hidden Markov-local polynomial models (HMLPMs), finds global patterns from a DTS set. We demonstrate our method on the analysis of "Exchange Rates Patterns" between the U.S. dollar and the United Kingdom Pound.
+
+Keywords. temporal data mining, discrete-valued time series, similarity patterns, periodicity analysis, local polynomial modelling, hidden Markov models.
+
+1 Introduction
+Temporal data mining is concerned with discovering qualitative and quantitative temporal patterns in a temporal database or in a discrete-valued time series (DTS) dataset. DTS commonly occur in temporal databases (e.g., the weekly salary of an employee, or a daily rainfall at a particular location). We identify two kinds of major problems that have been studied in temporal data mining:
+1. The similarity problem: finding fully or partially similar patterns in a DTS, and 2. The periodicity problem: finding fully or partially periodic patterns in a DTS.
+Although there are various results to date on discovering periodic patterns and similarity patterns DTS datasets (e.g. [4]), a general theory and general method of data analysis of discovering patterns for DTS data analysis is not well known.
+Our proposed framework is based on a new model for discovering patterns by using hidden Markov models and local polynomial modelling. The first step of the framework consists of a distance measure function for discovering structural patterns (shapes). In this step, the rough shapes of patterns are only decided from the DTS and a distance measure is employed to compute the nearest neighbors (NN) to, or the closest candidates of, given patterns among the similar ones selected. In the second step, the degree of similarity and periodicity between the extracted patterns is measured based on local polynomial models. The third step of the framework consists of a hidden Markov-local
+
+polynomial model for discovering all levels patterns based on results from the first two steps.
+The paper is organised as follows. Section 2 presents the definitions and basic methods of hidden Markov models and local polynomial modelling. Section 3 presents our new method of hidden Markov-local polynomial models (HMLPM). Section 4 applies new models to "Daily Foreign Exchange Rates" data and section 5 discusses related work. The final section concludes the paper with a short summary.
+
+2 Definitions and Basic Methods
+
+We first give a definition of what we mean by DTS and some other notations will be
+
+introduced later. The basic models will be given here and studied in detail in the rest of
+
+the paper.
+
+ ¢¤¡ ¦£ ¥§£©¨ 
+
+Definition 1 Suppose that
+
+is a probability space and  is a discrete-valued
+
+t %im¡&e£'$¥ in(£ ¨dex set. If for any   there exists a  rando£ m varia ble  ©"!$# defined on then the family of random variables )©"$! # 01  is called a discrete-
+
+valued time series (DTS).
+
+2.1 Definitions and Properties
+
+¦£ 3 £'3
+
+We consider the bivariate data (2     ), . . . ,(52 4 43 ) which form an independent¦£ a3 nd
+
+identicall£¦yEFd£HiG)sHGtr©G i£'bI uted sample from a population (2 , ). For given pairs of data 682 7 97 # ,
+
+for @BDA C
+
+, we can regard the data as generated from the model
+
+Y QA RP XT# VS UW X9# X
+
+where Y5"X`# = 0, ac¢b defgX # = 1, and 2 and X are independent.
+
+We assume that for every successive pair of two time points in DTS, ( 7ih   - p7 = qr"p#
+
+is a function (in most cases, rq "p # = consta3 nt).3 For ev3 ery successive three observations: t2 s , 2¤s'h   and 2¤'s h ¡ , the triple value of ( s , 's h ,  's h ¡ ) has only nine distinct states
+
+(called local features) depending on changes in value.
+
+Let state: wu v be the same state as the prior one, wu x the go-up state compared with
+
+sth3peacperior=on  es1a,n3 sd2Tu, sy 3t,hse4g, os5-3d, osw6,nss7t,aste8,cso93 m p=ar  e(d3
+
+with s , u x
+
+the 3 , ux
+
+prio3 r ), (
+
+one, s , u x 3
+
+t,huwenv )w, (e3
+
+have s , u  x
+
+state, uwy ),
+
+( s , u v , u x ), ( s , u v , u v ), ( s , u v , u y ), ( s , u y , u x ), ( s , u y , u v ), ( s , u y , u y ) .
+
+A sequence is called a full periodic sequence if every point in time contributes
+
+(precisely or approximately) to the cyclic behavior of the overall time series (that is,
+
+there are cyclic patterns with the same or different periods of repetition).
+
+A sequence is called a partial periodic sequence if the behavior of the sequence is
+
+periodic at some but not all points in the time series.
+
+  £ £)GHG)G 
+
+Definition 2 Let  A    ¡
+
+be a sequence. If for every  s R ,  s   , then
+
+the sequence h is called a Structural Base sequence and a subsequence of h is called
+
+a sub-Structural Base sequence. If any subsequence vx of  is a periodic sequence,
+
+then vx is called a sub-structural periodic sequence,  also is a structural periodic
+
+sequence (existence periodic pattern(s)).
+
+  £ H£ )G GHG G 
+
+       Definition 3 Let A   ¡
+
+be a real valued sequence. Then is called a value-
+
+  ¡£¢   ¥¤ ¦point process. For s with
+
+s C (mod 1) for all , we say that y is uniformly
+
+distributed if every subinterval of [0, 1] gets its fair share of the terms of the sequence
+
+in the long run.
+
+  £ H£ HG )G GHG 
+
+      ©§ ¨ ¤    ¤Definition 4 Let A   ¡
+
+be a sequence of real numbers with
+
+§  &S , for all k, where I is a constant and is an allowable variable  pa£ram)£ HG e)G tHGeGr. We
+
+  § §say that y has an approximate constant sequence distribution of A
+
+. In
+
+¨  ¤    ¤ general, if w6p#
+
+T"p # S for all k, we say that y has an approximate
+
+distribution function h(t).
+
+2.2 Hidden Markov Models (HMMs)
+
+In a hidden Markov model (HMM) an underlying and unobserved sequence of states
+
+follows a Markov chain with a finite state space and the probability distribution of the
+
+observation at any time is determined only by the current state of that Markov chain.
+
+In this subsection we briefly introduce the hidden Markov time series models which is
+
+limited to standard results taken from the literature. We have in particular used those of
+
+ ! ! #"B  Ca(£ldeELi)£eaGHtnHG   dG©u £
+
+BP ru ,nwa kitN[h1t3r]ab.nesaitnioinrrperdoubcaibblielithyommaotgriexneo.uTshMatairsk,ov
+
+chain A
+
+on 7s
+
+the state # , where
+
+space for all
+
+¦states @ and , and times  :
+
+" $&¦ % ('g7 s A Pu WA u   A@ #
+
+   )G HG G
+
+) ) )10For u  , there exis  ts a unique, strictly positive, stationary distribution = ( ,  , ),
+
+)where we suppose u is stationary, so that is, for all   , the distrib ution of Bu 
+
+32Suppose there e  xists a nonn£§eg)G aGHtGiv£ e random process   c    N such th§£atG), HG cG o£ ndi-
+
+574 698 @ @tional on u 0A u   A C
+
+ , the random variables )  A C
+
+
+
+A B Care mutually i§£ ndG)GHeGHp£endent and, if u  A @ ,   takes the value with probability  7 . That
+
+D74 E6 8is, for  A C
+
+ , the distribution of   conditional on u is given by
+
+P6  FA AG% u WA @ # FA B C 7
+
+B C B Cwh7 edreo
+
+the not
+
+probabilities depend on  ,
+
+7 the
+
+as the "state-dependent probabilities". subscript  will be omitted.
+
+If
+
+the
+
+probabilities
+
+2.3 Local Polynomial Models (LPMs)
+
+The key idea of local modelling is explained in the context of least squares regression
+
+models. We use standard results from the local polynomial analysis theory which can be
+
+found from the literature on linear polynomial analysis (e.g, [8]). Recall the data model
+
+function given earlier: Y A RP X#wSUW X#9X where Y5fgX # = 0, ac¢b ed fgX # = 1, and 2 and X
+IHare independent 1. We approximate the unknown regression function RP # locally by a
+
+(Y d P SQ RUWT V X `Y 1T Vba1 We always denote the conditional variance of given Q c aby
+
+¥
+by
+
+and the density of
+
+Hpolynomial of order   in a neighbourhood of ¢¡ ,
+
+IHPR ¤# £
+
+RP IH ¡ w# SV¦P ¥ IH ¡ #HIH
+
+¨¥H ¡ #wS
+
+GHG)HG £ S
+
+¥P ¨4 § (8 IH©¡   
+
+#
+
+IH
+
+¨
+
+H ¡ #§ G
+
+This polynomial is fitted locally by a weighted least squares regression problem:
+
+¨ ¨ H ¨ H   4   3
+
+minimize
+
+7
+
+§
+
+s "2 7
+
+¡
+
+#
+
+s
+
+
+
+!
+¡
+
+"2
+
+7
+
+¡ # %£
+
+7    s ¢¡ 
+
+  ¦ 
+where is the same as in definition 4, and #" # with a kernel function assigning
+weights to each datum point 2.
+
+3 Hidden Markov-Local Polynomial models (HMLPMs)
+
+A real-world temporal dataset may contain different kinds of patterns such as com-
+
+plete and partial similarity patterns and periodicity patterns, and complete or partial
+
+different order patterns. There are many different techniques for efficient sequence or
+
+subsequence matching to find patterns in discrete-valued time series database (DTSB)
+
+(e.g, [1]). A limitation of those techniques is also that they do not provide a coher-
+
+ent language for expressing prior knowledge and handling uncertainty in the matching
+
+process. Also the existence of different patterns does not guarantee the existence of an
+
+explicit model.
+
+In this section we introduce our new data mining model for pattern analysis in a
+
+DTS by a combination of the hidden Markov models (HMMs) and local polynomial
+
+models (LPMs), called hidden Markov-local polynomial models (HMLPMs). HMMs
+
+have been successfully used in many applications, such as in isolated word recognition
+
+(see [7]), but they have two major limitations. One is HMMs often have a large number
+
+of unstructured parameters, and the other is they cannot express dependencies between
+
+hidden states. In order to overcome the limitations of HMMs we apply local polynomial
+
+modelling techniques to relax the restrictive form of a HMM. We combine HMMs and
+
+LPMs to form hybrid models that contain the expressive power of artificial LPMs with
+
+the sequential time series aspect of HMMs.
+
+For building up our new data mining model we divide the data sequence or data
+
+vector sequence into two groups: (1) the structural-base data group and (2) the pure
+
+value-based data group. In group one we only consider the data sequence as a 9-state
+
+structural sequence by applying a distance measure function for performing structural
+
+pattern search. In group two, we use local polynomial techniques on the pure value-
+
+based sequence data for discovering pure value-based patterns. Then we combine those
+
+two groups by using hidden Markov models to obtain the final results.
+
+Y a R Y a&% 130 42 %
+
+2 In section 4, we choose Epanechnikov kernel function: $
+
+(')
+
+¥
+for our experiments
+
+in pure-value pattern searching.
+
+3.1 Modelling DTS
+
+Without loss of generality we assume that for each successive pair of time points in a DTS, we have p 7 h   -  7 =   (a unit constant). According to our method the structural base sequence and value-point process data model become:
+
+U QA PR V#TVS UW V9# X
+
+ where U is the number of s
+
+6wheFreirsetalychw©¡ e ¨mA ayvg iC e£w
+
+Eeth£ e
+
+
+of a given sample sequence. st£ ruc£ tura£ l ba£ se a£ s a£ set of vector sequence
+
+¢  ¤¡ £¢£
+
+"
+
+""
+
+£¥¡§¦5
+
+,
+
+¢  ¢   !¢# denotes the ! -dimensional obser-
+
+vation on an object that is to be assigned to a prespecified group.
+
+Then we may also view the value-point process model as a local polynomial model:
+
+  #H #§A
+
+¡S 
+
+  IH
+
+
+¨
+
+H ¡ #S
+
+#HGHGHG)£ S  §
+
+¥¨ H ¡ # § S
+
+XG
+
+It is more convenient to work with matrix notation for the solution to the above least
+
+squares problem in section 2.3. Let
+
+¨¥H ©¨ H"# cC 62  
+
+©¡ # " "" 62 4
+
+3¡ # § %'&
+
+¥¨ H ©¨ HX A $ ...
+
+...
+
+...
+
+£
+(
+
+cC 62   ©¡ # " " " 62 4 3¡ # §
+
+6 6and put Y DA 3
+Further, let
+
+£
+ 
+W
+
+"
+
+""
+be
+
+¦£ 3 4
+the
+
+# and ) 1A 0) ¡ 13241 d iagon al
+
+£ "" " £ ) matrix
+
+§
+
+# of
+
+G the
+
+weights:
+
+¨ H  
+W A65%@b87 "2 7
+
+¡ # %G
+
+The solution vector is provided by weighted least squares theory and is given by
+6 ' 6 G 
+) A X WX# X WY
+
+Then the problem of value-point pattern discovery can be formulated as the local
+polynomial analysis of discrete-valued time series.
+
+3.2 Structural Pattern Discovery
+
+We now introduce an approach to discovering patterns in structural base sequences
+
+which uses a distance measure function with its density estimator.
+
+From the point of view of our method in structural sequence data analysis, we
+
+use squared distance functions quadratic forms. Specifically, if
+
+9wh1A ichA@CaB r£e@EpD r£o"v"i"d£e@Gd%F b# ydeancoltaesssthoef
+
+positive semidefinite ! -dimensional obser-
+
+vation of each different distance of patterns in a state on an object that is to be assigned
+
+to one of the 7 prespecified groups, then, for measuring the squared distance between 9 and the centroid of the @ th group, we can consider the function [3]
+
+¨ ¨H
+
+¡
+6@ # DA I9
+
+QRP A# SIT
+
+U9 QRP #
+
+¡where T
+
+H is a positive semidefinite matrix to ensure the
+
+¡
+"@ W# V
+
+.
+
+3.3 Point-Value Pattern Discovery
+
+Here we introduce an enhancement to the local polynomial modelling approach through
+
+func¦£ti3 onal "2 # ,   
+
+"
+
+data
+" " , "2
+
+an4 a¦£ l3ysF4 i#s,.
+
+On one
+
+the can
+
+value-point replace the
+
+pattern discovery, given the bivariate data weighted least squares regression function
+
+in section 2.3 by
+
+G¨ 4    3  § 7
+
+%s "2 7G¨ H3¡# s  ¢ ¡ "2 7 ¥¨ ©H ¡#
+
+7   s ¢ ¢¡ 
+
+ where
+¤  £ % % ¦¥ ¨case of
+
+"#
+the
+
+is a loss function. For above function with
+
+the purpose of "p§# A  S
+
+pE redicC ti# n g3.future
+
+values
+
+we
+
+use
+
+a
+
+special
+
+3.4 Using HMLPMs for Pattern Discovery
+
+For using HMLPMs in pattern discovery we combine the above two  kinds of pat tern
+
+daniscirorvederuyc.ibInleshtroumctougreanl epoauttseMrnasrekaorvchcihnaginleotnththeessttrautcetuspraalcese  q% uC e£ n ceE e£)GHHGa ©G  £
+
+T 
+!
+
+ N be , with the
+
+!transition probability matrix (see section 2.1 for details).
+
+¨§In value-point pattern 
+2 ¤§ 4796 8 ne£ gGHaGHti)G v£ e ra ndom process
+
+sea rc hi ng  Ns upsupcohseththaet,
+
+pure valued data c£ oGHnHG d)G i£tional on a
+
+sequAence  Fa is
+
+a non A
+
+§ C  § A B Cand, if u 
+
+, the random variables A @ ,  takes the value
+
+ A C with probability
+
+
+
+7
+
+ .
+
+are mutually That is, for RA
+
+ind£epHG e)G nHG d£ ent C ,
+
+4796 8the distribution of  conditional on a is given by
+
+A % FB C§P W A a WA@ # A  7
+
+¨©(a
+
+kSnouwppnopsoestihtiavteifina te g=er@),a n dh  a7s.
+
+a local polynomial distribution with parameters 1 § 
+That is, the conditional local polynomial distribution
+
+¨©of   has parameters 1 §  and P
+
+6p # , where
+0PR"p# A    7  7  
+
+7¦"p # £
+
+and 7'6p # is, as before, the indicator of the event   £a  )£ HG AGHHG £ @  . Then we have "state-
+
+A ¡ ¨©dependent probab  ilit ies" for each nine states ( A
+
+C
+
+1 § )
+
+The models
+ ¨case there are P
+
+¡
+
+
+
+ are defined parameters: P
+
+paasrahmidedteenrsMa7 rokro v-7 l,oacnadl
+
+polynomial models. In this
+¡
+P P transition proba-
+
+" !b  ilities 7 s , e.g. the off-diagonal elements of , to specify the "hidden Markov chain"
+
+u .
+
+3 This is often called  ¦   #! "%$'&(0$ ¦) &1$2302 !#4  .
+
+4 Experimental Results
+This section presents selected experimental results. There are three steps of experiments for the investigation of "Daily Foreign Exchange Rates"4 analysis of "Exchange Rates Patterns" between the U. S. dollar and the U. K. pound. The data consist of daily exchange rate for each business day between 2 January 1971 and 21 June 1999. The time series is plotted in figure 1.
+
+2.8 2.6 2.4 2.2
+2 1.8 1.6 1.4 1.2
+1 0
+
+1000
+
+2000
+
+3000
+
+4000
+
+5000
+
+6000
+
+Fig. 1. 5764 working days exchange rates between the U. S. dollar and the U. K. pound, since 1971.
+
+4.1 On structural pattern searching
+We investigate the sample of the structural base to test naturalness of the similarity and periodicity on the Structural Base distribution. The size of this discrete-valued time series is abou  t 57£ 6eE4£ poi£ nts.£ We£ co£nsid£ er 9£ states in the state-space of structural distribution:  A g C   ¢  ¢     ! .
+In Figure 2, each point represents the occurence of one of the nine transition states, retaining the original order of the states. There exist two approximation uniformly distributed on state 3 and state 7 if the observations are big enough. Figure 2 also explains two facts: (1) there exists a hidden periodic distribution which corresponds to patterns on the same line with different distances, and (2) there exist partial periodic patterns on and between the same lines. To explain this further, we can look at the plot of distances between the patterns at a finer granularity over a selected portion of the daily exchange rates. For instance, in the right of Figure 2 the dataset consists of daily exchange rates for 300 business days starting from 3 January 1983, telling us there exist a number of partial periodic patterns appearing in each year and, also telling us in each state in a
+4 The Federal Reserve Bank of New York for trade weighted value of the dollar = index of weighted average exchange value of U.S. dollar against the United Kingdom Pound: http://www.frbchi.org/econinfo/finance/finance.html.
+
+99
+
+88
+
+77
+
+66
+
+55
+
+44
+
+33
+
+22
+
+11
+
+0
+
+1000
+
+2000
+
+3000
+
+4000
+
+5000
+
+6000
+
+50 100 150 200 250
+
+Fig. 2. Left: plot of the distance between same state for all 9 states in 5764 business days. Right: plot of the distance between same state for all 9 states in first 300 business days.
+
+year there is a hidden periodic and similarity distribution with each point representing
+
+the distance of patterns of various forms. Between some combined pattern classes there
+
+exist similar patterns such as between 5 to 10 and 15 to 22; between 32 to 35 and 42 to
+
+44.
+
+In Figure 3 the x-axis represents how many times the same distance is found be-
+
+tween repeating patterns and the y-axis represents the distance between the first and
+
+second occurences of each repeating pattern. In other words, we classify repeating pat-
+
+terns based on a distance classification technique. Again we can look at the plot over a
+
+selected portion to observe the distribution of distances in more detail. For example, in
+
+the right of figure 3 the dataset consists of daily exchange rates for the first 50 business
+
+  ! H H ! ¤days. It can be observed that the distribution of distances is a cubic curve distribution:
+
+A
+
+ 
+¢  ¡¤£ hw ¡ h¦¥ , where
+
+¡
+= a + b + c and , b
+
+0, a § 0.
+
+1000 900 800 700 600 500 400 300 200 100 0 0
+
+900 800 700 600 500 400 300 200 100
+
+50 100 150 200 250 300 350
+
+5 10 15 20 25 30 35 40 45 50
+
+Fig. 3. Left: plot of the distance between same state for all states in 5764 business days. Right: plot different pattern appear in different distances for first 50 business days.
+
+In summary, some results for the structural base experiments are as follows:
+
+­ Structural distribution is a hidden periodic distribution with a periodic length func-
+
+tion rq "p # (there are techniques available to approximate to the form of this function
+
+such as higher-order polynomial functions).
+
+­ There exist some partial periodic patterns based on a distance shifting.
+
+ 
+
+ ­ For all kinds of distance functions there exist a cubic curve: A   ¡ £ hw ¡ h¦¥ , where
+
+¡
+! H H ! ¤= a + b + c and , b
+
+0, a § 0.
+
+­ there exists an approximate uniform distribution in state 3 and state 7.
+
+4.2 On value-point pattern searching
+
+We now illustrate our new method to construct predictive intervals on the value-point
+
+('sequence for searching periodic and similarit y patterns. The linear regression of value-
+point of 2  against 2    explains about 8! ! of the variability of the data sequence,
+
+but it does not help us much in analysis and predicting future excha3 nge rates. In the
+G¨ ('light of our structural base experiments, we have found tha3 t the se3 ries W AQG 2&E  02  ¡ (' ¡has non-trivial autocorrelation. The correlation between  and    is  8 . Then
+
+the observations can be modelled as a polynomial regression function, say
+
+¨ ('3 £ r A2  &2  S¡ WU "2  9# X
+
+ A C ¦£ FE £HHG G)G £'I
+
+and then the following new series
+
+  ¨6p # A 3 6p w# S 3 " C# S X  S
+
+ A C £¦eE £)HG G)G £'I
+
+may be obtained. We also consider the XF"p# as an auto-regression ¡£¢
+
+E # model
+
+' 'X  A bgX   ¥S ¤¦X  ¡ S§¦
+
+SS
+
+SS
+
+where b , ¤ are constants dependent on sample dataset, and `¦  with a small variance
+constant which3 can be used to improve the predictive equation. SOur analysis is focused
+('on the series3  which3 is presented in the left of Figure 4. It is scatter plot of lag 2
+differences:  against  . 
+
+We obtain the exchange rates model according to nonparametric quantile regression
+
+theory:
+
+¡ ('3 G 3  A  8    RS X 
+
+From the distribution of X` , the FX 6p # can be modelled as an ¡£¢
+
+E #
+
+¡ (' ¨ ¡ ('G E
+X W A FC X   
+
+G 8 X 
+
+¡ S¨¦)
+
+with a small Var(¦  )(about 0.00093) to improve the predictive equation.
+¡ ('For prediction3 of futurG e ex3 change rates for the next 210 business days, we use the
+simple equation  A  8    with an average error of 0.00135. In the right of Figure 4 the actually observed series and predicted series are shown.
+Some results for the value-point of experiments are as follows:
+
+­ There does not exist any full periodic pattern, but there exist some partial periodic patterns based on a distance shifting.
+­ There exist some similarity patterns with a small distance shifting.
+
+0.1 2.2
+
+0.08 0.06 0.04
+
+2.1 ------ observed ................ predicted
+2
+
+0.02 0
+-0.02
+
+1.9 1.8
+
+-0.04 -0.06 -0.08
+
+1.7 1.6
+
+-0.1
+
+1.5
+
+-0.1 -0.08 -0.06 -0.04 -0.02 0 0.02 0.04 0.06 0.08 0.1 0
+
+50 100 150 200 250
+
+P PFig. 4. Left: Scatter plot of lag 2 differences:   against ¢  ¡ ¢ . Right:Plot of future exchange rates
+
+P Ponly for 210 business days by using the simple equation
+
+  = 0.488
+
+¢  ¡ ¢
+
+4.3 Using HMLPMs for pattern searching
+
+  £
+
+Let u   
+space
+
+%CT£ u
+
+
+
+¤ FE £ 
+
+
+
+
+£
+
+¤£ 
+'   
+
+N£
+ 
+
+b£ e a£n ir£redu cible homogeneous Markov chain on the state  ¢ ! , with transition probability matrix (TPM) (or,
+
+!stochastic matrix) :
+
+£ G GE
+
+£
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+e¢C 
+
+£
+
+¡ ¡ ¡ ¡ 5¡ ¡ ¡ ¡ ¡ ¡£
+
+£
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+G
+
+G
+
+£
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+ gC C
+
+
+
+! ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡A
+
+£ £
+
+£
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+G
+
+GE
+
+£
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+
+
+
+
+£
+
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡ ¡£
+
+G£
+
+  8 G
+
+GE G
+
+£ £
+
+e CF C 8  E eC G
+
+G
+
+EG
+
+E
+
+£ £
+
+GE
+
+F 'C   8 
+
+8  !
+
+£ £
+
+ !
+
+£ £
+
+C
+
+G
+
+G
+
+£ £
+
+G
+
+
+
+
+
+£ £
+
+ 8  G
+
+G
+
+£ £
+
+!
+
+8   C G E G E G
+
+£ £
+
+ !8 88   8!  £
+
+!We are interested F! ¡Markov property, the
+
+in the TPM:
+
+future ¦¤ ¨¥ 5§  ©
+
+of
+
+di stA ribu.tTiohnisomf TeaPnMs ,thrq a"tp t# h=e
+
+ . According to the TPM is non-recurrent
+
+¦of a state )@ to a state  . In other words, we cannot use present exchange rate to predict
+
+future exchange rate of some period after, but we are only able to predict near future
+
+exchange rate.
+¤§ 2 ¥ ('Suppose that our predicti  on of future exchange rate of value-point sequence is a
+nonnegative random process  w  N , and satisfy   A     S  .
+
+Suppose
+! ! ! 2t3 ime o3 rder
+
+th£e
+ 
+
+d¡is£ t"ri" b" u£ tio np
+
+of 
+
+sequence of transition probability matrix (TPM) N corresponding to the prediction value-point
+
+under  A
+
+¨ ('  .¡
+
+We have main combined-results on exchange rates as follows:
+
+­ We are only able to predict a short future period by using all present information. ­ There does not exist any full periodic pattern but there exist some partial periodic
+patterns.
+
+­ There exist some similarity patterns with a small distance shifting.
+5 Related Work
+According to pattern theory objectives in pattern searching can be classified into three categories:
+­ Create a representation in terms of algebraic systems with probabilistic superstructures intended for the representation and understanding of patterns in nature and science.
+­ Analyse the regular structures from the perspectives of mathematical theory. ­ Apply regular structures to particular applications and implement the structures by
+algorithms and code.
+In recent years various studies have considered temporal datasets for searching different kinds of and/or different levels of patterns. These studies have only covered one or two of the above categories. For example, many researchers use statistical techniques such as Metric-distance based techniques, Model-based techniques, or a combination of techniques (e.g, [14]) to search for different pattern problems such as in periodic patterns searching (e.g., [9]) and similarity pattern searching (e.g., [6]).
+¢  ¡Some studies have covered the above three categories for searching patterns in data
+mining. For instance [2] presents a "shape definition language", called  , for retrieving objects based on shapes contained in the histories associated with these objects. Also [12] present a logic algorithm for finding and representing hidden patterns. In [5], authors described adaptive methods which are based on similar methods for finding rules and discovering local patterns.
+Our work is different from these works. First, we use a statistical language to perform all the search work. Second, we divide the data sequence or, data vector sequence, into two groups: one is the structural base group and the other is the pure value based group. In group one our techniques are similar to Agrawal's work but we only consider three state changes (i.e., up (value increases), down (value decreases) and same (no change)) whereas Agarwal considers eight state changes (i.e., up (slightly increasing value), Up (highly increasing value), down (slightly increasing value) and so on). In this group, we also use distance measuring functions on structural based sequences which is similar to [12]. In group two we apply statistical techniques such as local polynomial modelling to deal with pure data which is similar to [5]. Finally, our work combines significant information of two groups to get global information which is behind the dataset.
+6 Concluding Remarks
+This paper has presented a new approach combining hidden Markov models and local polynomial analysis to form new models of application of data mining. The rough decision for pattern discovery comes from the structural level that is a collection of certain predefined similarity patterns. The clusters of similarity patterns are computed in this
+
+level by the choice of certain distance measures. The point-value patterns are decided in the second level and the similarity and periodicity of a DTS are extracted. In the final level we combine structural and value-point pattern searching into the HMLPM model to obtain a global pattern picture and understand the patterns in a dataset better. Another approach to find similar and periodic patterns has been reported else where [10, 11]. With these the model used is based on hidden periodicity analysis and plocal polynormial analysis. However, we have found that using different models at different levels produces better results.
+The "Daily Foreign Exchanges Rates" data was used to find the similar patterns and periodicities. The existence of similarity and partially periodic patterns are observed even though there is no clear full periodicity in this analysis.
+The method guarantees finding different patterns if they exist with structural and valued probability distribution of a real-dataset. The results of preliminary experiments are promising and we are currently applying the method to large realistic data sets such as two kinds of diabetes dataset.
+References
+1. Rakesh Agrawal, King-Ip Lin, Harpreet S. Sawhney, and Kyuseok Shim. Fast similarity search in the presence of noise, scaling, and translation in time-series databases. In Proceedings of the 21st VLDB Conference, Zu¨rich, Switzerland, 1995.
+2. Rakesh Agrawal, Giuseppe Psaila, Edward L.Wimmers, and Mohamed Zait. Querying shapes of histories. In Proceedings of the 21st VLDB Conference, 1995.
+3. T. W. Anderson. An introduction to Multivariate Statistical Analysis. Wiley, New York, 1984.
+4. C. Bettini. Mining temportal relationships with multiple granularities in time sequences. IEEE Transactions on Data & Knowledge Engineering, 1998.
+5. H. Mannila G.Renganathan G. Das, K. Lin and P. Smyth. Rule discovery from time series. In Proceedings of the international conference on KDD and Data Mining(KDD-98), 1998.
+6. D.Gunopulos G.Das and H. Mannila. Finding similar time seies. In Principles of Knowledge Discovery and Data Mining '97, 1997.
+7. P. Guttort. Stochastic Modeling of Scientific Data. Chapman & Hall, London, 1995. 8. J.Fan and I.Gijbels, editors. Local polynomial Modelling and Its Applications. Chapman and
+hall, 1996. 9. Cen Li and Gautam Biswas. Temporal pattern generation using hidden markov model based
+unsuperised classifcation. In Proc. of IDA-99, pages 245­256, 1999. 10. Wei Q. Lin and Mehmet A.Orgun. Temporal data mining using hidden periodicity analysis.
+In Proceedings of ISMIS2000, University of North Carolina, USA, 2000. 11. Wei Q. Lin, Mehmet A.Orgun, and Graham Williams. Temporal data mining using
+multilevel-local polynomial models. In Proceedings of IDEAL2000, The Chinese University of Hongkong, Hong Kong, 2000. 12. S.Jajodia andS.Sripada O.Etzion, editor. Temporal databases: Research and Practice. Springer-Verlag,LNCS1399, 1998. 13. P.Baldi and S. Brunak. Bioinformatics & The Machine Learning Approach. The MIT Press, 1999. 14. Z.Huang. Clustering large data set with mixed numeric and categorical values. In 1st PacificAsia Conference on Knowledge Discovery and Data Mining, 1997.
+
+

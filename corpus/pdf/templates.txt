@@ -1,0 +1,300 @@
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Templates for Spatial Reasoning in Responsive Geographical Information Systems
+Graham J. Williams
+Centre for Spatial Information Systems CSIRO Division of Information Technology
+GPO Box 664 Canberra 2601 Australia
+Phone: +61 6 275 0963 Fax: +61 6 257 6325
+Email: Graham.Williams@csis.dit.csiro.au
+Abstract
+Responsive geographical information systems (GIS) address the needs of the decision maker working in a spatially oriented environment where data is regularly updated, where the data is often voluminous, incomplete, and noisy, and where timely decisions must be made. Such environments stretch the capabilities of traditional GIS. A responsive GIS must play a more active role in the support of the decision maker. This paper introduces the concept of a responsive GIS and demonstrates the integration of artificial intelligence techniques to provide such active support. Expert knowledge, represented as Templates, can have both spatial and temporal components, and remains within the GIS framework rather than providing separate, and often disjoint, GIS and Expert System modules.
+1 Introduction
+Geographical Information Systems, traditionally recognised as advanced data processing systems, are now becoming sophisticated computer-based decision support tools. The traditional and still important role played by a GIS is one of providing access to large amounts of spatially indexed data. A graphical display (usually a map) makes this data accessible to a user--visualisation facilitating the user's understanding of the data and supporting effective decision making. Novel approaches to the development of GIS as spatial decision support systems enhance their functionality beyond that provided by traditional and/or commercial GIS. Whilst still requiring efficient access to large amounts of centrally stored data, many applications also require access to distributed and complex data (Abel et al. 1992) and to dynamic (frequently changing) data.
+2.01 Page 1
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Several interesting developments in GIS have looked at using ideas from Artificial Intelligence (AI) research, particularly expert systems, to enhance the decision support role of the GIS (Williams et al. 1986, Smith et al. 1987, Davis et al. 1990, Skidmore et al. 1991, Leung and Leung 1993, Evans et al. 1993). Such developments have (to varying degrees) treated the expert system component separate from the GIS component. Users of such systems often need to be familiar with the different representations and interfaces associated with each component.
+ 
+In this paper we present the Tactical Military Intelligence Processing System (TMIPS) , an integrated intelligent GIS designed to aid the decision maker operating in rapidly changing, spatially oriented environments. We introduce the term responsive GIS to refer to those GIS designed to operate in such environments. After characterising responsive GIS applications in section 2, we introduce TMIPS and the domain of military intelligence processing in section 3. The AI notion of hypothesis selection is then considered, and the concept of providing an intelligent reasoning assistant whilst remaining within the GIS framework is adopted (section 4). The implementation of these ideas within TMIPS demonstrates the effectiveness of this integrated framework (section 5). The resulting system provides a military intelligence officer with access to a large spatial database, together with capabilities for handling dynamic data. The user is supported through the representation and storage of predictions about the current situation and cached wisdom of domain experts.
+
+2 Responsive GIS
+
+Data used in GIS has generally been static in nature. Land parcel boundaries, for example, change infrequently and whilst land ownership may change more frequently, it is usually at intervals of years rather than months, weeks, days, or hours. Similarly, rivers, vegetation, and even towns and cities are all represented by data items which change infrequently, if at all.
+As GIS technology is applied to new domains concerns with dynamic spatial data become more important. Example applications are as diverse as the dispatch of emergency vehicles, search and rescue operations, traffic loads in a road network, weather monitoring, bush fire monitoring, and tracking fauna. Handling dynamic spatial data places new demands upon the GIS. Such data may be updated frequently (by the minute or even by the second) and the GIS must keep its display upto-date. In many such applications it is the dynamic data which is of central interest to the decision maker whilst static data provides the context. A responsive GIS must deal with both static and dynamic data.
+
+In the dispatch of vehicles (emergency vehicles or delivery vehicles) from one location to another through a road network, the operations coordinator requires ready access to street maps, as well as up-to-date data on traffic conditions. Particular patterns in the traffic conditions guide the operator in their task of dispatching the most appropriate vehicle along the most appropriate route. Information about road closures, traffic light outage, and accidents disrupting traffic flow are all important to the decision making.
+A land-based emergency search and rescue operation requires the GIS to provide ready access to map-type data (vegetation, infrastructure, topology, etc.) in addition to providing up-to-date data on the progress of the ongoing operation. Reports from field observers (such as there is evidence to
+
+Page 2
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+suggest they camped in the vicinity of the lower crossing of the Tembus River 2 nights ago) must be recorded, displayed, and readily accessible on a map. This dynamic data is vital to the operations coordinator.
+For these types of applications a responsive GIS may be more appropriate than the traditional GIS designed for generally static data. The types of applications that can benefit from a responsive GIS can be characterised as requiring:
+  much data to be readily available (leading to the common information overload problems);
+  some (often important) data to be regularly updated and modified; and
+  decisions to be made rapidly, with changing and often incomplete and noisy data.
+With dynamic data and rapid decision making the GIS will need to play an active role if it is to effectively support the decision maker. As new data arrives updates to the database should be immediately reflected in the display. Such data interpreted in context is often crucial to the decision making. As a situation develops, the user will begin to recognise patterns of behaviour that are similar to common patterns they may already be familiar with--their previous experience leads them to develop conceptual models that they can call upon when faced with a new situation. Having identified an appropriate model the user may make predictions about further events that might occur. These predictions further guide the decision making process. A responsive GIS will support the user's predictions and will record the models for later reference by the user and for its own use in reasoning.
+3 Military Intelligence Processing
+The task performed by a military intelligence officer is another example where a responsive GIS can play an important role. This domain has been used to drive our exploration of responsive GIS. TMIPS is used for the demonstration of spatial reasoning capabilities directed towards assisting the user's decision making. We describe in this section the primary information systems support provided by TMIPS. The following sections then build upon this basic GIS framework.
+Intelligence data is received from observations made by personnel or equipment in the field. Field observations provide, in varying degrees of detail and accuracy, data about the location, movement, and composition of units belonging to an opposing force. Each observation is recorded within TMIPS as a Message (a TMIPS defined data structure). Messages can be received from multiple observers, which might be land-based, air-based, or satellite-based. Distinct Messages may describe the same military units, but from different perspectives. The task of the intelligence officer is to bring all of this information together to form a comprehensive understanding and to provide a basis for decision making.
+Much of the intelligence officer's task lies in interpreting the Messages in the context of what is known of the structure and behaviour of the opposing forces. The structural knowledge describes how the opposing forces (typically) organise themselves into a hierarchy based upon size and described in terms of their types. For this domain, the size of the units are describe symbolically as
+2.01 Page 3
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Divisions, Regiments, Battalions, Companies, Platoons, and Squads. The types of the units are described symbolically as Infantry, Rifle, Medical, etc. The units are then described as Infantry Battalions, and Rifle Platoons, and so on. The behavioural knowledge describes the typical relationships between the various units, and the types of courses of action they generally follow.
+TMIPS supports the intelligence officer at a number of levels, each building upon the ones below it (figure 1). Each level introduces new concepts and tools for the intelligence officer, allowing complexity to be introduced gradually to the user.
+
+Conclusions
+
+Structured Messages
+Messages
+
+Map Display
+Figure 1: The TMIPS building blocks--a base framework for a responsive geographical information system. Levels of increasingly more supportive subsystems are the key to providing the user with an easy to use yet sophisticated geographical information system. The Map Display is the basic user interface. Messages are parsed into Structured Messages and displayed as icons upon the Map. From these the user makes Conclusions about the true identity of the reported units based upon their experience and knowledge of the opposing force.
+
+TMIPS provides typical GIS map display functionality, with access to multiple layers of data (terrain, infrastructure, vegetation, etc.) which may be overlaid upon satellite images of the region. All data is stored in an object-oriented database. Zoom, Pan, and Pick operations are supported, where Pick provides the ability to display text data associated with any displayed object. TMIPS also incorporates distance and inter-visibility (line-of-sight) calculation functions, and grid overlays. Figure 2 shows the TMIPS map display, its legend, and the main control panel.
+
+Page 4
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Figure 2: Three TMIPS interfaces. The larger window contains the basic map interface. The top window is the main control panel from which all of the functionality of TMIPS can be accessed. The right window displays the map legend which can be scrolled for further items. The user can tune the map display interactively by turning layers on or off, including the display of any currently available satellite imagery. The Message subsystem provides for the entry and storage of reports from field observers. In an operational system, these are entered either by an intelligence clerk from handwritten reports (transcriptive data entry) or directly from communications devices in the field (source data entry). A TMIPS Message includes a time-stamp, recording the date and time of receipt of the Message, and raw, uninterpreted text. An example of a Message might be: A rifle platoon has crossed the inland highway in the vicinity of Merrimac and has been deployed in GS3597. 3 x BDCMs with CT2s have been deployed with the platoon. [0830 10 March 1994] Messages form the starting point of the intelligence officer's task. A Message is transformed into a Structured Message, either automatically by parsing the text of the Message, or manually by an
+2.01 Page 5
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+intelligence clerk. A Structured Message is a rerepresenation of the free form text into a structured form from which reasoning can more readily be performed.
+The key components of a Structured Message are a spatial reference, an activity being performed, and a description of the units that have been sighted at that location (in terms of the size and type of the units and the equipment they have with them). Each Structured Message is linked to the Message(s) from which it was derived (i.e., upon which it depends). Once a Message has been transformed into a Structured Message an iconic representation can be displayed on the map. The icon conveys the type, size, activity, and identity of the object graphically (figure 3). Selecting an icon (using the Mouse in Pick mode) will display the text data associated with the object.
+
+... .. ..
+
+Rifle Platoon
+
+Rifle Squad
+
+Infantry Motor Rifle Squad
+
+Figure 3: A sample of the types of icons used to convey structural information about the dynamic objects displayed on the Map. For the military intelligence application, the dots indicate the size of the object (platoon or squad in this case), and the contents of the rectangle indicate the type of the object (rifle or infantry motor rifle).
+
+Although Structured Messages are "cleaned up" versions of raw Messages they reflect the data contained in the original Message which may be incomplete and/or inaccurate. Structured Messages may begin to form a pattern expressed through their spatial relationships as displayed upon the Map. From these fragments of information, the user can begin to gain some insights into what is actually happening in the field. Incomplete bits of information can be made more complete by knowing the current context. For example, it might be known that a typical formation for a rifle battalion in area defence involves an advance party of four units, with a rifle platoon ahead of three squad's (an infantry motor rifle squad flanked by rifle squads). If the Structured Messages begin to reflect such a pattern, suitable Conclusions about missing data can be made by the intelligence officer-- Structured Messages are transformed into Conclusions by filling in missing data and correcting erroneous data.
+
+Conclusions record inferences made by the intelligence officer about the true identity of the units being reported by the field observers (Calder 1992). In terms of actual evidence, Conclusions are considered to be less well supported that Structured Messages, representing the intelligence officer's interpretation of the available data. Conclusions rely upon one or more Structured Messages and/or other Conclusions. These supporting relationships are recorded in the database as links between the various objects. The links from Conclusions back to their supporting Structured Messages and Conclusions form a Justification Network which can be browsed and used to explain the user's reasoning which led to any particular Conclusion. This is particularly useful when one intelligence officer continues on from another (as at a change of shift).
+
+Page 6
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+The support provided by TMIPS for recording and displaying on a map Messages, Structured Messages, and Conclusions, eases the otherwise onerous task of managing multiple sources of data from which inferences are to be made. The system described so far extends GIS capabilities with support for interactive acquisition and display of data. The following sections explore how the GIS can be enhanced to provide active support of the decision maker particularly through the use of spatial reasoning in TMIPS.
+4 Hypotheses and Templates
+Responsive GIS are used in rapidly changing environments where timely decisions must be made. As noted in section 2 to effectively support the decision maker the GIS will actively contribute to the decision making process. Consider the example of an intelligence officer who has built up through experience a collection of alternative models describing the different behaviours of an opposing force. For the situation the officer is currently monitoring, evidence to support one model or another is often sought. A partially supported model will lead the officer to assume the existence of any missing components of the model (e.g., military units not yet reported to TMIPS) and to make decisions based upon the assumption that the model they currently believe to fit the best is correct.
+We refer here to the missing evidence for a proposed model as Expectations and to a model itself as a Template. A responsive GIS will record and monitor the users' Expectations, automatically identifying relevant data as it becomes available. A responsive GIS will also record and use the collection of Templates. In this section we briefly review the concept of hypothesis selection, identifying Templates as a representation for hypotheses in responsive GIS.
+A general class of problems of interest in Artificial Intelligence research is characterised as requiring the selection of a hypothesis given some evidence (which may have some uncertainty associated with it). AI systems (including expert systems) identify supporting evidence for a particular hypothesis from a set of given facts. The set of hypotheses and the types of facts that need to be taken into account are specified for a particular problem. Medical diagnostic systems, for example, use patient symptoms in making a decision about probable, but known, diseases. A military intelligence system will support an hypothesis with data about the location and composition of a collection of military units.
+Approaches to the task of selecting hypotheses, given a collection of evidence, have included Fuzzy Logic, Bayesian analysis, Dempster-Shafer theory, and certainty factors in expert systems. Although no one of these has been found to be completely satisfactory for hypothesis selection (Dillard 1992) any one of them generally suffices, depending upon the characteristics of the particular application.
+For the purposes of this analysis of responsive GIS, we can identify an hypothesis as an interpretation of a given situation described in terms of objects between which there exists spatial (and simple temporal) relationships. In effect, a hypothesis is a typical spatial or spatio-temporal scenario (some identifiable pattern or arrangement of objects). An example from military intelligence might be a rifle battalion in area defence which describes a particular spatial arrangement of rifle platoons and squads.
+2.01 Page 7
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+
+We assume that by identifying a given situation as similar to some other known typical scenario we are able to infer something useful about the given situation (performing spatial reasoning). For example, we assume that having identified a collection of rifle platoons and squads as partially fitting the typical pattern of a rifle battalion in area defence, we can predict the existence of the remaining platoons and squads that would complete this typical battalion. We can infer their existence awaiting further evidence.
+In the spatial context we call a typical scenario a Template (adopting military parlance) and picture it as a clear rubber sheet with a collection of objects drawn upon it. The rubber sheet can be overlaid upon a map and might be stretched in different directions in order to make it fit reasonably, taking into account the locations of the known units and the topology recorded upon the map--we fit the hypothesis (Template) to the given situation. In TMIPS a Template consists of a collection of military units, each described using the same data schemas as for Structured Messages and Conclusions. The locations of the units of a Template are specified relative to a reference point for the Template (rather than as actual map locations). The location can specify stretchability, placing restrictions on how far the unit can move and still be considered as part of the Template.
+A Template is similar to a collection of rules in a traditional rule-based expert system. Each Template encapsulates the knowledge of its applicability and its predictions. The knowledge is represented in a form that is familiar to the user of the responsive GIS yet retains the expressiveness of rules. The user's interaction with the system is simplified, eliminating any need to switch to a different (i.e., explicit rule-based) formalism.
+For GIS, two types of Templates are of interest: spatial and spatio-temporal. Spatial Templates identify the spatial organisation of a set of objects. The Template may involve any number and type of units with spatial relationships defined between them. Spatio-temporal Templates extend the idea of a spatial arrangement of objects by allowing a simple temporal relationship between objects. Such a Template describes the expected location of units and the time-frames within which units are expected to be at that location.
+A Template can be used in one of the following ways:
+
+  to passively provide a cache for expert knowledge;   to actively identify typical situations as they arise;   to actively predict other events.
+
+In terms of providing a cache, the responsive GIS records the experts experience as a collection of Templates. The Templates can be used as a memory aid or by others who may not have the depth of knowledge of the expert. The users can scroll through these Templates, finding one (or more) that fits the current situation, providing a framework within which the user can perform their task.
+The second case provides the GIS with the ability to monitor dynamic data (and static data where appropriate) to determine which, if any, of the cached Templates match a new situation. The system can automatically choose and suggest Templates to the user using hypothesis selection techniques.
+The third case recognises that in fitting a Template to a current situation there will not be a perfect spatial match between the idealised Template and the actual situation. The units of a template which
+
+Page 8
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+do not match any currently know units (allowing for stretchability) thus become automatically generated Expectations. These three cases define a convenient path for a staged implementation, with each case building upon the other. Each by themselves is a useful tool. This staged approach has been taken in the implementation of Templates in TMIPS.
+5 Templates for Military Intelligence Processing
+The framework of figure 1 can be built upon to implement Expectations and Templates in TMIPS (figure 4). The Structured Message and Conclusion data structures of TMIPS already provide a convenient and familiar organisation for describing collections of units. These data structures can be easily extended to represent Expectations and Templates.
+
+Conclusions
+
+Expectations
+
+Structured Messages
+Messages
+
+Templates
+
+Map Display
+
+Template Map
+
+Figure 4: Expectations and Templates build upon the basic TMIPS framework. Expectations record the users' predictions about future events. Templates record typical scenarios which can be used by the system to make its own predictions based upon the data describing the current situation.
+2.01 Page 9
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+5.1 Expectations
+
+The first phase of implementing spatial reasoning in TMIPS is the support of Expectations as specified in Price and Calder (1992) and implemented as described in Williams and Woods (1993). An Expectation is similar to a Conclusion with added functionality. An Expectation represents the user's prediction of some event occuring (e.g., from the information available expressed as structured messages and conclusions, the intelligence officer may believe that a unit not yet reported to TMIPS will be reported at some time to be at a particular location). The intelligence officer will create Expectations which reflect their understanding of the behaviour of the opposing forces. For example, given two rifle squads advancing north, we might expect to find an infantry motor rifle squad advancing with them. This situation is actually reflected in figure 2: rifle squads have been located near Bilinga Hill and near the airport. The user has recorded the Expectation of finding an infantry motor rifle squad located east of Woodgee Hill (represented by the "E" on the map).
+
+The added functionality of an Expectation is that of an active daemon. A daemon is a process which watches for some conditions to be met and then activates some action. In TMIPS, the daemons monitor Messages, Structured Messages, and Conclusions, looking for any that may "match" an Expectation.
+
+Matching is the basis of the reasoning capabilities embodied in the Expectations model. An Expectation is an encapsulated representation of knowledge, and is comparable to a rule in an expert system. In contrast to rules Expectations are dynamically created objects, reflecting a hypothesis formed by the user as the situation is unfolding. The Expectation contains a description of the conditions under which it can be met (in terms of unit descriptions and locations).
+
+The matching performed in TMIPS (i.e., checking the conditions under which an Expectation can be met) is based on both the aspatial and spatial attributes of the objects. These types of matching give different information. An Expectation can record descriptions of objects to varying degrees of completeness. The description associated with an Expectation is compared with the descriptions contained in Messages, Structured Messages, and Conclusions. If the degree of overlap in the two descriptions is large enough (where any unspecified components of a description will match anything), then a match is said to occur. Spatial matching involves determining whether there is any overlap between the region specified for the Expectation and that specified for any Structured Message or Conclusion (Williams and Woods 1993). The degree of overlap can be used to define a threshold for when a match is said to occur.
+
+The results of the independent aspatial and spatial matching between an Expectation and other data can then be interpreted together. An aspatial match identifies that the unit described by the Expectation has been reported to the system. If this unit also matches spatially, then the Expectation can be said to have been met, and the user is informed of this positive result. If, however, the Expectation did not spatially match the reported unit (i.e., the user had predicted the unit to be found at one location and yet it is reported to be at another location), then the Expectation has only partially been met, and the user must be informed of this discrepancy. The user might then refine their interpretation of the situation. Conversely, an Expectation may match another unit spatially, but not match it aspatially. Thus, the user has predicted a unit to be found at a given location, but some other unit has been reported there. This may constitute evidence against the Expectation or may simply require a refinement to the Expectation. The user again is alerted when this situation arises,
+
+Page 10
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+and is permitted to modify their interpretation. The matching process identifies both evidence for user interpretations and evidence against them.
+Expectations may have a simple temporal component. The event identified by an Expectation has a start and end time. The matching process occurs only within this time frame. Once the end time has been reached and an Expectation has not been matched, the user again is alerted. This behaviour is useful for monitoring regular events and raising an alert whenever a regular event did not occur. It is also useful for identifying that the user's predictions did not occur within the expected time frame.
+Expectations provide a framework for representing dynamic, and sometimes short-lived, knowledge. This knowledge records the user's current understanding of a situation and is constantly being monitored to identify discrepancies from the user's understanding. It also identifies evidence that conflicts with the user's understanding.
+5.2 Templates
+In identifying Expectations, the user is drawing upon experience. The user knows the usual patterns that occur and, when partial patterns of units have been reported to TMIPS, the user can fill in the rest of the details (other units). The final stage of the current implementation of TMIPS supplements this functionality with Templates to record a collection of hypotheses.
+A Template collects together spatially related units which are commonly found together. Prior to using a Template the units represent an expected situation rather than the actual situation, and so Expectations are the building blocks of Templates in TMIPS. A generic Template contains Expectations which have relative locations (relative to a reference point of the Template). An instantiated Template contains Expectations with absolute locations (specified in terms of map coordinates). An interface is provided to allow the intelligence officer to browse all available Templates and to choose any of them to be instantiated.
+Both Spatial and Spatio-Temporal Templates are supported in TMIPS. The units of a Spatial Template are typically arranged in some regular pattern, as illustrated in figure 5. This Spatial Template has been instantiated in the vicinity of the Highway through the centre of the map. It consists of 17 objects (each an Expectation) arranged in an idealised, but typical, configuration. The spatial relationships between the units of the Template can be specified with some flexibility. Each of the units has a primary location (as displayed initially when the Template is instantiated) with some degree of stretchability. This stretchability allows units to be moved within the specified limits. The units could be pictured as having springs connecting them which can be stretched or compressed and moved forwards and backwards within the specified limits. The general spatial pattern specified for the Template must be maintained.
+Once a Spatial Template has been instantiated and displayed on the Template Map the individual units can be moved around to reflect the actual Expectations of the intelligence officer. The corresponding Expectations become activated and the full daemon-based matching process comes into effect. When enough matches occur the intelligence officer may replace the remaining Expectations with Conclusions to indicate a greater degree of confidence in their existence.
+2.01 Page 11
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+
+Figure 5: The Spatial Template Map provides the same functionality as the main TMIPS map but generally with fewer layers (avoiding unnecessary clutter). In this case we see a typical Rifle Battalion in Area Defence Template instantiated between Mudgeeraba and Merrimac. Such a Rifle Battalion typically consists of 17 units, made up of various Rifle Platoons, Rifle Squads, etc., with a motorised squad bringing up the rear.
+
+A Spatio-Temporal Template records the typical behaviour of one or more objects over time. In effect, a Spatio-Temporal Template introduces the concept of a time frame to the Spatial Template. A simple example is illustrated in figure 6, where the pattern of behaviour being recorded relates to the location and time-frame of three units. This particular Spatio-Temporal Template can be chosen by the intelligence officer from the list of those available to be instantiated. The Template records the Expectation that some unidentified military unit will be found at the location GS4584 for some particular time frame. Sometime later, it is Expected that a Rifle Unit will be located at GS4586, and then an Infantry Unit at GS4681. If the intelligence officer decides to instantiate this Template
+
+Page 12
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+the corresponding Expectations become active and will be monitored by the TMIPS daemons. The user is informed as support or otherwise for the Templates arrives.
+Figure 6: A Temporal Template records typical patterns of behaviour over time. The template is displayed as a time line with time-frames associated with a collection of units. Each unit also has a location and activity associated with it.
+TMIPS Templates can provide the three levels of support identified earlier: caching of an expert's knowledge; automatically identifying typical situations; and predicting future events. This support aids the decision maker by providing rigorous access to expert knowledge, where the knowledge itself may monitor a situation and report itself to the user when it appears to be of relevance.
+6 Conceptual Design
+TMIPS is implemented in the object-oriented programming language C++, using the ONTOS objectoriented database management system (Ontos 1991) and the XWindow/Motif graphical user interface (Young 1990). It employs the geographical object-oriented systems architecture developed by Milne et al. (1993). In the object-oriented model, both data (attributes) and behaviour (functions) are associated with classes. Classes generally describe the structure of a collection of instances, although some classes exist solely to be inherited from rather than to be explicitly instantiated--the sub-classes will usually have instances. Classes are organised hierarchically, with (multiple) inheritance providing the opportunity for the reuse of data structures and behaviour and for specialisation. Messages, Structured Messages, Conclusions, Expectations, and Templates are all objects in the TMIPS database. The schematic database design used for TMIPS is illustrated in figures 7 and 8, using a slightly modified version of the symbology introduced by Hull and King (1987).
+2.01 Page 13
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Messages, Units, and Observations (figure 7) are base classes--classes without inheritance. Each object that belongs to the class Message, for example, has attributes called Text (the text of a field report), Time (the date and time stamp of the message), From (the field observer), and To (the receiver of the message). Instances of this class are created as new messages arrive and are stored persistently in the database.
+
+Id Type Size Task Equip
+
+Unit
+
+Time Place
+Activity Comment
+
+depends upon
+Observation
+
+Text Time From To
+
+Message
+
+Structured Message
+
+Conclusion
+
+Expectation
+
+Start End Status
+
+Figure 7: TMIPS' dynamic objects design. An Observation consists of a Time, Place, Activity, etc., and describes a collection of Units at this location. Each Unit is in turn described by a number of attributes. Instances of the base class Message, and the derived classes Structured Message, Conclusion, and Expectation, form the collection of dynamic objects that are stored persistently in TMIPS.
+
+A Unit records details about the identity of a reported unit, including it's true Identity, if known, it's Type, Size, the Task it is performing, and what Equipment it holds. An Observation records information pertaining to a set of Units at a particular Time, located at a particular Place, and involved in some Activity. An Observation can list a set of other Observations upon which it depends.
+Structured Messages, Conclusions, and Expectations are all derived classes, inheriting from the base class Observation. Instances of these classes have similar structures and operations associated with them. For example, they all have mapping capabilities which are implemented for the Observation class, but used with the instances of the derived classes.
+A Structured Message is an Observation which in addition to the usual data associated with an Observation records a set of related Messages. An Expectation is an Observation which also records a Start time, End time, and current Status. Although the three derived classes each describe a set of units at particular locations and at particular times, the semantics of the three classes differ. A Structured Message is a formal record of a field report. A Conclusion records an interpretation of a Structured Message as made by the intelligence officer in the context of what is known more glob-
+
+Page 14
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+
+Type Time Comment
+
+Configuration Template
+
+Expectation
+
+Std Spatial Template
+
+Std Temprl Template
+
+Inst Spatial Template
+
+Instance
+
+Name
+
+Centroid
+
+Inst Temprl Template
+
+Figure 8: Templates build upon the idea of Expectations. A collection of Standard Templates (both Spatial and Spatio-Temporal) represent the cached wisdom about typical scenarios. A Standard Template is instantiated when the situation matches some part of the Template. A Template simply consists of a collection of spatially related Expectations.
+
+ally of a situation. An Expectation records the intelligence officer's prediction (or a prediction generated by TMIPS) of events yet to be reported.
+Templates build upon this design. A Template describes a collection of Units which are arranged according to spatial relationships between the Units. When a Template is actually instantiated, these Units are recorded as Expectations--they correspond to predictions about the existence of Units at particular locations. A natural representation for a Template is as a collection of Expectations, each Expectation describing what is expected to be found at a particular location. Thus, a Template has Type, Time, and Comment attributes, and a Configuration attribute which identifies a set of Expectations (figure 8).
+TMIPS records expert knowledge as Spatial and Spatio-Temporal Templates. The data model identifies these two classes as Standard Spatial and Standard Spatio-Temporal Templates. When a user of TMIPS instantiates one of these standard Templates on the map, a new object is created (an Instantiated Template). This Instantiated Template records information about the instance, such as its name and its actual centroid location.
+This object-oriented approach to the design and implementation of TMIPS has provided a simple and clear, yet productive, organisation of the data. Remaining within the object-oriented paradigm for the implementation of all components of the TMIPS system (the data management, knowledge management, and user-interface components) has also facilitated its implementation.
+2.01 Page 15
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+7 Summary and Concluding Remarks
+
+As GIS are deployed more widely and in new domains, new challenges arise. The demands placed upon GIS require that they become flexible, interactive, and intelligent managers of spatially oriented data. Responsive GIS have been identified as a class of GIS aimed to meet the needs of users who work in environments with dynamic (frequently changing) data. The user must make decisions from what is currently known (even if known only imprecisely) within the context of the generally static spatial data found in traditional GIS.
+
+TMIPS introduces significant support for the handling of active, dynamic, objects. These objects represent real-world entities of significant interest to the decision maker. They are objects whose location may be changing in real-time. TMIPS is a GIS that caters for the input, storage, and monitoring of such objects. Hypothesis selection ideas from artificial intelligence allow the system to actively monitor the dynamic situation as it is progressing, to support the user who wishes to record predictions about how the situation will progress in the future. The system is also able to make predictions itself using cached expert knowledge. Basic expert systems type capabilities are provided within the framework of the GIS maintaining a common formalism for the storage of data and for the storage of expert knowledge.
+
+Several interesting and complex research issues remain to be addressed. A knowledge acquisition tool which assists the expert in expressing their knowledge to the system would aid in the task of recording the "cached" knowledge. Extending this further, a promising direction for future research is in the application of ideas from machine learning research to the automatic discovery of new typical patterns of behaviour (Templates). Templates can also be viewed as autonomous agents that monitor a situation looking for evidence that would allow them to nominate themselves as candidate explanations of the situation. An architecture based upon ideas from agent-oriented programming and distributed artificial intelligence may further enhance the responsive GIS.
+
+The intelligent placement of objects on the map is also an important area requiring further work. When a Template is instantiated, the placement of Expectations must take into account the characteristics of the location at which the Expectation is being placed. Important characteristics include the slope, vegetation, site characteristics, etc. All such information should be taken into account when placing an object automatically on the map.
+
+Another research topic gaining considerable momentum concerns the representation and use of temporal data in GIS (Langran 1992, Worboys 1992). In this paper we have begun to explore aspects of spatio-temporal reasoning in the context of responsive GIS where events occur regularly and the objects of interest may be moving through the environment. TMIPS provides a limited mechanism for performing basic spatio-temporal reasoning with its concept of Spatio-Temporal Templates. Further research and development of the concept of temporal GIS in the context of responsive GIS is likely to prove fruitful.
+
+In conclusion, responsive, interactive, dynamic, and intelligent support is required for applications such as command and control in military intelligence, emergency and delivery vehicle dispatch, emergency search and rescue, medical imaging, and sea-port and air traffic control. Whilst TMIPS is specifically a military intelligence processing system, its architecture and use of Expectations and Templates may point the way towards the development of general purpose responsive GIS.
+
+Page 16
+
+2.01
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Acknowledgements
+The design and implementation of Templates has benefitted considerably from Peter Calder, Gordon Martin, and Richard Price of DSTO and Peter Milne of CSIRO. The team responsible for developing and implementing TMIPS has also included David Campbell, Scott Milton, and John Smith of CSIRO, Steven Woods now with the Canadian Defence Research Establishment Valcartier, and Ronnie Gori and Jonathon Willmore of DSTO. Comments and suggestions from the anonymous reviewers of this paper have also been valuable.
+Notes
+ 
+TMIPS is the result of collaboration between the Australian Defence Science and Technology Organisation (DSTO) and the Commonwealth Scientific and Industrial Research Organisation (CSIRO). DSTO has been instrumental in the identification of the problem (Gori and Calder 1990) and CSIRO has contributed towards the design and implementation of the system.
+References
+Abel, D. J., Ackland, R. G., Cameron, M. A., Smith, D. F., Walker, G., and Yap, S. K., 1992, The environmental decision support system project: An exploration of alternative GIS architectures. International Journal of Geographical Information Systems, 6(3), 193­204.
+Calder, P., 1992, Modelling conclusions in intelligence assessment, Divisional Paper ITD-92-23, Defence Science and Technology Organisation, Information Technology Division, P.O. Box 1500, Salisbury SA 5108, Australia.
+Davis, J. R., Whigham, P., and Grant, I. W., 1990, Representing and applying knowledge about spatial processes in environmental management, Introductory Readings in Geographic Information Systems, edited by D. J. Peuquet, and D. F. Marble, Taylor and Francis, London, chapter 14, pp. 195­205.
+Dillard, R. A., 1992, Using data quality measures in decision­making algorithms. IEEE Expert, 7(6), 63­72.
+Evans, T. A., Djokic, D., and Maidment, D. R., 1993, Development and application of expert geographic information systems. Journal of Computing in Civil Engineering, 7(3), 339­353.
+Gori, R., and Calder, P. F., 1990, A decision support system for military intelligence assessment. Workshop Proceedings, 1990 Australian Joint Conference on Artificial Intelligence, Australian Computer Society.
+Hull, R., and King, R., 1987, Semantic database modelling: survey, applications, and research issues. ACM Computing Surveys, 19(3), 201­260.
+2.01 Page 17
+
+Published in the International Journal of Geographical Information Systems, 1995, Vol 9, No 2, Pp 117­131
+Langran, G., 1992, Time in Geographic Information Systems, Taylor & Francis, London.
+Leung, Y., and Leung, K. S., 1993, An intelligent expert system shell for knowledge-based geographical information systems: 2. some applications. International Journal of Geographical Information Systems, 7(3), 201­213.
+Milne, P., Milton, S., and Smith, J. L., 1993, Geogrphical object-oriented databases­A case study. International Journal of Geographical Information Systems, 7(1), 39­55.
+Ontos, 1991, ONTOS Developers Guide, Ontos Inc., Three Burlington Woods, Burlington Massachussetts, USA 01803.
+Price, R., and Calder, P., 1992, The expectation model and template matching for intelligence processing, Divisional Paper ITD-92-22, Defence Science and Technology Organisation, Information Technology Division, P.O. Box 1500, Salisbury SA 5108, Australia.
+Skidmore, A. K., Ryan, P. J., Dawes, W., Short, D., and O'Loughlin, E., 1991, Use of an expert system to map forest soils from a geographical information system. International Journal of Geographical Information Systems, 5(4), 431­445.
+Smith, T., Peuquet, D., Menon, S., and Agarwal, P., 1987, KBGIS-II: A knowledge-based geographical information system. International Journal of Geographical Information Systems, 1(2), 149­172.
+Williams, G. J., and Woods, S. G., 1993, Representing expectations in spatial information systems, Advances in spatial databases, edited by D. J. Abel, and B. C. Ooi, Vol. 692 of Lecture notes in computer science, Springer-Verlag, pp. 465­476. Proceedings of The Third International Symposium on Large Spatial Databases (SSD'93).
+Williams, G. J., Naninga, P. M., and Davis, J. R., 1986, GEM: A micro-computer based expert system for geographic domains. 6th International Workshop on Expert Systems and Their Applications, Vol. 1, Agence de l'Informatique, Palais des Papes, Avignon, France, pp. 45­60.
+Worboys, M. F., 1992, A model for spatio-temporal information. Proceedings of the 5th International Symposium on Spatial Data Handling, Charleston, South Carolina, pp. 602­611.
+Young, D. A., 1990, The X Window System, Prentice-Hall, Englewood Cliffs.
+
+Page 18
+
+2.01
+
+

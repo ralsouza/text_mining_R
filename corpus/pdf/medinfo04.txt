@@ -1,0 +1,26 @@
+MEDINFO 2004 M. Fieschi et al. (Eds) Amsterdam: IOS Press
+© 2004 IMIA. All rights reserved
+
+A new method of "pharmaco-vigilance" for automatically identifying Adverse Drug Reactions (ADRs) in large populations
+Simon Hawkinsa , Graham Williamsb, Hongxing Heb , Lifang Gub, Jiuyong Lic , Chris Kelmand
+a School of Health Sciences, University of Canberra, Australia b Division of Mathematical and Information Sciences, CSIRO, Australia c Department of Mathematics and Computing, University of South Queensland, Australia d Australian Department of Health and Ageing, Australian Public Service, Australia
+
+Abstract
+We propose a new method of "pharmaco-vigilance" that will automatically detect the majority of occurrences of Adverse Drug Reactions (ADRs) in large populations. We demonstrate the validity of this technique by detecting most occurrences of the life-threatening ADR, known as severe angioedema (or swelling of the wind-pipe and face severe enough to require immediate hospitalisation) that occurs occasionally after taking a very commonly used blood pressure drug (known as ACE-Inhibitors). Our method is able to detect most cases of severe angioedema that occur among the 3.3 million people in the state of Queensland Australia over a 5-year period. Our technique is also able to discover, for the first time, a set of simple rules, that can be used by doctors to identify the characteristics of patients who are most susceptible to developing angiodenema after taking ACE-Inhibitors.
+Introduction
+Only 1500 people or so test a new drug before it is put onto the market. This means that many side-effects are not discovered until after the drug is released. Once on the market, doctors are traditionally required to advise ADRAC when one of their patients develops an ADR. But according to figures from this authority, less than one per cent of ADRs are reported by Australian doctors!
+We suggest a better approach to the detection of ADRs is to use the population-based drug prescription database known as the Pharmaceutical Benefits Scheme (PBS), and link it at patient level to hospital admissions and medical data. Since this database covers the entire population of governmentsubsidised drug users, we identify most cases of the ADR.
+Data
+In the present study, we link the medical, drug and hospital history of all people on concessional or repatriation benefits
+
+who have been hospitalised in the state of Queensland, Australia over the 5-year period, 1995-1999 (683,358 patients).
+Results
+Incidence. Using this database, we accurately determine the annual incidence of ACE-Inhibitor induced angioedema to be stable over 5 years at around 100-115 cases per 100,000 person years. When ACE-Inhibitor users are matched with patients on gender, age and health status, we find an incidence of 87.9 cases of angioedema per 100,000 person years among the ACE Inhibitor users but only 33.2 cases per 100,000 person-years among non-users of these drugs.
+Patients at risk. Using logistic regression, we find ACEInhibitor users are (1) 3.3 times more likely to develop angioedema than non-users of these drugs; (2) 2.3 times more likely to develop angioedema if they also take systemic hormonal drugs; (3) 1.7 times more likely to develop angioedema if they also take genito-urinary or sex hormone drugs; and (4) 1.4 times more likely to develop angioedema if they have a co-morbidity of respiratory disease.
+Rules. Using Association Rules, we find simple rules that identify high-risk patients. ACE Inhibitor users are at elevated risk of severe angioedema if they (1) suffer from asthma or respiratory disease (2) they are over 50 years of age; or (3) they also taking systemic hormonal preparation or genitourinary system drugs. Patients in the population at greatest risk are females over 60 years, who also take genito-urinary & sex hormone drugs, anti-neoplastic & immuno-modulating drugs.
+Conclusion
+This study demonstrates the utility of using population-level linked health data (1) to detect and then calculate the incidence rates of rare ADRs, and (2) to develop a set of simple rules that will describe the characteristics of patients at greatest risk.
+
+1635
+
+

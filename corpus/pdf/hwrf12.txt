@@ -1,0 +1,1855 @@
+Hybrid weighted random forests for
+classifying very high-dimensional data
+Baoxun Xu1, Joshua Zhexue Huang2, Graham Williams2 and Yunming Ye1
+1Department of Computer Science, Harbin Institute of Technology Shenzhen Graduate School, Shenzhen 518055, China
+2Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen 518055, China
+Email: amusing002@gmail.com
+Random forests are a popular classification method based on an ensemble of a single type of decision trees from subspaces of data. In the literature, there are many different types of decision tree algorithms, including C4.5, CART, and CHAID. Each type of decision tree algorithm may capture different information and structure. This paper proposes a hybrid weighted random forest algorithm, simultaneously using a feature weighting method and a hybrid forest method to classify very high dimensional data. The hybrid weighted random forest algorithm can effectively reduce subspace size and improve classification performance without increasing the error bound. We conduct a series of experiments on eight high dimensional datasets to compare our method with traditional random forest methods and other classification methods. The results show that our method
+consistently outperforms these traditional methods.
+Keywords: Random Forests; Hybrid Weighted Random Forest; Classification; Decision tree;
+
+1. INTRODUCTION
+Random forests [1, 2] are a popular classification method which builds an ensemble of a single type of decision trees from different random subspaces of data. The decision trees are often either built using C4.5 [3] or CART [4], but only one type within a single random forest. In recent years, random forests have attracted increasing attention due to (1) its competitive performance compared with other classification methods, especially for high-dimensional data, (2) algorithmic intuitiveness and simplicity, and (3) its most important capability - "ensemble" using bagging [5] and stochastic discrimination [2].
+Several methods have been proposed to grow random forests from subspaces of data [1, 2, 6, 7, 8, 9, 10]. In these methods, the most popular forest construction procedure was proposed by Breiman [1] to first use bagging to generate training data subsets for building individual trees. A subspace of features is then randomly selected at each node to grow branches of a decision tree. The trees are then combined as an ensemble into a forest. As an ensemble learner, the performance of a random forest is highly dependent on two factors: the performance of each tree and the diversity of the trees in the forests [11]. Breiman formulated the overall performance of a set of trees as the average strength and proved that the generalization
+
+error of a random forest is bounded by the ratio of the average correlation between trees divided by the square of the average strength of the trees.
+For very high dimensional data, such as text data, there are usually a large portion of features that are uninformative to the classes. During this forest building process, informative features would have the large chance to be missed, if we randomly select a small subspace (Breiman suggested selecting log2(M ) + 1 features in a subspace, where M is the number of independent features in the data) from high dimensional data [12]. As a result, weak trees are created from these subspaces, the average strength of those trees is reduced and the error bound of the random forest is enlarged. Therefore, when a large proportion of such "weak" trees are generated in a random forest, the forest has a large likelihood to make a wrong decision which mainly results from those "weak" trees' classification power.
+To address this problem, we aim to optimize decision trees of a random forest by two strategies. One straightforward strategy is to enhance the classification performance of individual trees by a feature weighting method for subspace sampling [12, 13, 14]. In this method, feature weights are computed with respect to the correlations of features to the class feature and regarded as the probabilities of the feature to be selected in subspaces. This method obviously increases the classification performance of individual
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+2 Baoxun Xu, Joshua Zhexue Huang, Graham Williams, Yunming Ye
+
+trees because the subspaces will be biased to contain more informative features. However, the chance of more correlated trees is also increased since the features with large weights are likely to be repeatedly selected.
+The second strategy is more straightforward: use several different types of decision trees for each training data subset, to increase the diversity of the trees, and then select the optimal tree as the individual tree classifier in the random forest model. The work presented here extends the algorithm developed in [15]. Specifically, we build three different types of tree classifiers (C4.5, CART, and CHAID [16, 17]) for each training data subset. We then evaluate the performance of the three classifiers and select the best tree. In this way, we build a hybrid random forest which may include different types of decision trees in the ensemble. The added diversity of the decision trees can effectively improve the accuracy of each tree in the forest, and hence the classification performance of the ensemble. However, when we use this method to build the best random forest model for classifying high dimensional data, we can not be sure of what subspace size is best.
+In this paper, we propose a hybrid weighted random forest algorithm by simultaneously using a new feature weighting method together with the hybrid random forest method to classify high dimensional data. In this new random forest algorithm, we calculate feature weights and use weighted sampling to randomly select features for subspaces at each node in building different types of trees classifiers (C4.5, CART, and CHAID) for each training data subset, and select the best tree as the individual tree in the final ensemble model.
+Experiments were performed on 8 high dimensional text datasets with dimensions ranging from 2000 to 13195. We compared the performance of eight random forest methods and well-known classification methods: C4.5 random forest, CART random forest, CHAID random forest, hybrid random forest, C4.5 weighted random forest, CART weighted random forest, CHAID weighted random forest, hybrid weighted random forest, support vector machines [18], naive Bayes [19], and k-nearest neighbors [20]. The experimental results show that our hybrid weighted random forest achieves improved classification performance over the ten competitive methods.
+The remainder of this paper is organized as follows. In Section 2, we introduce a framework for building a hybrid weighted random forest, and describe a new random forest algorithm. Section 3 summarizes four measures to evaluate random forest models. We present experimental results on 8 high dimensional text datasets in Section 4. Section 5 contains our conclusions.
+
+2. HYBRID FORESTS
+
+WEIGHTED
+
+RANDOM
+
+In this section, we first introduce a feature weighting method for subspace sampling. Then we present a
+
+TABLE 1. Contingency table of input feature A and class
+
+feature Y Y = y1 . . . Y = yj . . . Y = yq Total
+
+A = a1 11 . . . 1j . . . 1q
+
+... ... . . .
+
+...
+
+...
+
+...
+
+1· ...
+
+A = ai i1 . . . ij . . . iq
+
+... ... . . .
+
+...
+
+...
+
+...
+
+i· ...
+
+A = ap p1 . . . pj . . . pq
+
+p·
+
+Total ·1 . . . ·j . . . ·q
+
+
+
+general framework for building hybrid random forests. By integrating these two methods, we propose a novel hybrid weighted random forest algorithm.
+
+2.1. Notation
+
+Let Y be the class (or target) feature with q distinct class labels yj for j = 1, · · · , q. For the purposes of our discussion we consider a single categorical feature A in dataset D with p distinct category values. We denote the distinct values by ai for i = 1, · · · , p. Numeric features can be discretized into p intervals with a supervised discretization method.
+Assume D has val objects. The size of the subset of D satisfying the condition that A = ai and Y = yj is denoted by ij. Considering all combinations of the categorical values of A and the labels of Y , we can obtain a contingency table [21] of A against Y as shown in Table 1. The far right column contains the marginal totals for feature A:
+
+q i. = ij
+j=1
+
+for i = 1, · · · , p
+
+(1)
+
+and the bottom row is the marginal totals for class feature Y :
+
+p .j = ij
+i=1
+
+for j = 1, · · · , q
+
+(2)
+
+The grand total (the total number of samples) is in the bottom right corner:
+
+q p  = ij
+j=1 i=1
+
+(3)
+
+Given a training dataset D and feature A we first compute the contingency table. The feature weights are then computed using the two methods to be discussed in the following subsection.
+
+2.2. Feature Weighting Method
+In this subsection, we give the details of the feature weighting method for subspace sampling in random forests. Consider an M-dimensional feature space {A1, A2, . . . , AM }. We present how to compute the
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+Hybrid weighted random forests for classifying very high-dimensional data
+
+3
+
+weights {w1, w2, . . . , wM } for every feature in the space. These weights are then used in the improved algorithm to grow each decision tree in the random forest.
+
+2.2.1. Feature Weight Computation The weight of feature A represents the correlation between the values of feature A and the values of the class feature Y . A larger weight will indicate that the class labels of objects in the training dataset are more correlated with the values of feature A, indicating that A is more informative to the class of objects. Thus it is suggested that A has a stronger power in predicting the classes of new objects.
+In the following, we propose to use the chi-square statistic to compute feature weights because this method can quantify the correspondence between two categorical variables.
+Given the contingency table of an input feature A and the class feature Y of dataset D, the chi-square statistic of the two features is computed as:
+
+corr(A, Y ) = p q (ij - tij)2
+
+i=1 j=1
+
+tij
+
+(4)
+
+where ij is the observed frequency from the contingency table and tij is the expected frequency computed as
+
+tij
+
+=
+
+i·
+
+× ·j 
+
+(5)
+
+The larger the measure corr(A, Y ), the more informative the feature A is in predicting class Y .
+
+2.2.2. Normalized Feature Weight
+
+In practice, feature weights are normalized for feature
+
+subspace sampling. We use corr(A, Y ) to measure the
+
+informativeness of these features and consider them
+
+as feature weights. However, to treat the weights as
+
+probabilities of features, we normalize the measures to
+
+ensure the sum of the normalized feature weights is
+
+equal to 1. Let corr(Ai, Y ) (1  i  M ) be the set of M feature measures. We compute the normalized
+
+weights as
+
+ wi = Ni=1corcro(rAri(,AYi), Y )
+
+(6)
+
+Here, we use the square root to smooth the values of the measures. wi can be considered as the probability that feature Ai is randomly sampled in a subspace. The more informative a feature is, the larger the weight and the higher the probability of the feature being selected.
+
+2.3. Framework for Building a Hybrid Random Forest
+As an ensemble learner, the performance of a random forest is highly dependent on two factors: the diversity among the trees and the accuracy of each tree [11].
+
+Diversity is commonly obtained by using bagging and random subspace sampling. We introduce a further element of diversity by using different types of trees.
+Considering an analogy with forestry, the different data subsets from bagging represent the "soil structures." Different decision tree algorithms represent "different tree species". Our approach has two key aspects: one is to use three types of decision tree algorithms to generate three different tree classifiers for each training data subset; the other is to evaluate the accuracy of each tree as the measure of tree importance. In this paper, we use the out-of-bag accuracy to assess the importance of a tree.
+Following Breiman [1], we use bagging to generate a series of training data subsets from which we build trees. For each tree, the data subset used to grow the tree is called the "in-of-bag" (IOB) data and the remaining data subset is called the "out-of-bag" (OOB) data. Since OOB data is not used for building trees we can use this data to objectively evaluate each tree's accuracy and importance. The OOB accuracy gives an unbiased estimate of the true accuracy of a model.
+Given n instances in a training dataset D and a tree classifier hk(IOBk) built from the k'th training data subset IOBk, we define the OOB accuracy of the tree hk(IOBk), for di  D, as:
+
+OOBAcck
+
+=
+
+n
+i=1
+
+I(hin=k(1dIi()d=i yiO; dOi BkO) OBk)
+
+(7)
+
+where I(.) is an indicator function. The larger the OOBAcck, the better the classification quality of a tree.
+We use the out-of-bag data subset OOBi to calculate the out-of-bag accuracies of the three types of trees (C4.5, CART and CHAID) with evaluation values E1, E2 and E3 respectively.
+Fig. 1 illustrates the procedure for building a hybrid random forest model. Firstly, a series of IOB/OOB datasets are generated from the entire training dataset by bagging. Then, three types of tree classifiers (C4.5, CART and CHAID) are built using each IOB dataset. The corresponding OOB dataset is used to calculate the OOB accuracies of the three tree classifiers. Finally, we select the tree with the highest OOB accuracy as the final tree classifier, which is included in the hybrid random forest.
+Building a hybrid random forest model in this way will increase the diversity among the trees. The classification performance of each individual tree classifier is also maximized.
+
+2.4. Decision Tree Algorithms
+The core of our approach is the diversity of decision tree algorithms in our random forest. Different decision tree algorithms grow structurally different trees from the same training data. Selecting a good decision tree algorithm to grow trees for a random forest is critical
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+4 Baoxun Xu, Joshua Zhexue Huang, Graham Williams, Yunming Ye
+the difference lies in the way to split a node, such as the split functions and binary branches or multibranches. In this work we use these different decision tree algorithms to build a hybrid random forest.
+
+2.5. Hybrid Weighted Random Forest Algorithm
+
+FIGURE 1. The Hybrid Random Forests framework.
+for the performance of the random forest. Few studies have considered how different decision tree algorithms affect a random forest. We do so in this paper.
+The common decision tree algorithms are as follows: Classification Trees 4.5 (C4.5) is a supervised learning classification algorithm used to construct decision trees. Given a set of pre-classified objects, each described by a vector of attribute values, we construct a mapping from attribute values to classes. C4.5 uses a divide-and-conquer approach to grow decision trees. Beginning with the entire dataset, a tree is constructed by considering each predictor variable for dividing the dataset. The best predictor is chosen at each node using a impurity or diversity measure. The goal is to produce subsets of the data which are homogeneous with respect to the target variable. C4.5 selects the test that maximizes the information gain ratio (IGR) [3]. Classification and Regression Tree (CART) is a recursive partitioning method that can be used for both regression and classification. The main difference between C4.5 and CART is the test selection and evaluation process. Chi-squared Automatic Interaction Detector (CHAID) method is based on the chi-square test of association. A CHAID decision tree is constructed by repeatedly splitting subsets of the space into two or more nodes. To determine the best split at any node, any allowable pair of categories of the predictor variables is merged until there is no statistically significant difference within the pair with respect to the target variable [16, 17]. From these decision tree algorithms, we can see that
+
+In this subsection we present a hybrid weighted random forest algorithm by simultaneously using the feature weights and a hybrid method to classify high dimensional data. The benefits of our algorithm has two aspects: Firstly, compared with hybrid forest method [15], we can use a small subspace size to create accurate random forest models. Secondly, compared with building a random forest using feature weighting [14], we can use several different types of decision trees for each training data subset to increase the diversities of trees. The added diversity of the decision trees can effectively improve the classification performance of the ensemble model. The detailed steps are introduced in Algorithm 1.
+Input parameters to Algorithm 1 include a training dataset D, the set of features A, the class feature Y , the number of trees in the random forest K and the size of subspaces m. The output is a random forest model M . Lines 9­16 form the loop for building K decision trees. In the loop, Line 10 samples the training data D by sampling with replacement to generate an in-of-bag data subset IOBi for building a decision tree. Line 11­14 build three types of tree classifiers (C4.5, CART, and CHAID). In this procedure, Line 12 calls the function createT reej() to build a tree classifier. Line 13 calculates the out-of-bag accuracy of the tree classifier. After this procedure, Line 15 selects the tree classifier with the maximum out-of-bag accuracy. K decision tree trees are thus generated to form a hybrid weighted random forest model M .
+Generically, function createT reej() first creates a new node. Then, it tests the stopping criteria to decide whether to return to the upper node or to split this node. If we choose to split this node, then the feature weighting method is used to randomly select m features as the subspace for node splitting. These features are used as candidates to generate the best split to partition the node. For each subset of the partition, createT reej() is called again to create a new node under the current node. If a leaf node is created, it returns to the parent node. This recursive process continues until a full tree is generated.
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+Hybrid weighted random forests for classifying very high-dimensional data
+
+5
+
+Algorithm 1 New Random Forest Algorithm
+1: Input: 2: - D : the training dataset, 3: - A : the features space {A1, A2, ..., AM }, 4: - Y : the class features space {y1, y2, ..., yq}, 5: - K : the number of trees, 6: - m : the size of subspaces. 7: Output: A random forest M ; 8: Method: 9: for i = 1 to K do 10: draw a bootstrap sample in-of-bag data subset
+IOBi and out-of-bag data subset OOBi from training dataset D; 11: for j = 1 to 3 do 12: hi,j(IOBi) = createT reej(); 13: use out-of-bag data subset OOBi to calculate
+the out-of-bag accuracy OOBAcci, j of the tree classifier hi,j(IOBi) by Equation(1); 14: end for 15: select hi(IOBi) with the highest out-of-bag accuracy OOBAcci as Optimal tree i; 16: end for 17: combine the K tree classifiers h1(IOB1), h2(IOB2), ..., hK (IOBK ) into a random forest M ;
+18:
+19: Function createTree() 20: create a new node N ; 21: if stopping criteria is met then 22: return N as a leaf node; 23: else 24: for j = 1 to M do 25: compute the informativeness measure
+corr(Aj, Y ) by Equation (4); 26: end for 27: compute feature weights {w1, w2, ..., wM } by
+Equation (6); 28: use the feature weighting method to randomly
+select m features; 29: use these m features as candidates to generate
+the best split for the node to be partitioned; 30: call createTree() for each split; 31: end if 32: return N ;
+3. EVALUATION MEASURES
+In this paper, we use five measures, i.e., strength, correlation, error bound c/s2, test accuracy, and F1 metric, to evaluate our random forest models. Strength measures the collective performance of individual trees in a random forest and the correlation measures the diversity of the trees. The ratio of the correlation over the square of the strength c/s2 indicates the generalization error bound of the random forest model. These three measures were introduced in [1]. The accuracy measures the performance of a random forest model on unseen test data. The F1 metric is a
+
+commonly used measure of classification performance.
+
+3.1. Strength and Correlation Measures
+
+We follow Breiman's method described in [1] to calculate the strength, correlation and the ratio c/s2.
+
+Following Breiman's notation, we denote strength as
+
+s and correlation as ¯. Let hk(IOBk) be the kth tree classifier grown from the kth training data IOBk sampled from D with replacement. Assume the
+
+random forest model contains K trees. The out-of-bag
+
+proportion of votes for di  D on class j is
+
+Q(di, j)
+
+=
+
+kK=1I(Kkh=k1(dIi()d=i /j
+
+; di / IOBk I OBk )
+
+)
+
+(8)
+
+This is the number of trees in the random forest which are trained without di and classify di into class j, divided by the number of training datasets not containing di.
+The strength s is computed as:
+
+s
+
+=
+
+1 n
+
+n (Q(di, yi) -
+
+maxj=yi Q(di, j))
+
+i=1
+
+(9)
+
+where n is the number of objects in D and yi indicates the true class of di.
+The correlation ¯ is computed as:
+
+¯ =
+
+1 n
+
+n
+
+i=1
+
+(
+
+1 K
+
+(Q(Kkd=i1,yip) k-+mp¯akx+j =(ypi kQ-(dpi¯,kj))2))22
+
+-
+
+s2
+
+(10)
+
+where
+
+pk
+
+=
+
+n
+i=1
+
+I(hin=k(1dIi()d=i /yiI;
+
+di / OBk
+
+I )
+
+OBk )
+
+(11)
+
+and
+
+p¯k
+
+=
+
+n
+i=1
+
+I
+
+(hk (dni )
+i=1
+
+= ^j(di, Y ); di / I(di / IOBk)
+
+I OBk )
+
+(12)
+
+where
+
+^j(di, Y ) = argmaxj= yi Q(d, j)
+
+(13)
+
+is the class that obtains the maximal number of votes among all classes but the true class.
+
+3.2. General Error Bound Measure c/s2
+Given the strength and correlation, the out-of-bag estimate of the c/s2 measure can be computed.
+An important theoretical result in Breiman's method is the upper bound of the generalization error of the random forest ensemble that is derived as
+
+P E  (1 - s2)/s2
+
+(14)
+
+where ¯ is the mean value of correlations between all pairs of individual classifiers and s is the strength of the set of individual classifiers that is estimated as the
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+6 Baoxun Xu, Joshua Zhexue Huang, Graham Williams, Yunming Ye
+
+average accuracy of individual classifiers on D with out-of-bag evaluation. This inequality shows that the generalization error of a random forest is affected by the strength of individual classifiers and their mutual correlations. Therefore, Breiman defined the c/s2 ratio to measure a random forest as
+
+c/s2 = ¯/s2
+
+(15)
+
+The smaller the ratio, the better the performance of the random forest. As such, c/s2 gives guidance for
+reducing the generalization error of random forests.
+
+TABLE 2. Summary statistic of 8 high-dimensional
+
+datasets Name Features Instances Classes % Minority
+
+Fbis 2000
+
+2463
+
+17
+
+1.54
+
+Re0 2886
+
+1504
+
+13
+
+0.73
+
+Re1 3758
+
+1657
+
+25
+
+0.6
+
+Tr41 7454
+
+878
+
+10
+
+1.03
+
+Wap 8460
+
+1560
+
+20
+
+0.32
+
+Tr31 10,128
+
+927
+
+7
+
+0.22
+
+La2s 12,432
+
+3075
+
+6
+
+8.07
+
+La1s 13,195
+
+3204
+
+6
+
+8.52
+
+3.3. Test Accuracy
+
+The test accuracy measures the classification performance of a random forest on the test data set. Let Dt be a test data and Yt be the class labels. Given di  Dt, the number of votes for di on class j is
+
+K N (di, j) = I(hk(di) = j)
+k=1
+The test accuracy is calculated as
+
+(16)
+
+1 n
+
+Acc = n
+
+I(N (di, yi) - maxj=yi N (di, j) > 0) (17)
+
+i=1
+
+where n is the number of objects in Dt and yi indicates the true class of di.
+
+3.4. F1 Metric
+To evaluate the performance of classification methods in dealing with an unbalanced class distribution, we use the F1 metric introduced by Yang and Liu [22]. This measure is equal to the harmonic mean of recall () and precision (). The overall F1 score of the entire classification problem can be computed by a microaverage and a macro-average.
+Micro-averaged F1 is computed globally over all classes, and emphasizes the performance of a classifier on common classes. Define  and  as follows:
+
+ = iq=1(Tiq=P1iT+PFi Pi) ,  = qi=1(Tiq=P1iT+PFi Ni) (18)
+where q is the number of classes. T Pi (True Positives) is the number of objects correctly predicted as class i, F Pi (False Positives) is the number of objects that are predicted to belong to class i but do not. The microaveraged F1 is computed as:
+
+2 M icroF 1 =
++
+
+(19)
+
+Macro-averaged F1 is first computed locally over each class, and then the average over all classes is taken.
+
+It emphasizes the performance of a classifier on rare categories. Define  and  as follows:
+
+i
+
+=
+
+T Pi , (T Pi + F Pi)
+
+i
+
+=
+
+T Pi (T Pi + F Ni)
+
+(20)
+
+F 1 for each category i and the macro-averaged F1 are computed as:
+
+F 1i
+
+=
+
+2ii , i + i
+
+M acroF 1
+
+=
+
+q
+i=1
+
+F 1i
+
+q
+
+(21)
+
+The larger the MicroF1 and MacroF1 values are, the higher the classification performance of the classifier.
+
+4. EXPERIMENTS
+In this section, we present two experiments that demonstrate the effectiveness of the new random forest algorithm for classifying high dimensional data. High dimensional datasets with various sizes and characteristics were used in the experiments. The first experiment is designed to show how our proposed method can reduce the generalization error bound c/s2, and improve test accuracy when the size of the selected subspace is not too large. The second experiment is used to demonstrate the classification performance of our proposed method in comparison to other classification methods, i.e. SVM, NB and KNN.
+
+4.1. Datasets
+In the experiments, we used eight real-world high dimensional datasets. These datasets were selected due to their diversities in the number of features, the number of instances, and the number of classes. Their dimensionalities vary from 2000 to 13,195. Instances vary from 878 to 3204 and the minority class rate varies from 0.22% to 8.52%. In each dataset, we randomly select 70% of instances as the training dataset, and the remaining data as the test dataset. Detailed information of the eight datasets is listed in Table 2.
+The Fbis, Re0, Re1, Tr41, Wap, Tr31, La2s and La1s datasets are classical text classification benchmark datasets which were carefully selected and
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+Hybrid weighted random forests for classifying very high-dimensional data
+
+7
+
+preprocessed by Han and Karypis [23]. Dataset Fbis was compiled from the Foreign Broadcast Information Service TREC-5 [24]. The datasets Re0 and Re1 were selected from the Reuters-21578 text categorization test collection Distribution 1.0 [25]. The datasets Tr41 and Tr31 were derived from TREC-5 [24], TREC-6 [24], and TREC-7 [24]. Dataset Wap is from the WebACE project (WAP) [26]. The datasets La2s and La1s were selected from the Los Angeles Times for TREC-5 [24]. The classes of these datasets were generated from the relevance judgment provided in these collections.
+4.2. Performance Comparisons between Random Forest Methods
+The purpose of this experiment was to evaluate the effect of the hybrid weighted random forest method (H W RF) on strength, correlation, c/s2, and test accuracy. The eight high dimensional datasets were analyzed and results were compared with seven other random forest methods, i.e., C4.5 random forest (C4.5 RF), CART random forest (CART RF), CHAID random forest (CHAID RF), hybrid random forest (H RF), C4.5 weighted random forest (C4.5 W RF), CART weighted random forest (CART W RF), CHAID weighted random forest (CHAID W RF). For each dataset, we ran each random forest algorithm against different sizes of the feature subspaces. Since the number of features in these datasets was very large, we started with a subspace of 10 features and increased the subspace by 5 more features each time. For a given subspace size, we built 100 trees for each random forest model. In order to obtain a stable result, we built 80 random forest models for each subspace size, each dataset and each algorithm, and computed the average values of the four measures of strength, correlation, c/s2, and test accuracy as the final results for comparison. The performance of the eight random forest algorithms on the four measures for each of the 8 datasets is shown in Figs. 2, 3, 4, and 5.
+Fig. 2 plots the strength for the eight methods against different subspace sizes on each of the 8 datasets. In the same subspace, the higher the strength, the better the result. From the curves, we can see that the new algorithm (H W RF) consistently performs better than the seven other random forest algorithms. The advantages are more obvious for small subspaces. The new algorithm quickly achieved higher strength as the subspace size increases. The seven other random forest algorithms require larger subspaces to achieve a higher strength. These results indicate that the hybrid weighted random forest algorithm enables random forest models to achieve a higher strength for small subspace sizes compared to the seven other random forest algorithms.
+Fig. 3 plots the curves for the correlations for the eight random forest methods on the 8 datasets. For
+
+small subspace sizes, H RF, C4.5 RF, CART RF, and CHAID RF produce higher correlations between the trees on all datasets. The correlation decreases as the subspace size increases. For the random forest models the lower the correlation between the trees then the better the final model. With our new random forest algorithm (H W RF) a low correlation level was achieved with very small subspaces in all 8 datasets. We also note that as the subspace size increased the correlation level increased as well. This is understandable because as the subspace size increases, the same informative features are more likely to be selected repeatedly in the subspaces, increasing the similarity of the decision trees. Therefore, the feature weighting method for subspace selection works well for small subspaces, at least from the point of view of the correlation measure.
+Fig. 4 shows the error bound indicator c/s2 for the eight methods on the 8 datasets. From these figures we can observe that as the subspace size increases, c/s2 consistently reduces. The behaviour indicates that a subspace size larger than log2(M )+1 benefits all eight algorithms. However, the new algorithm (H W RF) achieved a lower level of c/s2 at subspace size of log2(M ) + 1 than the seven other algorithms.
+Fig. 5 plots the curves showing the accuracy of the eight random forest models on the test datasets from the 8 datasets. We can clearly see that the new random forest algorithm (H W RF) outperforms the seven other random forest algorithms in all eight data sets. It can be seen that the new method is more stable in classification performance than other methods. In all of these figures, it is observed that the highest test accuracy is often obtained with the default subspace size of log2(M ) + 1. This implies that in practice, large size subspaces are not necessary to grow high-quality trees for random forests.
+4.3. Performance Comparisons with Other Classification Methods
+We conducted a further experimental comparison against three other widely used text classification methods: support vector machines (SVM), Naive Bayes (NB), and k-nearest neighbor (KNN). The support vector machine used a linear Kernel with a regularization parameter of 0.03125, which was often used in text categorization. For Naive Bayes, we adopted the multi-variate Bernoulli event model that is frequently used in text classification [27]. For knearest neighbor (KNN), we set the number k of neighbors to 13. In the experiments, we used WEKA's implementation for these three text classification methods [28]. We used a single subspace size of features in all eight datasets to run the random forest algorithms. For H RF, C4.5 RF, CART RF, and CHAID RF, we used a subspace size of 90 features in the first 6 datasets (i.e., Fbis, Re0, Re1, Tr41, Wap, and
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+8 Baoxun Xu, Joshua Zhexue Huang, Graham Williams, Yunming Ye
+
+Strength
+
+Strength
+
+Fbis
+0.52
+
+0.48
+
+0.44
+
+0.40 0.36 0.32 0.28 0.24
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Re1
+0.60
+
+0.55
+
+0.50
+
+0.45
+
+0.40
+
+H_W_RF
+
+0.35
+
+C4.5_W_RF CART_W_RF
+
+0.30
+
+CHAID_W_RF H_RF
+
+0.25
+
+C4.5_RF CART_RF
+
+CHAID_RF
+
+0.20
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Wap
+0.44
+
+0.40
+
+0.36
+
+0.32
+
+0.28
+
+H_W_RF C4.5_W_RF
+
+0.24
+
+CART_W_RF CHAID_W_RF
+
+0.20
+
+H_RF C4.5_RF
+
+0.16
+
+CART_RF
+
+CHAID_RF
+
+0.12
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+La2s
+0.60
+
+0.55
+
+0.50
+
+0.45
+
+0.40 0.35 0.30 0.25
+
+10 20 30 40 50 60 70 80 90 100 110 120 130
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+Number of features
+
+Strength
+
+Strength
+
+Strength
+
+Strength
+
+Re0
+0.52
+
+0.48
+
+0.44
+
+0.40
+
+H_W_RF
+
+0.36
+
+C4.5_W_RF CART_W_RF
+
+0.32
+
+CHAID_W_RF H_RF
+
+0.28
+
+C4.5_RF CART_RF
+
+CHAID_RF
+
+0.24
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Tr41
+0.8
+
+0.7
+
+0.6
+
+0.5 0.4 0.3 0.2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Tr31
+0.9
+
+0.8
+
+0.7
+
+0.6 0.5 0.4 0.3
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+La1s
+0.60
+
+0.55
+
+0.50
+
+0.45
+
+0.40 0.35 0.30 0.25
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10 20 30 40 50 60 70 80 90 100 110 120 130 Number of features
+
+Strength
+
+Strength
+
+FIGURE 2. Strength changes against the number of features in the subspace on the 8 high dimensional datasets
+
+Tr31) to run the random forest algorithms, and used a subspace size of 120 features in the last 2 datasets (La2s and La1s) to run these random forest algorithms. For H W RF, C4.5 W RF, CART W RF, and CHAID W RF, we used Breiman's subspace size of
+
+log2(M ) + 1 to run these random forest algorithms. This number of features provided a consistent result as shown in Fig. 5. In order to obtain stable results, we built 20 random forest models for each random forest algorithm and each dataset and present the average
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+Hybrid weighted random forests for classifying very high-dimensional data
+
+9
+
+Correlation
+
+Correlation
+
+0.216
+
+Fbis
+
+0.208
+
+0.200
+
+0.192
+
+0.184
+
+0.176
+
+0.168
+
+0.160
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+90 100
+
+Number of features
+
+Correlation
+
+0.285
+
+Re0
+
+0.270
+
+0.255
+
+0.240 0.225 0.210 0.195 0.180
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Re1
+0.27
+
+0.26
+
+0.25
+
+0.24
+
+0.23 0.22 0.21 0.20 0.19
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Wap
+0.27
+
+0.26
+
+0.25
+
+0.24
+
+0.23 0.22 0.21 0.20 0.19
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Correlation
+
+Correlation
+
+Tr41
+0.18
+
+0.16
+
+0.14
+
+0.12
+
+H_W_RF C4.5_W_RF
+
+0.10
+
+CART_W_RF CHAID_W_RF
+
+H_RF
+
+0.08
+
+C4.5_RF CART_RF
+
+CHAID_RF
+
+0.06
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Tr31
+0.14
+
+0.12
+
+0.10 0.08 0.06 0.04
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+0.162
+
+La2s
+
+0.156
+
+0.150
+
+0.144
+
+0.138 0.132 0.126 0.120 0.114
+
+10 20 30 40 50 60 70 80 90 100 110 120 130
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+Number of features
+
+Correlation
+
+0.165
+
+La1s
+
+0.160
+
+0.155
+
+0.150
+
+0.145 0.140 0.135 0.130 0.125
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10 20 30 40 50 60 70 80 90 100 110 120 130 Number of features
+
+Correlation
+
+Correlation
+
+FIGURE 3. Correlation changes against the number of features in the subspace on the 8 high dimensional datasets
+
+results, noting that the range of values are less than ±0.005 and the hybrid trees are always more accurate.
+The comparison results of classification performance of eleven methods are shown in Table 3. The performance is estimated using test accuracy (Acc),
+
+Micro F1 (Mic), and Macro F1 (Mac). Boldface denotes best results between eleven classification methods. While the improvement is often quite small, there is always an improvement demonstrated. We observe that our proposed method (H W RF)
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+10 Baoxun Xu, Joshua Zhexue Huang, Graham Williams, Yunming Ye
+
+2 C/S
+
+2 C/S
+
+Fbis
+3.50
+
+3.15 2.80
+
+log (M)+1 2
+
+2.45
+
+2.10 1.75 1.40 1.05 0.70
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+2 C/S
+
+Re0
+4.0
+
+3.5
+
+3.0
+
+2.5
+
+H_W_RF
+
+2.0
+
+C4.5_W_RF CART_W_RF
+
+1.5 1.0
+
+log (M)+1 2
+
+CHAID_W_RF H_RF C4.5_RF CART_RF
+
+CHAID_RF
+
+0.5
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Re1
+6.3
+
+5.6
+
+4.9
+
+4.2
+
+3.5 2.8 2.1 1.4 0.7
+
+log (M)+1 2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Wap
+14
+12 log (M)+1 2
+10
+8
+H_W_RF
+6 C4.5_W_RF
+CART_W_RF
+4 CHAID_W_RF H_RF C4.5_RF
+2 CART_RF
+CHAID_RF
+0 10 20 30 40 50 60 70 80 90 100
+Number of features
+
+2
+C/S
+
+2
+C/S
+
+Tr41
+4.0
+
+3.5 3.0 2.5
+
+log (M)+1 2
+
+2.0
+
+H_W_RF
+
+1.5
+
+C4.5_W_RF CART_W_RF
+
+1.0
+
+CHAID_W_RF H_RF
+
+0.5
+
+C4.5_RF CART_RF
+
+0.0
+
+CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+1.50 1.25
+
+Tr31
+log (M)+1 2
+
+1.00
+
+0.75
+
+H_W_RF C4.5_W_RF
+
+CART_W_RF
+
+0.50
+
+CHAID_W_RF
+
+H_RF
+
+0.25
+
+C4.5_RF CART_RF
+
+CHAID_RF
+
+0.00
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+La2s
+1.8
+
+1.6
+
+1.4
+
+1.2 1.0 0.8 0.6 0.4
+
+log (M)+1 2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_W_RF CHAID_RF
+
+10 20 30 40 50 60 70 80 90 100 110 120 130 Number of features
+
+2
+C/S
+
+2.2 2.0 1.8 1.6 1.4 1.2 1.0 0.8 0.6 0.4
+
+log (M)+1 2
+
+La1s
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10 20 30 40 50 60 70 80 90 100 110 120 130
+
+Number of features
+
+2 C/S
+
+2 C/S
+
+FIGURE 4. c/s2 changes against the number of features in the subspace on the 8 high dimensional datasets
+
+outperformed the other classification methods in all datasets.
+
+5. CONCLUSIONS
+In this paper, we presented a hybrid weighted random forest algorithm by simultaneously using a feature weighting method and a hybrid forest method to classify
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+Hybrid weighted random forests for classifying very high-dimensional data
+
+11
+
+Accuracy
+
+Accuracy
+
+Fbis
+0.86
+
+0.84
+
+0.82
+
+0.80 0.78 0.76 0.74
+
+log (M)+1 2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Accuracy
+
+Re0
+0.88
+
+0.84
+
+0.80
+
+0.76
+
+0.72
+
+0.68
+
+H_W_RF C4.5_W_RF
+
+0.64
+
+CART_W_RF CHAID_W_RF
+
+0.60
+
+H_RF C4.5_RF
+
+0.56
+
+log (M)+1 2
+
+CART_RF CHAID_RF
+
+0.52
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Re1
+0.86
+
+0.84 0.82 0.80
+
+log (M)+1 2
+
+0.78
+
+H_W_RF
+
+0.76
+
+C4.5_W_RF
+
+0.74
+
+CART_W_RF CHAID_W_RF
+
+0.72
+
+H_RF C4.5_RF
+
+0.70
+
+CART_RF CHAID_RF
+
+0.68
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Wap
+0.84
+
+0.81
+
+0.78
+
+0.75
+
+0.72 0.69 0.66 0.63 0.60
+
+log (M)+1
+2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+Accuracy
+
+Accuracy
+
+Tr41
+1.00
+
+0.95
+
+0.90
+
+0.85
+
+0.80 0.75 0.70 0.65
+
+log (M)+1 2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+1.000
+
+Tr31
+
+0.975
+
+0.950
+
+0.925
+
+0.900
+
+H_W_RF
+
+0.875
+
+C4.5_W_RF CART_W_RF
+
+0.850
+
+CHAID_W_RF H_RF
+
+0.825
+
+log (M)+1 2
+
+C4.5_RF CART_RF
+
+CHAID_RF
+
+0.800
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+100
+
+Number of features
+
+0.900
+
+La2s
+
+0.885
+
+0.870
+
+0.855
+
+0.840 0.825 0.810 0.795 0.780
+
+log (M)+1 2
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+10 20 30 40 50 60 70 80 90 100 110 120 130 Number of features
+
+Accuracy
+
+La1s
+0.88
+
+0.86
+
+0.84
+
+0.82 0.80 0.78 0.76
+
+log (M)+1 2
+10 20 30 40 50 60 70 80 90 100 110 120 130
+
+H_W_RF C4.5_W_RF CART_W_RF CHAID_W_RF H_RF C4.5_RF CART_RF CHAID_RF
+
+Number of features
+
+Accuracy
+
+Accuracy
+
+FIGURE 5. Test Accuracy changes against the number of features in the subspace on the 8 high dimensional datasets
+
+high dimensional data. Our algorithm not only retains a small subspace size (Breiman's formula log2(M ) + 1 for determining the subspace size) to create accurate random forest models, but also effectively reduces the upper bound of the generalization error and
+
+improves classification performance. From the results of experiments on various high dimensional datasets, the random forest generated by our new method is superior to other classification methods. We can use the default log2(M ) + 1 subspace size and generally guarantee
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+12 Baoxun Xu, Joshua Zhexue Huang, Graham Williams, Yunming Ye
+
+TABLE 3. The comparison of results (best accuracy, Micro F1, and Macro F1 results) of the eleven methods on the 8
+
+datasets
+
+Dataset
+
+Fbis
+
+Re0
+
+Re1 Tr41
+
+Measures Acc Mic Mac Acc Mic Mac Acc Mic Mac Acc Mic Mac
+
+SVM 0.834 0.799 0.76 0.804 0.795 0.756 0.829 0.826 0.706 0.95 0.915 0.87
+
+KNN 0.78 0.752 0.722 0.779 0.752 0.752 0.788 0.668 0.638 0.915 0.813 0.765
+
+NB 0.776 0.74 0.706 0.784 0.741 0.619 0.816 0.732 0.58 0.935 0.856 0.782
+
+H RF 0.853 0.816 0.816 0.845 0.82 0.82 0.841 0.832 0.8 0.953 0.926 0.895
+
+C4.5 RF 0.836 0.806 0.806 0.836 0.802 0.802 0.825 0.811 0.781 0.948 0.92 0.89
+
+CART RF 0.829 0.797 0.787 0.826 0.798 0.798 0.825 0.808 0.783 0.917 0.891 0.88
+
+CHAID RF 0.842 0.805 0.805 0.832 0.8 0.8 0.838 0.815 0.795 0.926 0.903 0.88
+
+H W RF 0.856 0.825 0.82 0.855 0.825 0.822 0.848 0.836 0.81 0.953 0.926 0.895
+
+C4.5 W RF 0.841 0.809 0.815 0.845 0.815 0.812 0.838 0.826 0.795 0.95 0.922 0.892
+
+CART W RF 0.835 0.805 0.81 0.839 0.81 0.805 0.835 0.818 0.79 0.935 0.91 0.88
+
+CHAID W RF 0.839 0.815 0.812 0.842 0.812 0.815 0.84 0.83 0.8 0.942 0.915 0.88
+
+Dataset
+
+Wap
+
+Tr31
+
+la2s
+
+la1s
+
+Measures Acc Mic Mac Acc Mic Mac Acc Mic Mac Acc Mic Mac
+
+SVM 0.81 0.772 0.663 0.955 0.907 0.87 0.89 0.832 0.807 0.875 0.82 0.803
+
+KNN 0.752 0.622 0.622 0.905 0.82 0.762 0.841 0.805 0.786 0.827 0.798 0.761
+
+NB 0.797 0.742 0.559 0.925 0.832 0.81 0.896 0.815 0.79 0.87 0.802 0.775
+
+H RF 0.815 0.805 0.735 0.965 0.925 0.88 0.89 0.84 0.82 0.862 0.825 0.805
+
+C4.5 RF 0.797 0.795 0.732 0.962 0.902 0.87 0.878 0.83 0.81 0.855 0.82 0.798
+
+CART RF 0.793 0.793 0.73 0.958 0.892 0.86 0.882 0.832 0.81 0.84 0.815 0.792
+
+CHAID RF 0.805 0.805 0.732 0.96 0.9 0.852 0.88 0.83 0.803 0.845 0.816 0.795
+
+H W RF 0.815 0.805 0.735 0.965 0.925 0.88 0.896 0.848 0.825 0.875 0.836 0.82
+
+C4.5 W RF 0.805 0.795 0.732 0.962 0.911 0.87 0.886 0.835 0.816 0.866 0.825 0.81
+
+CART W RF 0.8 0.792 0.73 0.96 0.902 0.865 0.887 0.835 0.812 0.87 0.825 0.81
+
+CHAID W RF 0.811 0.795 0.73 0.96 0.905 0.855 0.887 0.833 0.81 0.865 0.825 0.805
+
+to always produce the best models, on a variety of measures, by using the hybrid weighted random forest algorithm.
+ACKNOWLEDGEMENTS
+This research is supported in part by NSFC under Grant NO.61073195, and Shenzhen New Industry Development Fund under Grant NO.CXB201005250021A
+REFERENCES
+[1] Breiman, L. (2001) Random forests. Machine learning, 45, 5­32.
+[2] Ho, T. (1998) Random subspace method for constructing decision forests. IEEE Transactions on Pattern Analysis and Machine Intelligence, 20, 832­844.
+[3] Quinlan, J. (1993) C4.5: Programs for machine learning. Morgan Kaufmann.
+[4] Breiman, L. (1984) Classification and regression trees. Chapman & Hall/CRC.
+[5] Breiman, L. (1996) Bagging predictors. Machine learning, 24, 123­140.
+[6] Ho, T. (1995) Random decision forests. Proceedings of the Third International Conference on Document Analysis and Recognition, pp. 278­282. IEEE.
+[7] Dietterich, T. (2000) An experimental comparison of three methods for constructing ensembles of decision trees: Bagging, boosting, and randomization. Machine learning, 40, 139­157.
+
+[8] Banfield, R., Hall, L., Bowyer, K., and Kegelmeyer, W. (2007) A comparison of decision tree ensemble creation techniques. IEEE Transactions on Pattern Analysis and Machine Intelligence, 29, 173­180.
+[9] Robnik-Sikonja, M. (2004) Improving random forests. Proceedings of the 15th European Conference on Machine Learning, pp. 359­370. Springer.
+[10] Ho, T. (1998) C4.5 decision forests. Proceedings of the Fourteenth International Conference on Pattern Recognition, pp. 545­549. IEEE.
+[11] Dietterrich, T. (1997) Machine learning research: four current direction. Artificial Intelligence Magzine, 18, 97­136.
+[12] Amaratunga, D., Cabrera, J., and Lee, Y. (2008) Enriched random forests. Bioinformatics, 24, 2010­ 2014.
+[13] Ye, Y., Li, H., Deng, X., and Huang, J. (2008) Feature weighting random forest for detection of hidden web search interfaces. The Journal of Computational Linguistics and Chinese Language Processing, 13, 387­ 404.
+[14] Xu, B., Huang, J., Williams, G., Wang, Q., and Ye, Y. (2012) Classifying very high-dimensional data with random forests built from small subspaces. International Journal of Data Warehousing and Mining, 8, 45­62.
+[15] Xu, B., Huang, J., Williams, G., Li, J., and Ye, Y. (2012) Hybrid random forests: Advantages of mixed trees in classifying text data. Proceedings of the 16th Pacific-Asia Conference on Knowledge Discovery and Data Mining. Springer.
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+Hybrid weighted random forests for classifying very high-dimensional data
+[16] Biggs, D., De Ville, B., and Suen, E. (1991) A method of choosing multiway partitions for classification and decision trees. Journal of Applied Statistics, 18, 49­62.
+[17] Ture, M., Kurt, I., Turhan Kurum, A., and Ozdamar, K. (2005) Comparing classification techniques for predicting essential hypertension. Expert Systems with Applications, 29, 583­588.
+[18] Begum, N., M.A., F., and Ren, F. (2009) Automatic text summarization using support vector machine. International Journal of Innovative Computing, Information and Control, 5, 1987­1996.
+[19] Chen, J., Huang, H., Tian, S., and Qu, Y. (2009) Feature selection for text classification with naive bayes. Expert Systems with Applications, 36, 5432­ 5435.
+[20] Tan, S. (2005) Neighbor-weighted k-nearest neighbor for unbalanced text corpus. Expert Systems with Applications, 28, 667­671.
+[21] Pearson, K. (1904) On the Theory of Contingency and Its Relation to Association and Normal Correlation. Cambridge University Press.
+[22] Yang, Y. and Liu, X. (1999) A re-examination of text categorization methods. Proceedings of the 22th International Conference on Research and Development in Information Retrieval, pp. 42­49. ACM.
+[23] Han, E. and Karypis, G. (2000) Centroid-based document classification: Analysis and experimental results. Proceedings of the 4th European Conference on Principles of Data Mining and Knowledge Discovery, pp. 424­431. Springer.
+[24] TREC. (2011) Text retrieval conference, http://trec.nist.gov.
+[25] Lewis, D. (1999) Reuters-21578 text categorization test collection distribution 1.0, http://www.research.att.com/ lewis.
+[26] Han, E., Boley, D., Gini, M., Gross, R., Hastings, K., Karypis, G., Kumar, V., Mobasher, B., and Moore, J. (1998) Webace: A web agent for document categorization and exploration. Proceedings of the 2nd International Conference on Autonomous Agents, pp. 408­415. ACM.
+[27] McCallum, A. and Nigam, K. (1998) A comparison of event models for naive bayes text classification. AAAI98 workshop on learning for text categorization, pp. 41­ 48.
+[28] Witten, I., Frank, E., and Hall, M. (2011) Data Mining: Practical machine learning tools and techniques. Morgan Kaufmann.
+
+13
+
+The Computer Journal, Vol. ??, No. ??, ????
+
+

@@ -1,0 +1,272 @@
+Frequency-Based Temporal Pattern Mining in Health Data
+
+Jie Chen1 Ross Sparks1
+
+Huidong Jin1
+
+Hongxing He1
+
+Christine M. O'Keefe1
+
+Graham Williams1,2
+
+Damien McAullay1
+
+Chris Kelman3
+
+1CSIRO Mathematical and Information Sciences, GPO Box 664, Canberra ACT 2601, Australia
+2Australian Taxation Office, 51 Allara Street, Canberra ACT 2601, Australia (Current affiliation) 3National Centre for Epidemiology and Population Health, the Australian National University, Canberra
+ACT 0200, Australia
+
+Abstract
+The low occurrence rate of adverse drug reactions makes it difficult to identify the risk factors from straightforward application of frequent pattern discovery in large databases. In this paper, we are interested in developing a data mining strategy that can fully utilize the information around rare events in sequence data in order to measure the multiple occurrences of patterns in the whole period of target and non-target data. We define an interestingness measure which exploits the difference between frequency of patterns in target and non-target sequence data. The proposed strategy guarantees the easy generation of candidate patterns from the target sequence data by applying existing association mining algorithms. Then these patterns can be evaluated by comparing their frequency in the target and non-target data. We also propose a ranking algorithm that takes into account both the rank of patterns as determined by the interestingness measure and the support in the target population, which can prune the patterns greatly and highlight more interesting results. Experimental results of a case study on angioedema show the usefulness of the proposed approach.
+1 Introduction
+Adverse drug reactions (ADRs) occur infrequently but may lead to serious or life threatening conditions requiring hospitalisation. At present, adverse drug reactions resulting from new medications and their interactions with other medicines, are often detected only if there exists either dramatic or widespread reactions. When a new drug is introduced, it is likely that unexpected side-effects will go unnoticed until a very substantial number of patients have been adversely affected. Thus, systematic monitoring of health data to more quickly identify possible ADRs is of financial and social importance. In general, the early detection of unexpected adverse reactions relies on a local voluntary reporting system and collated statistics from overseas agencies. The use of a population-based prescribing data set, such
+1
+
+as the Pharmaceutical Benefits Scheme (PBS) data in Australia, linked to hospital admissions data, would provide an opportunity to detect common and rare adverse reactions at a much earlier stage. From a data mining prospective, the low occurrence rate of ADRs in large databases often makes it difficult to identify the risk factors from a straightforward application of frequent pattern discovery algorithm. The problem domain has the following characteristics: (1) Primary interest lies in rare events amongst large datasets; (2) Factors leading to rare adverse drug reactions include temporal drug exposure; (3) Rare events are associated with a small proportion of patients yet all data for all patients are required to assess the risk.
+Often, we can not identify, in advance, appropriate hypotheses. For example, for adverse drug reactions we usually have little prior knowledge on which drug or drug combinations might lead to unexpected outcomes (while the expected outcomes have often already been studied). Our aim is to discover temporal patterns associated with rare events that are then further assessed for their possible relationship with adverse outcomes. In our previous work [1], only the information in the time window before the first target event was considered for the mining of temporal associations. In this paper, we are interested in developing a data mining strategy that can fully utilize the information around rare events in sequence data. The main contributions of this paper are as follows. A new interestingness measure based on frequency of patterns is defined. Candidate patterns are generated from case sequences. Finally, a collaborative ranking algorithm that can prune the patterns greatly is proposed to highlight more interesting results.
+The remainder of this paper is organised as follows. Section 2 reviews related work. Section 3 presents formal definitions. Section 4 outlines the proposed algorithm. Section 5 describes the dataset used in our experiments and reports on some encouraging results. Section 6 concludes the paper.
+2 Related Work
+Temporal patterns mining has drawn much attention in recent years [12, 11, 6]. Regarding mining patterns for rare events, [16] describes timeweaver, a genetic algorithm based machine learning system that predicts rare events by identifying predictive temporal and sequential patterns. [19] provides an sequential pattern algorithm that can predict failures in databases of plan executions. The framework proposed by [13] finds interesting patterns from a single long temporal event sequence. In this paper, we are interested in handling more complicated temporal sequences, namely the exposure and outcome sequences for disease and non-disease entities, with the awareness of difference between inside and outside hazard windows.
+Following the goal of understanding differences between several contrasting groups, [2] introduces the emerging patterns mining. [18] uses anomaly detection algorithm to detect groups with specific characteristics whose recent pattern of illness is anomalous relative to historical patterns, but it limits itself to two items in a single rule. In contrast, the goal of this paper is to explore temporal associations from large temporal sequences datasets.
+The problem of large number of rules has been studied by many researchers [7, 5]. They mainly prune off those qualitative or quantitative association rules that contain little extra information as compared to their ancestors. Recently, [9] studies a modified Hedge algorithm to address the pattern ordering problem by combining the rank information gathered from
+2
+
+disparate sources. We present an effective collaborative ranking algorithm that takes into account not only the rank of patterns by the interestingness measure but also the support in the target population. The interestingness measure is also different from the general ones reviewed by [14].
+3 Problem Description
+Let E = i be a set of entities (patients). Suppose there is a database of sequences D = si =< (ei1, ti1), (ei2, ti2), ..., (eij, tij), ..., (eimi, timi) > and for any si, ti1  TST ART and timi  TEND which means that all sequences are bounded in a constant time period [TST ART , TEND]. We care about the occurrences of events called target events, which are user specified hospitalisation events in our case. For these target events, we try to explore the associations between these and other events, or to identify the high risk exposures associated with the outcome. The population E is partitioned into two subsets T and T , where T are the patients or entities that have at least one target event occurring within [TST ART , TEND] and T is for the others.
+Definition 1 (eip, tip), (ei,p+1, ti,p+1), ..., (eiq, tiq) is a windowed segment of sequence si with time window [ts, te] if ts  tip  ti,p+1  . . .  tiq < te  timi, ti,p-1 < ts and ti,q+1  te, w = te - ts, where w = te - ts is constant, and usually specified by a domain expert.
+Definition 2 For sequence data D, p is defined as a windowed pattern if 1) It is a conjunction (or ordered list)of items(drugs) 2) There exists at least one windowed segment so that there is at least one occurrence of pattern p within in the windowed segment The windowed segment is called a matched windowed segment of p.
+To make an efficient search of possible associations for target events, we do not consider all possible windowed patterns in D. We generate a candidate set of windowed patterns directly from the sequences in T . The idea is to construct a sub-database DTw for T , i.e. treat each windowed segment exactly prior to each target event (te is the time stamp of a target event) as a transaction, and if there are multiple target events for a patient (entity), non-overlapped windowed segments in si are considered. Namely, for each sequence of T , we first scan from the start of sequence to get the first target event, then get the next target event, and so on, if the window ending with it is not overlapped with its previous one.
+Target events may appear in one sequence of a patient (entity) multiple times. For simplicity, we impose a jump condition for target population, which can be illustrated by Figure 1. For any si, in the search process of a pattern p, we use sliding windows event by event according to the order of time stamps. It can be proved that any windowed segment of si can be accessed in such a way [1]. We denote the start time stamp of the kth sliding window as tSik. For si of any entity in T , each time tiS,k+1 will be set to the next consecutive time stamp of si except that 1) p is matched in the current sliding window starting from tiSk and 2) tiSk is the first time stamp in si that tiSk  tTij - w, where tTij is one of the time stamps of target events. If this exception happens, tSi,k+1 will be set to the first time stamp in si that tSi,k+1  tSik + w, i.e. jump a window ahead to continue the scan. We can make the following definition of frequency and observation.
+3
+
+Figure 1: Illustration of jump condition for target population
+
+Definition 3 For the sequences of T , f reqT (p) is the total number of matched windowed segments under the jump condition for target population.
+
+Observation 1. f reqT (p) is equal to the total number of sequences in DTw for any windowed pattern p generated from DT w.
+
+This observation is useful because it enables us to generate a set of candidate windowed
+patterns by using existing frequent patterns mining algorithms, say OPUS [15] used in this
+paper. Similarly, we impose a jump condition for non-target population. For si of any entity in T , each time tSi,k+1 will be set to the next consecutive time stamp of si except that 1) p is matched in the current sliding window starting from tiSk. If this exception happens(here no second condition is specified as there is no any target events in the sequence), tiS,k+1 will be set to the first time stamp in si that tSi,k+1  tiSk +w, i.e. jump a window ahead to continue the scan.
+
+Definition 4 For the sequences of T , f reqT (p) is the total number of matched windowed segments under the jump condition for non-target population.
+
+These two jump conditions ensure that for any si in D, the counted matched windowed segments of p are not overlapped. Nonetheless, they are different for target and non-target populations. To compare fairly the occurrences of a windowed pattern in the two populations, we define another frequency metric.
+
+Definition 5 For the sequences of T , f reqT (p) is the total number of matched windowed segments under the jump condition for non-target population.
+
+In summary, f reqT (p) provides a measure about how frequent p appears in non-overlapped windows exactly prior to target events(called hazard windows). f reqT (p) implies how frequently p appears in non-overlapped windows without consideration of target events. It can be derived that f reqT (p)  f reqT (p). The higher the ratio of f reqT (p) to f reqT (p), there should be more occurrences of p right in the hazard windows. Based on the above definitions of frequencies, we define a discriminability measure to describe a temporal pattern associated with target events, given the information of the whole sequences inside and outside the hazard winows of target population and non-target populations as well.
+
+w discriminability(p) =
+W
+
+f reqT (p) - f reqT (p) |T | |T |
+
+f reqT (p) f reqT (p)
+
+(1)
+
+4
+
+Input: Two datasets of all entities including their event sequences D and demographics, a window size w and study period size W , a minimum support for target dataset and demographical rules R for generating sub-populations. Output: Ranked patterns. Method:
+1. output=NULL; 2. for r  R 3. T , T =PartitionPopulation(r) /*partition entities */ 4. {p}, {f reqT (p)} = GenPattern(D,T ,w,s0); /* generate candidate patterns and get f reqT (p)*/ 5. {f reqT (p)} = CountFreq(D, {p},T , w); /* counting patterns on target population again */ 6. {f reqT (p)} = CountFreq(D, {p},T , w); /* counting patterns on non-target population */ 7. ranked-patterns = ColRank({p,f reqT (p)}); /* collaborative ranking of patterns*/ 8. output = output  {ranked-patterns}; 9. return output;
+Figure 2: Pseudo code of the FREM algorithm
+
+where the length of study period is W = TEND - TST ART , the estimated upper bounds of
+
+f reqT (p) and f reqT (p) are |T |W/w and |T |W/w respectively. Also note that f reqT (p) 
+
+f reqT (p), and
+
+-1  discriminability(p)  1
+
+(2)
+
+Temporal patterns that are more likely to appear inside hazard windows rather than
+
+outside hazard windows or in non-target populations will be highlighted through relative
+
+higher positive values of this interestingness measure.
+
+For example, suppose
+
+w W
+
+(
+
+f
+
+reqT |T |
+
+(p)
+
+-
+
+f reqT (p) )
+|T |
+
+=
+
+0.5
+
+and
+
+f reqT (p) f reqT (p)
+
+=
+
+1,
+
+i.e.
+
+we
+
+have
+
+discriminability(p)
+
+=
+
+0.5
+
+which
+
+means
+
+that
+
+the
+
+the frequency p appears in hazard windows is the same as the frequency it appears without
+
+the limitation of hazard windows, and the normalised difference of frequency of p in target
+
+and non-target population is as high as 0.5. Thus it might be of our interest for mining
+
+temporal patterns associated with target events. In principle, this interestingness measure
+
+has incorporated both the support and strength of a pattern.
+
+4 Frequency-Based Windowed Patterns Mining Algorithm
+Figure 2 illustrates the framework of our Frequency-Based Rare Events Mining (FREM) algorithm.
+We first partition the whole population according to their demographics and hospitalisation situations with respect to the target disease. Then we generate candidate patterns from DTw of the target populations. Both existence patterns, which ignore the order of events, and sequential patterns algorithms can be integrated in GenPattern. The counting of these patterns in T needs an efficient algorithm due to the large number of non-target patients. Thus, we design an efficient algorithm for the existence patterns in CountFreq, which is illustrated in Figure 3. Here the general idea is to update the dynamic data structure for the partially matched items of a pattern, dropping outdated, partially matched items when the
+
+5
+
+Input: {p}, sequences of T or T Output: f reqT (p) or f reqT (p) Method:
+1. Patterns = PreselectPatterns({p}, sequence si); 2. Patterns.PartiallyMatched = Null; 3. IndexCurrentEvent = ValidSlidingWindow.start = 0; 4. Patterns.LastMatched = - 5. while ValidSlidingWindow : 6. Patterns.PartiallyMatched.drop(); 7. if IndexCurrentEvent - ValidSlidingWindow.start < w : 8. IndexCurrentEvent += 1; 9. else: break 10. if Patterns.PartiallyMatch(): 11. Patterns.PartiallyMatched.update(); 12. if ValidSlidingWindow.start - Patterns.LastMatched > w: 13. if Patterns.MatchedCheck(): 14. Patterns.count += 1; 15. Patterns.LastMatched = ValidSlidingWindow.start; 16. ValidSlidingWindow.start += 1; 17. return Patterns.count;
+
+Figure 3: Pseudo code of CountFreq algorithm
+
+sliding window updates. Moreover, PreselectPatterns uses the set difference between pattern and sequence so as to save the search for the pattern that can not appear in the sequence. In our experiment, this algorithm is over five times faster than a intuitive counting process without these optimisations.
+Since there are usually many patterns with high discriminability values. We need to highlight the most interesting ones for further investigation.Usually the patterns are ranked by their interestingness measures. Our idea of ranking interesting patterns is to take into account both the interestingness measure and frequency of patterns in the target population. We propose a pruning condition for the collaborative ranking to shortlist interesting patterns.
+
+f reqT (p1)  f reqT (p2)
+
+(3)
+
+but discriminability(p1)  discriminability(p2)
+
+(4)
+
+and intersection(p1, p2) = 
+
+(5)
+
+It means that a pattern p1 will be pruned if the frequency of p1 in DTw is greater than or equal to any pattern p2 with the same or higher interestingness measure and p1 and p2 also
+
+6
+
+Input: {p,f reqT (p), discriminability(p)} Output: Ranked patterns Method:
+1. PatternsSorted = SortByDiscriminability({p,discriminability(p)}); 2. RankedPatternsSoFar = Null; 3. for p in PatternsSorted: 4. if p intersect with x in RankedPatterSoFar: 5. if f reqT (p)  f reqT (x): 6. prune(p); 7. else: 8. RankedPatternsSoFar.append(p); 9. else: 10. RankedPatternsSoFar.append(p); 11. return RankedPatternsSoFar;
+Figure 4: Pseudo code of ColRank algorithm
+have common items. Equation 5 can prevent excluding some potential signals from consideration, and achieve the goal of improving the chance of detection of most significant patterns. The ranking algorithm ColRank given in Figure 4 will do the pruning process according to this condition. Experiment result in the next section will show that the algorithm can reduce the number of patterns substantially.
+5 Mining on Real Health Data: A Case Study
+The Queensland Linked Data Set [17] links hospital admissions data from Queensland Health with the pharmaceutical prescription data from Commonwealth Department of Health and Ageing, providing a de-identified dataset for analysis. The record for each patient includes demographic variables and a sequence of PBS and hospitalisation events. Two datasets are extracted. One contains all 400 patients with hospital admissions due to angioedema 1(the target event). The other contains 682,958 patients who have no angioedema hospitalisations. We stratify the population into age and gender groups. The study period is four years from 1995 to 1999, and we choose a hazard window of 180 days as suggested by contributing medical experts.
+We used our FREM algorithm on this data set. The ranked interesting patterns for the female and male aged 60+ cohorts are shown in Table 1 and 2 respectively. The minimum support for the generation of candidate patterns for both cohorts is 8%. Here we only consider patterns involving two drugs at a time, to make results easier to interpret. Note that
+1Angioedema is a swelling (large welts or weals), that occurs beneath the skin rather than on the surface [10]. There are a number of case series in the literature demonstrating that ACE inhibitors-related angioedema is responsible for as many as 40% of angioedema episodes [10].
+7
+
+No.
+1 4 5 6 7 10 12 15 17 18 19 22 28 34 40 41 49 55 57 60
+
+discriminability(p)
+0.0179 0.0094 0.0084 0.0078 0.0078 0.0072 0.0069 0.0068 0.0066 0.0065 0.0065 0.0062 0.0059 0.0053 0.0049 0.0047 0.0039 0.0037 0.0037 0.0035
+
+f reqT (p) 30418 13714 53844 44251 40426 67019 25141 55186 26598 31011 24707 39230 21250 37728 28612 41997 55912 44154 41958 73093
+
+f reqT (p) 22 11 16 14 13 15 10 14 11 11 11 12 10 10 10 10 13 10 10 10
+
+Pattern
+C09AA G03CA G03CA C03CA C09AA N05CD C09AA C07AB C09AA R03AC N02BE C01DA G03CA N05CD C03CA C01DA J01DA H02AB C03CA C08CA C09AA M01AB N05CD C01DA C01DA J01FA C08CA C07AB C09AA J01CA A02BA N06AA N02BE R03AC C03CA A12BA J07BB R03AC N02BE J01DA
+
+Table 1: Ranked patterns for females aged 60+ (|T |/|T | for this cohort is 101/12858
+
+No.
+1 3 7 17 21 26 32 37 42 53 55 71 73
+
+discriminability(p)
+0.0125 0.0118 0.0108 0.0092 0.0082 0.0079 0.0077 0.0069 0.0064 0.0057 0.0055 0.0042 0.0033
+
+f reqT (p) 54782 46736 66975 18097 25253 17578 16351 8873 25958 35041 18106 33191 26361
+
+f reqT (p) 12 11 13 7 6 6 5 5 6 5 5 5 5
+
+Pattern
+C09AA C03CA C09AA C08CA A02BA N02BE N05CD R03BA R03AC N02AA N05CD D07AC C08CA D07AC J01CA A03FA H02AB R03BA J07BB C01DA N05CD C07AB N02BE R03BA A02BA H02AB
+
+Table 2: Ranked patterns for males aged 60+ (|T |/|T | for this cohort is 53/102796)
+
+the "No." in tables denotes the order of a pattern sorted by their discriminabilities. The number of resulting patterns have been reduced from 79 and 77 to 20 and 13 for the two cohorts, respectively. Among these ranked patterns, ACE inhibitors(ATC 2 code: C09AA) has appeared as the most interesting drug in both tables, which is consistent with the knowledge of medical practitioners. The first pattern in Table 1 is "C09AA G03CA", which means the combination usage of ACE inhibitors and estrogen within 180 days is highly associated with the occurrence of angioedema. This result is consistent with our previous discovery in [1]. For males aged 60+, the most interesting pattern "C09AA C03CA" suggests that the combination usage of ACE inhibitors and Sulfonamides, Plain within 180 days is highly associated with the occurrence of angioedema reactions. Interestingly, Furosemide (C03CA01) as one sub-categorty of Sulfonamides, Plain has been reported to cause acute reaction of angioedma [3, 4].Amlodipine besylate (C08CA01) as one sub-categorty of Dihydropyridine derivatives (C08CA) has been reported to cause allergic reactions including pruritis, rash, angioedema and erythema multiforme [8].
+2This uses the Anatomical Therapeutic Chemical (ATC) classification system
+
+8
+
+6 Discussion and Conclusions
+We have defined an interestingness measure which exploits the difference of frequency of patterns in target and non-target sequence data, so that multiple occurrences of patterns in the whole period of target and non-target data can be measured. The proposed strategy guarantees the generation of candidate temporal patterns from the target sequence data by integrating conventional frequent pattern mining algorithms. Then, these patterns can be evaluated in conjunction with the frequency of them in non-target data. We have also proposed a collaborative ranking algorithm that takes into account both the rank of patterns by the interestingness measure and the support in the target population, which can prune the patterns greatly and highlight more interesting results. The experimental results by using an efficient counting algorithm on real health data show the usefulness of the proposed approach. This paper can be extended in a variety of aspects. For example, we can consider drug prescription events rather than hospitalization events as target events for our ongoing work. We suggest this framework could be applied to other applications where mining temporal sequences of contrast entities is of interest.
+Acknowledgements
+The authors acknowledge the Commonwealth Department of Health and Ageing, and the Queensland Department of Health for providing data for this research.
+References
+[1] J. Chen, H. He, G. Williams, and H. Jin. Temporal sequence associations for rare events. In Proceedings of 8th Pacific-Asia International Conference on Knowledge Discovery and Data Mining (PAKDD), Lecture Notes in Computer Science (LNAI 3056), pages 235­239, Sydney, Australia, May 2004.
+[2] G. Dong and J. Li. Efficient mining of emerging patterns: Discovering trends and differences. In Proceedings of the 5th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pages 43­52, San Diego, August 1999.
+[3] Furosemide. http://www.inchem.org/documents/pims/pharm/pim240.htm. Chemical Safety Information from Intergovernmental Organizations.
+[4] J. R. Hansbrough, H. J. Wedner, and D. D. Chaplin. Anaphylaxis to intravenous furosemide. J Allergy Clin Immunol, 80(4):538­41, 1987.
+[5] S. Huang and G. Webb. Discarding insignificant rules during impact rule discovery in large databases. In Proceedings of the SIAM 2005 Data Mining Conference (SDM'05), 2005.
+9
+
+[6] C.-H. Lee, M.-S. Chen, and C.-R. Lin. Progressive partition miner: An efficient algorithm for mining general temporal association rules. IEEE Transactions on Knowledge and Data Engineering, 15(4):1004­1017, July 2003.
+
+[7] B. Liu, W. Hsu, and Y. Ma. Pruning and summarizing the discovered associations. In Proceedings of the fifth ACM SIGKDD international conference on Knowledge discovery and data mining, pages 125 ­ 134, 1999.
+
+[8] NORVASC. http://www.inhousepharmacy.com/heart-health/norvasc-information.html. Inhouse Pharmacy.
+
+[9] R. J. Pang-Ning Tan. Ordering patterns by combining opinions from multiple sources. In Proceedings of the Tenth ACM SIGKDD Int'l Conf on Knowledge Discovery and Data Mining (KDD-2004), 2004.
+
+[10] M. Reid, B. Euerle, and M. Bollinger. http://www.emedicine.com/med/topic135.htm.
+
+Angioedema, 2002.
+
+[11] J. F. Roddick and M. Spiliopoulou. A survey of temporal knowledge discovery paradigms and methods. IEEE Transactions on Knowledge and Data Engineering, 14(4):750­767, 2002.
+
+[12] R. Srikant and R. Agrawal. Mining sequential patterns: Generalizations and performance improvements. In Proceeding 5th International Conference on Extending Database Technology, EDBT, pages 3­17, 1996.
+
+[13] X. Sun, M. E. Orlowska, and X. Li. Finding negative event-oriented patterns in long temporal sequences. In Proceedings of PAKDD'04, pages 212­221, May 2004.
+
+[14] P.-N. Tan, V. Kumar, and J. Srivastava. Selecting the right interestingness measure for association patterns. In Proceedings of the Eighth ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pages 32­41. ACM Press, 2002.
+
+[15] G. I. Webb. Efficient search for association rules. In Proceedings of SIGKDD'00, pages 99­107, 2000.
+
+[16] G. M. Weiss and H. Hirsh. Learning to predict rare events in event sequences. In Proceedings of the Fourth International Conference on Knowledge Discovery and Data Mining, pages 359­363, New York, August 1998.
+
+[17] G. Williams, D. Vickers, R. Baxter, S. Hawkins, C. Kelman, R. Solon, H. He, and L. Gu. The Queensland Linked Data Set. Technical Report CMIS 02/21, CSIRO, Canberra, 2002.
+
+[18] W.-K. Wong, A. Moore, G. Cooper, and M. Wagner. WSARE: What's strange about recent events? Journal of Urban Health, 80(2):i66­i75, 2003.
+
+[19] M. J. Zaki, N. Lesh, and M. Ogihara. PLANMINE: Predicting plan failures using sequence mining. Artificial Intelligence Review, 14(6):421­446, December 2000.
+
+10
+
+

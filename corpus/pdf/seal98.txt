@@ -1,0 +1,1503 @@
+Data Mining The Analysis of Large and Complex Datasets
+Graham Williams
+
+ACSys
+Outline
+The Data Mining Task Techniques for Data Mining Case Studies in Data Mining Research Directions Wrap Up
+
+2
+
+ACSys
+
+ACSys Data Mining
+
+CRC for Advanced Computational Systems
+­ ANU, CSIRO, (Digital), Fujitsu, Sun, SGI ­ Five programs: one is Data Mining ­ Aim to work with collaborators to solve real problems and
+feed research problems to the scientists ­ Brings together expertise in Machine Learning, Statistics,
+Numerical Algorithms, Databases, Virtual Environments
+Graham Williams, Senior Research Scientist with CSIRO Machine Learning PhD in Ensemble Decision Tree Induction
+
+1
+
+ACSys
+So What is Data Mining?
+The non-trivial extraction of novel, implicit, and actionable knowledge from large datasets. ­ Extremely large datasets ­ Discovery of the non-obvious ­ Useful knowledge that can improve processes ­ Can not be done manually
+Technology to enable data exploration, data analysis, and data visualisation of very large databases at a high level of abstraction, without a specific hypothesis in mind.
+3
+
+ACSys
+And Where Has it Come From?
+
+Machine Learning
+
+Database Visualisation
+
+High Performance Computers
+
+Data Mining
+
+Applied Statistics
+
+Parallel Algorithms
+
+Pattern Recognition
+
+ACSys
+Techniques Used in Data Mining
+Predictive Modelling tree induction, neural nets, regression
+Database Segmentation clustering, k-means, Kohonen maps,
+Link Analysis association rules, sequential patterns, time sequences
+Deviation Detection visualisation, statistics
+
+4 7
+
+ACSys
+Knowledge Discovery in Databases
+A six or more step process: ­ data warehousing, ­ data selection, ­ data preprocessing, ­ data transformation, ­ data mining, ­ interpretation/evaluation
+Data Mining is sometimes referred to as KDD
+DM and KDD tend to be used as synonyms
+
+5
+
+ACSys
+Typical Applications of Data Mining
+Sales/Marketing ­ Provide better customer service ­ Improve cross-selling opportunities (beer and nappies) ­ Increase direct mail response rates
+Customer Retention ­ Identify patterns of defection ­ Predict likely defections
+Risk Assessment and Fraud ­ Identify inappropriate or unusual behaviour
+
+9
+
+ACSys
+
+ACSys Data Mining
+
+Mt Stromlo Observatory NRMA Insurance Limited
+
+Australian Taxation Office Health Insurance Commission
+
+10
+
+ACSys
+
+Outline
+
+The Data Mining Task Techniques for Data Mining Case Studies in Data Mining Research Directions Wrap Up
+
+12
+
+ACSys
+Some Research
+Interestingness through Evolutionary Computation Virtual Environments Data Mining Standards Temporal Data Mining Spatial Data Mining Feature Selection
+
+ACSys
+
+Outline
+
+The Data Mining Task
+­ History ­ Motivation ­ Disciplines ­ Definitions ­ The Process
+
+11
+
+13
+
+ACSys
+Why Data Mining Now?
+Changes in the Business Environment ­ Customers becoming more demanding ­ Markets are saturated
+Drivers ­ Focus on the customer, competition, and data assets
+Enablers ­ Increased data hoarding ­ Cheaper and faster hardware
+
+ACSys
+
+Outline
+
+The Data Mining Task
+­ History ­ Motivation ­ Disciplines ­ Definitions ­ The Process
+
+14
+
+16
+
+ACSys
+The Growth in KDD
+Research Community ­ KDD Workshops 1989, 1991, 1993, 1994 ­ KDD Conference annually since 1995 ­ KDD Journal since 1997 ­ ACM SIGKDD http://www.acm.org/sigkdd
+Commercially ­ Research: IBM, Amex, NAB, AT&T, HIC, NRMA ­ Services: ACSys, IBM, MIP, NCR, Magnify ­ Tools: TMC, IBM, ISL, SGI, SAS, Magnify
+
+15
+
+ACSys
+The Scientist's Motivation
+The Real World ­ Offers many challenging problems ­ Enormous databases now exist and readily available
+Statistics building models and doing analysis for years? ­ Statistics limited computationally ­ Relevance of statistics if we do not sample ­ There are not enough statisticians to go around!
+Machine Learning to build models? ­ Limited computationally, useful on toy problems, but . . .
+
+17
+
+ACSys
+Motivation: The Sizes
+Databases today are huge: ­ More than 1,000,000 entities ­ From 10 to 10,000 entities ­ Giga-bytes and tera-bytes
+Databases a growing at an unprecendented rate
+The corporate world is a cut-throat world ­ Decisions must be made rapidly ­ Decisions must be made with maximum knowledge
+
+ACSys
+
+Multiple Disciplines
+
+Machine Learning
+
+Database Visualisation
+
+High Performance Computers
+
+Data Mining
+
+Applied Statistics
+
+Parallel Algorithms
+
+Pattern Recognition
+
+18 22
+
+ACSys
+
+Outline
+
+The Data Mining Task
+­ History ­ Motivation ­ Disciplines ­ Definitions ­ The Process
+
+21
+
+ACSys
+Databases
+OLTP = OLAP = OLAM
+Data Warehouses ­ Subject-oriented, integrated, time-variant, non-volatile ­ Once created then what? ­ Excellent starting point for Data Mining Data Marts: Specialised, smaller, data store OLAP: Drill-down, roll-up, slice-n-dice, data cubes
+
+23
+
+ACSys
+
+ACSys
+
+From OLAP to Data Mining
+
+Statistics
+
+On-Line Analytical Processing
+­ Emphasis on Query ­ Generally know what we want to find ­ Expressible in SQL ­ Drill-Down, Data Cubes
+Data Mining
+­ Emphasis on Exploration ­ Generally idea of the target but not how to find ­ Let the machine drive the exploration ­ OLAM: Drill-Down, Data Cubes
+
+24
+
+Data, Counting, Probabilities, Hypothesis testing Prediction ­ Friedman: CART, MARS, PRIM All important, but no longer by themselves Sampling is the antithesis of Data Mining
+
+25
+
+ACSys
+Machine Learning
+Decision Trees and Classification Rules Neural Networks K Nearest Neighbours and Clustering Genetic Algorithms Association Rules All useful, but computationaly thirsty
+
+ACSys
+Visualisation
+Exploratory data analysis has long history Visualisation in Data Mining ­ Understanding the data ­ Visualising the process ­ Visualising the results of mining
+26
+
+27
+
+ACSys
+High Performance Computing
+Very large datasets--need rapid access to data Very slow algorithms--need to improve ­ Address computational complexity ­ Parallel algorithms
+
+ACSys
+Software Engineering
+SE Practices apply to DM practises Developing architectures for Data Mining Developing APIs for data and models
+
+ACSys
+
+Outline
+
+The Data Mining Task
+­ History ­ Motivation ­ Disciplines ­ Definitions ­ The Process
+
+28 29
+ACSys
+Discovering Knowledge
+The non-trivial extraction of novel, implicit, and actionable knowledge from large datasets. ­ Novel = not previously known ­ Implicit = not easily identifiable ­ Actionable = can act upon the discoveries
+Knowledge equates to patterns or models
+Generally we are searching for symbolic descriptions of novel and interesting patterns that are contained in the data. These patterns generally apply to a particular area of the database.
+30 31
+
+ACSys
+The Key is the Hypothesis
+Data mining "discovers information without a previously formulated hypothesis:" We don't particularly know what we are looking for. We hope to find un-thought of discoveries. Compare with: ­ SQL Queries ­ Information Retrieval ­ OLAP ­ Exploratory Data Analysis ­ Visualisation ­ Statistics
+32
+ACSys
+Formally
+Dataset D of real world entities D = fe1; e2; : : : ; eng. D is relational: RA1; A2; : : : ; Am Each entity is a tuple hv1; v2; : : : ; vmi The number of attributes m and the number of tuples n are typically "large" (m may be anywhere from 20 to 1000 and n
+typically greater than 1,000,000)
+34
+
+ACSys
+Data Mining in a Nutshell
+Start with a raw database
+ RDBMS or Warehouse
+Collect and aggregate variables in a variety of ways
+ dataset D
+Then mine the data: search for patterns implicit in the data and determining whether they are interesting
+
+33
+
+ACSys
+
+Generating Candidate Nuggets
+
+Generate a set of nuggets N = fn1; n2; : : : ; npg
+
+If inducing rules which symbolically describe the nuggets
+then we equivalently have R = fr1; r2; : : : ; rpg
+
+Rule might consist of conjunction of conditions:
+
+­ ­
+
+AAii
+
+2 2
+
+fvv11;;vv22;
+
+for
+:::
+
+numeric attributes
+; vqg for categorical
+
+attributes.
+
+35
+
+ACSys
+
+Assessing Interestingness
+
+Nuggets N = fn1; n2; : : : ; npg
+
+Generally p
+exploration.
+
+n so becoming more amenable to human
+
+However, p can still be large (several thousand)
+
+How do we measure the interestingness of a nugget?
+
+Different approaches employ different measures
+
+This question we come back to later
+
+36
+
+ACSys
+Data Mining is a Process
+A standard six step process is being developed: ­ Business Understanding (25%) ­ Data Understanding (20%) ­ Data Preparaation (25%) ­ Modelling (10%) ­ Evaluation (20%) ­ Deployment
+
+38
+
+ACSys
+
+Outline
+
+The Data Mining Task
+­ History ­ Motivation ­ Disciplines ­ Definitions ­ The Process
+
+37
+
+ACSys
+
+The CRISP-DM
+Being championed by NCR, Daimler-Benz, ISL, OHRA
+Cross Industry Standard Process for Data Mining http://www.ncr.dk/CRISP/index.htm
+Define and validate a Data Mining Process Model ­ applicable in diverse industry sectors ­ industry and tool neutral ­ large data mining projects executed faster, cheaper, more
+reliably and more manageably
+Life cycle of six (iterative) phases.
+
+39
+
+ACSys
+Business Understanding
+Initial phase focuses on understanding project objectives and requirements from a business perspective
+This knowledge is converted into a data mining problem definition
+Develop a preliminary plan designed to achieve the objectives
+
+ACSys
+Data Preparation
+Construct the mining dataset
+Derived from the initial raw dataset(s)
+Data preparation tasks: ­ table, record, and attribute selection ­ generation of derived features ­ data transformation ­ data cleaning
+
+41 43
+
+ACSys
+Data Understanding
+Initial data collection Familiarisation with the data ­ identify data quality problems ­ discover first insights into the data ­ detect interesting subsets to form hypotheses for hidden
+information
+42
+ACSys
+Preparing to Mine
+Data Quality ­ missing data ­ noisy data ­ lead to inconsistent or too general/specific discoveries Data Cleaning ­ duplicates ­ inconsistencies ­ identify and merge the same entities
+44
+
+ACSys
+Modelling--The Actual Data Mining
+Select various modelling techniques Apply and calibrate modelling techniques Typically there are several techniques for the same data mining problem Some techniques have specific requirements on the form of data and require stepping back to the data preparation phase
+45
+ACSys
+Deployment
+Deployment may be: ­ Generate a report of the discoveries made ­ Implement changes in the processes of the organisation ­ Implement a repeatable data mining process For successful deployment the customer must understand the actions to be carried out in order to actually make use of the created models
+47
+
+ACSys
+Evaluation
+Evaluate the model and review the steps executed to construct the model Does the model properly achieve the business objectives? Is there some important business issue that has not been sufficiently considered? Decide on the use of the data mining results
+46
+ACSys
+The KDD Process
+An interative process, often requiring multiple loops Time consuming process The actual mining is one small step in the whole process Issues in data management are crucial to success
+48
+
+ACSys
+Outline
+The Data Mining Task Techniques for Data Mining Case Studies in Data Mining Research Directions Wrap Up
+49
+ACSys
+Predictive Modelling: Classification
+Goal of classification is to build structures from examples of past decisions that can be used to make decisions for unseen cases. Often referred to as supervised learning. Decision Tree and Rule induction are popular techniques Neural Networks also used
+51
+
+ACSys
+Data Mining Operations
+Predictive Modelling (supervised learning) use observations to learn to predict
+Database Segmentation (unsupervised learning) partition data into similar groups
+Link Analysis links between individuals rather than characterising whole
+Deviation Detection outlier detection: becoming a major focus of data mining
+
+50
+
+ACSys
+
+Classification: C5.0
+
+ Quinlan: ID3 = C4.5 = C5.0
+Most widely used Machine Learning and Data Mining tool Started as Decision Tree Induction, now Rule Induction, also
+Available from http://www.rulequest.com/
+Many publically available alternatives
+CART developed by Breiman et al. (Stanford) Salford Systems http://www.salford-systems.com
+
+52
+
+ACSys
+Decision Tree Induction
+Decision tree induction is an example of a recursive partitioning algorithm
+Basic motivation: ­ A dataset contains a certain amount of information ­ A random dataset has high entropy ­ Work towards reducing the amount of entropy in the data ­ Alternatively, increase the amount of information exhibited
+by the data
+
+ACSys
+Algorithm
+Construct set of candidate partitions S Select best S* in S
+Describe each cell Ci in S* Test termination condition on each Ci
+­ true: form a leaf node
+­ false: recurse with Ci as new training set
+
+53 55
+
+ACSys
+
+Algorithm
+
+54
+
+ACSys
+
+Discriminating Descriptions
+
+Typical algorithm considers a single attribute at one time:
+
+categorical attributes ­ define a disjoint cell for each possible value: sex = "male"
+2­ can be grouped: transport (car, bike)
+
+continuous attributes
+
+­ define many possible binary partitions
+
+­ Split A
+
+A24 and
+
+24
+
+­ Or split A 28 and A 28
+
+56
+
+ACSys
+
+Information Measure
+
+Estimate the gain in information from a particular partitioning of the dataset
+
+A decision tree produces a message which is the decision
+P ,The information content is mj=1 pj plog j
+
+­ ­
+
+pthjeirsethaerepmrobpaobsisliitbyleofdmecaiksiinognsa particular
+
+decision
+
+PSame as entropy: jm=1 pj log1=pj.
+
+57
+
+ACSys
+Information Measure
+The information that is gained by partitioning T is then:
+gainA = infoT  , infoxT 
+This gain criterion can then be used to select the partition which maximises information gain Variations of the Information Gain have been developed to avoid various biases: Gini Index of Diversity
+
+59
+
+ACSys
+
+Information Measure
+
+Pinf oT  = ,jm=1 pj plog j is the amount of information
+needed to identify class of an object in T
+
+Maximised when all pj are equal
+
+Minimised (0) when all but one pj is 0 (the remaining pj is 1)
+
+Now partition the data into n cells
+
+P Expected
+infoxT 
+
+=infornim=1atjjTiToijjn
+
+requirement
+inf oTi
+
+is
+
+then
+
+the
+
+weighted
+
+sum:
+
+58
+
+ACSys
+
+End Result
+A bc EY <63 >=63 YN
+
+60
+
+ACSys
+Pruning
+We may be able to build a decision tree which perfectly reflects the data
+But the tree may not be generally applicable called overfitting
+Pruning is a technique for simplifying and hence generalising a decision tree
+
+61
+
+ACSys
+
+Pruning
+How to estimate error? Use a separate test set: ­ Error rate on training set (resubstitution error) not useful
+because pruning will always increase error ­ Two common techniques are cost-complexity pruning and
+reduced-error pruning
+Cost Complexity Pruning: Predicted error rate modelled as weighted sum of complexity and error on training set--the test cases used to determine weighting
+Reduced Error Pruning: Use test set to assess error rate directly
+
+63
+
+ACSys
+Error-Based Pruning
+Replace sub-trees with leaves Decision class is the majority Pruning based on predicted error rates ­ prune subtrees which result in lower predicted error rate
+62
+ACSys
+Issues
+Unknown attribute values Run out of attributes to split on Brittleness of method--small perturbations of data lead to significant changes in decision trees Trees become too large and are no longer particularly understandable (thousands of nodes) Data Mining: Accuracy, alone, is not so important
+64
+
+ACSys
+
+Classification Rules
+
+A tree can be converted to a rule set by traversing each path
+
+A bc EY <63 >=63 YN
+­ A=cY ­ A = b ^ E 63  Y ­ A = b ^ E  63  N ­ Rule Pruning: Perhaps E  63  N
+
+65
+
+ACSys
+
+Recent Research
+
+Bagging
+­ Sample with resubstitution from training set ­ Build multiple decision trees from different samples ­ Use a voting method to classify new objects
+Boosting
+­ Build multiple trees from all training data ­ Maintain a weight for each instance in the training set that
+reflects its importance ­ Use a voting method to classify new objects
+
+67
+
+ACSys
+Pros and Cons of Decision Tree Induction
+Pros ­ Greedy Search = Fast Execution ­ High dimensionality not a problem ­ Selects important variables ­ Creates symbolic descriptions
+Cons ­ Search space is huge ­ Interaction terms not considered
+­ Parallel axis tests only (A = v)
+
+66
+
+ACSys
+
+Predictive Modelling: Regression
+Linear Regression ­ Limited use and biased by outliers
+Non-Linear Regression ­ Difficult with high dimensional data
+Radial Basis Functions ­ More robust and flexible ­ Weighted sum of non-linear functions, each fitted to
+separate regions ­ Selection of regions is now important
+
+68
+
+ACSys
+Predictive Modelling: Neural Networks
+
+Input Nodes
+Data Input
+
+Hidden Nodes
+Data Flow
+
+Output Nodes
+
+Inactive Nodes Active Nodes
+
+Data Out
+
+ACSys
+Database Segmentation: Clustering
+Definition:
+­ Given n entities find a useful partition into p subsets
+Numerical Clustering ­ Usually easier since distance easy to calculate ­ For example, Euclidean distance
+Conceptual Clustering ­ Targets the derivation of the cluster ­ Symbolic descriptions ­ Can handle non-numeric data
+
+69 71
+
+ACSys
+Nearest Neighbour Approaches
+Compare a new entity with all other entities to find the nearest-neighbours Assign the new entity the most popular decision! A lazy learner (no generalisation until necessary)
+
+ACSys
+Link Analysis: Association Rules
+A technique developed specifically for data mining ­ Given
+ A dataset of customer transactions  A transaction is a collection of items
+­ Find
+ Correlations between items as rules
+Examples ­ Supermarket baskets ­ Attached mailing in direct marketing
+
+70 72
+
+ACSys
+Determining Interesting Association Rules
+Rules have confidence and support ­ IF x and y THEN z with confidence c
+ if x and y are in the basket, then so is z in c% of cases
+­ IF x and y THEN z with support s
+ the rule holds in s% of all transactions
+
+ACSys
+Typical Application
+Hundreds of thousands of different items Millions of transactions Many gigabytes of data It is a large task, but linear algorithms exist
+
+73 75
+
+ACSys
+
+Example
+
+Transaction
+12345 12346 12347 12348
+
+Items
+ABC AC AD BEF
+
+Input Parameters: confidence = 50%; support = 50%
+
+if A then C: c = 66.6% s = 50%
+
+if C then A: c = 100% s = 50%
+
+ACSys
+
+Itemsets are Basis of Algorithm
+
+Transaction
+12345 12346 12347 12348
+Rule A  C
+
+Items
+ABC AC AD BEF
+
+Itemset
+A B C A; C
+
+Support
+75% 50% 50% 50%
+
+s = s(A; C) = 50%
+
+c = s(A; C)/s(A) = 66.6%
+
+74 76
+
+ACSys
+Algorithm Outline
+Find all large itemsets ­ sets of items with at least minimum support ­ Apriori and AprioriTid and newer algorithms
+Generate rules from large itemsets
+­ For ABCD and AB in large itemset the rule AB CD
+holds if ratio s(ABCD)/s(AB) is large enough ­ This ratio is the confidence of the rule
+
+ACSys
+Outline
+The Data Mining Task Techniques for Data Mining Case Studies in Data Mining Research Directions Wrap Up
+
+77 79
+
+ACSys
+HIC Example
+Associations on episode database for pathology services ­ 6.8 million records X 120 attributes (3.5GB) ­ 15 months preprocessing then 2 weeks data mining Goal: find associations between tests ­ cmin = 50% and smin = 1%, 0.5%, 0.25%
+(1% of 6.8 million = 68,000) ­ Unexpected/unnecessary combination of services ­ Refuse cover saves $550,000 per year
+78
+ACSys
+The Hot Spots Methodology
+Search for interesting areas within a very large database ­ How to partition the data?
+Finding the nuggets ­ How to assess interestingness?
+Weighing the nugget In our case studies we have found clustering and rule induction to work together well to identify nuggets We are still novices in properly weighing the nuggets
+81
+
+ACSys
+
+Mining the Knowledge Mine
+Data-driven approach to generate the rules
+D­ Cluster into a set of subsets
+­ Describe each subset using Classification
+­ To generate nuggets R = fr1; r2; : : : ; rpg.
+While p is generally much smaller than n (p n) it can still be substantial (perhaps one or two thousand for n in the millions). p generally remains too large for manual
+consideration.
+Manual and time-consuming process of analysing lots of statistics about the groups that "looked" interesting.
+
+82
+
+ACSys
+
+Macho
+
+MAssive Compact Halo Objects The search for the dark matter of the Universe 20 million stars recorded nightly for over 4 years Search for micro lensing events
+
+ACSys
+
+ACSys Data Mining
+
+Mt Stromlo Observatory NRMA Insurance Limited
+
+Australian Taxation Office Health Insurance Commission
+
+83
+
+ACSys
+
+Micro-Lensing
+
+84 85
+
+ACSys
+
+Sample Star Light Curves
+
+Intensity -0.1 0.0 0.1
+
+-0.2
+
+0.1 0.2
+
+Intensity
+
+-0.1
+
+-0.3
+
+Intensity -0.2 -0.1 0.0 0.1
+
+450 500 550 600 Time (days)
+450 500 550 600 Time (days)
+450 500 550 600 Time (days)
+450 500 550 600 Time (days)
+
+86
+
+Intensity -0.05 0.0 0.05 0.10
+
+ACSys
+Approach: Cluster then Describe then Measure
+
+-0.2 -0.1 0.0 0.1 0.2 0.3 0.4
+
+Star 1135 ·
+Star 1045 · Star 1058· ·
+Star 1023
+
+·
+
+· ··
+
+··
+
+·····················································
+
+· ·
+
+·
+
+·
+
+·
+
+· ·
+
+·· ··
+
+· Star 1125
+
+· ···
+
+··
+
+· Star 1118
+
+· Star 1121 · ·
+
+· Star 1124
+
+Star 1113 · Star 1112 ·
+
+-0.2 -0.1 0.0 0.1 0.2 0.3 0.4
+
+88
+
+ACSys
+Transformed into Feature Space
+Time Series mapped into Feature Space Fourier Transforms, Auto-Regression, Wavelets, . . . Cluster stars using feature space Investigate outliers
+
+ACSys
+NRMA: Motor Vehicle Insurance
+Insurance premium setting and risk rating Actuaries study data and domain to define general formula Several million transactions annually Better understand dynamics of the areas of risk Consider more than the traditional small number of factors
+
+87 89
+
+ACSys
+Cluster then Describe then Measure
+
+.............................. ...........................
+
+ClmCost694
+
+SumRqst15500(319,1H6H81H) HHHHHHHHSHnyHTyHpe8
+
+(107,2HH18H) HClmHCHost21
+
+(212,1H4H63H) HCHlmHCoHst3850
+
+`1' ­0.269912
+HH(61,165)  HHHH HHHHHH`1'­0 HHHHHHH HHHHHHHH(0,6)
+
+(46,53)
+
+`1' ­0.109637
+
+(55,188)
+
+(157,1275)
+
+VehModel145
+(46,47)
+
+`1' ­0.0526316
+
+Exp13
+(51,116)
+
+Postcode2142
+(28,15) `1'­0.36
+
+(4,72)
+
+Cubic2.4
+
+(18,32)
+
+`1' ­0.113636
+
+(41,38)
+
+Cost = $ 158,000
+
+(10,78)
+
+Cost = $95,000
+
+`1'­0.388889 `0'­0.16 (7,11) (21,4)
+
+`1'­0.314286 `0'­0.318182
+
+(11,24) (30,14)
+
+90
+
+ACSys
+
+Finding the Interesting Groups
+
+Evaluate the large collection of groups (or Hot Spots) to find those that are important to the core business.
+
+Nugget
+2 3 19 24 34 35 36 40
+
+By Claims Y
+Y Y Y
+
+By Proportion
+Y Y
+
+By Average Cost
+Y Y
+Y Y Y Y
+
+92
+
+ACSys
+
+Find the Interesting Groups
+
+Rule 1 NCB 60 and Age  24 and Address is Urban Rule 23 Age 57 and Vehicle 2 fUtility, Station Wagong
+
+Nugget
+1 2 3 4 5 6 7 ... 60
+All
+
+Claims 150 140 5 10 20 65 5
+800 3800
+
+Total 1400 2300
+25 120 340 520
+5
+1400 72000
+
+Proportion 11 6 20 8 6 13
+100
+5.9 5.0
+
+Average Cost 3700 3800 4400 7900 5300 4400 6800
+3500 3000
+
+Total Cost 545,000 535,000 13,000 79,100 116,000 280,700 20,300
+2,800,000 12,000,000
+
+91
+
+ACSys
+
+Find the Interesting Groups
+
+Rule 1 NCB 60 and Age  24 and Address is Urban Rule 23 Age 57 and Vehicle 2 fUtility, Station Wagong
+
+Nugget
+1 2 3 4 5 6 7 ... 60
+All
+
+Claims 150 140 5 10 20 65 5
+800 3800
+
+Total 1400 2300
+25 120 340 520
+5
+1400 72000
+
+Proportion 11 6 20 8 6 13
+100
+5.9 5.0
+
+Average Cost 3700 3800 4400 7900 5300 4400 6800
+3500 3000
+
+Total Cost 545,000 535,000 13,000 79,100 116,000 280,700 20,300
+2,800,000 12,000,000
+
+93
+
+ACSys
+Health Insurance Commission
+Medicare Terabytes of patient claims since the inception of Medicare Inappropriate Provider practices an ongoing focus Exploration of public fraud (including doctor shoppers) Exploration of the practise of pathology
+
+94
+
+ACSys
+
+Cluster then Describe then Deliver
+
+Rule 1 Age is between 18 and 25 and Weeks  10
+Rule 2 Weeks 10 and Benefits $350
+
+ugget Size Age Gender Services Benefits Weeks Hoard Regular
+
+1 9000 30 2 150 30 3 1200 65 4 80 45 5 90 10 6 800 55 ... 280 30 25
+
+F F M F M M
+F
+
+10 30 24 841
+7 220 30 750 12 1125
+8 550
+15 450
+
+2 4 20 10 10 7
+15
+
+1 2 1 1 5 1
+2
+
+1 4 1 1 2 9
+6
+
+All 40,000 45
+
+8 30 3 1
+
+1
+
+96
+
+ACSys
+Cluster then Describe then Measure
+
+.............................. ...........................
+
+ClmCost694
+
+SumRqst15500(319,1H6H81H) HHHHHHHHSHnyHTyHpe8
+
+(107,2HH18H) HClmHCHost21
+
+(212,1H4H63H) HCHlmHCoHst3850
+
+`1' ­0.269912
+HH(61,165)  HHHH HHHHHH`1'­0 HHHHHHH HHHHHHHH(0,6)
+
+(46,53)
+
+`1' ­0.109637
+
+(55,188)
+
+(157,1275)
+
+VehModel145
+(46,47)
+
+`1' ­0.0526316
+
+Exp13
+(51,116)
+
+Postcode2142
+(28,15) `1'­0.36
+
+(4,72)
+
+Cubic2.4
+
+(18,32)
+
+`1' ­0.113636
+
+(41,38)
+
+Cost = $ 158,000
+
+(10,78)
+
+Cost = $95,000
+
+`1'­0.388889 `0'­0.16 (7,11) (21,4)
+
+`1'­0.314286 `0'­0.318182
+
+(11,24) (30,14)
+
+ACSys
+
+HIC Time Plots
+
+180000
+
+Accumulated Daily Processing 70102 (4)
+
+25000
+
+Accumulated Daily Processing 70191 (13)
+
+160000 140000
+
+20000
+
+120000 100000
+
+15000
+
+80000 60000
+
+10000
+
+40000 20000
+
+5000
+
+0 12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+0 12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+But there may be several thousand of these.
+
+95
+
+97
+
+ACSys
+
+Claim Hoarders
+
+A distinct group of behaviour identified as Claim Hoarders
+
+pin17300440631 700 35
+Service-Claim 600 30
+500 25
+400 20
+300 15
+200 10
+100 5
+
+pin17305130174
+
+Service-Claim
+
+30 25 20 15 10
+5
+
+pin17305600270
+
+Service-Claim
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+But there may be many millions of these.
+
+98
+
+ACSys
+Australian Tax Office
+Fraud Prevention and Control Discover nuances that can establish tax payer has nonlegitimate (possibly fraudulent) claims Conventional statistical techniques not working: more than looking for averages, outliers, etc. Effective selection of possible hits (not too many)
+
+100
+
+ACSys
+
+Medicare Regulars
+
+Group of patients with very regular activity:
+
+pina17307520484 300 45
+Service-Claim
+40
+250
+35
+
+pin17307520484
+
+Service-Claim
+
+200 30
+
+25 150
+20
+
+100 15
+
+10 50
+5
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Remove non-cash payments!!!
+
+ACSys
+
+ATO
+
+Identifying a tax avoidance scheme
+
+TxblInc SlryWgs TxInst WrkDed SpseRbt
+
+Hot Spot 1 2 3 4 5 6
+7 8 9 10 11 12
+
+Size 238 1221
+25 534 55 19
+1184 198 234
+4356 1417
+14 8
+473
+
+...
+
+99 101
+
+ACSys
+Outline
+The Data Mining Task Techniques for Data Mining Case Studies in Data Mining Research Directions Wrap Up
+102
+ACSys
+Fitness = Interestingness
+We cast our problem to that of searching for a collection of data subsets (described by rules) which we find interesting
+ROur rule set can serve as a starting point for the
+search (although randomly generated starting points could be used). If we can define what we mean by interesting then we could use that as out fitness measure to evolve a fitter collection of rules.
+104
+
+ACSys
+
+Interestingness
+
+We are drowning in a wealth of "discoveries"
+Visualisation is not enough--VR beginning to help.
+Still need a better way to help us interactively explore through the space of possible groupings of the data.
+Combined with VR to provide a data driven yet user controlled exploratory data mining system
+We need a way of better exploring the space and identifying interestingness more formally.
+
+103
+
+ACSys
+Rule Induction
+Rule Evolution is not new, but We do not seek rule accuracy in the usual sense We do not seek coverage in the usual sense
+Instead we seek a collection of rules that describe different regions of the database and are interesting.
+
+105
+
+ACSys
+Specifying Interestingness
+Specifying interestingness is now the difficult task. There are many aspects to take into account. The domain user will essentially refine their idea of interestingness as they proceed in their exploration Keep the domain user in the look: In an evolutionary sense, maintain them as the oracle to decide fitness of the interestingness measure
+
+106
+
+ACSys
+An Architecture for Evolutionary Hot Spots
+
+h a formal language for expressing interestingness we can now explore the evolution of fitness measure itself, allowing the data driven discoveries to be assessed by the domain r, whose input is captured to evolve measures of interestingness which are then employed evolve new nuggets!
+
+Dataset
+n = 1,000,000 m = Attributes
+
+Ruleset
+
+Hot Spots
+
+Sample
+
+Evolve
+
+s=3
+
+Human Ranking
+(q*s)
+
+p = 1000
+
+Evolve
+
+Analysis
+
+Measures of Interestingness
+q=5
+
+108
+
+ACSys
+
+How to Capture Interestingness
+
+We can capture interestingness as some formula involving:
+­ Distance A measure of how far a group prototype is from the population prototype.
+­ Template A pattern that is used to increase the interestingness measure.
+­ Belief Well know truths of the domain to check for surprising discoveries.
+­ Sizes Size of corresponding dataset and complexity of rule
+
+107
+
+ACSys
+Other Research Directions
+Virtual Environments Data Mining Standards Temporal Data Mining Spatial Data Mining Feature Selection
+
+109
+
+ACSys
+Virtual Environments
+The screen is too limited in what it can present visually Virtual environments provide considerably more real-estate Explore the results of data mining Rely on the significant human ability for perception ­ Pick up patterns in the forrest of trees that catch the eye
+
+ACSys
+Standardisation Issues
+Standard Architectures Standard Interfaces ­ Data Access Interfaces ­ Model Communication Interfaces
+
+ACSys
+
+Standard Architecture
+
+VR Cave XML
+
+Workbench
+XML XML
+
+GUI XML
+
+Plug-Ins Visualise Execute
+
+Data Extraction
+Agent
+Schema
+
+Statistical Summary Visualise
+
+Associatns Segments
+
+Rules JDBC/ODBC/OLE
+
+Fast Summaries
+
+Data Access API
+
+Data Cubes
+
+Read Many Write Rarely
+
+Fast Data Cube Generation
+
+RDBMS
+
+110 111
+ACSys
+Temporal Data Mining
+Time is an issue in many databases Most OLTP systems are time-based transactional systems Yet, we tend to factor time out to do Data Mining How can we use time directly in Data Mining? ­ Temporal Logics ­ Temporal Databases
+112 113
+
+ACSys
+Spatial Data Mining
+Spatial Inforation Systems (and GIS) now common technology Spatial Databases store Spatially Indexed data Again, in Data Mining we tend to factor space out! How can we use spatial information directly in Data Mining?
+
+ACSys
+Feature Selection
+Once we have the right features data mining is trivial! But how do we best aggregate the source features? ­ Aggregate transactions in some way:
+number of transactions every 3 months number of different types of transactions ­ Aggregate spatial data appropriately: in particular census collection disctrict But the aggregations encapsulate preconceived ideas
+
+ACSys
+Outline
+The Data Mining Task Techniques for Data Mining Case Studies in Data Mining Research Directions
+Wrap Up
+
+114
+
+ACSys
+Wrap Up ­ Tools ­ Privacy
+
+Outline
+
+115
+
+116 117
+
+ACSys
+The Data Mining Vendor Space
+Visit http://www.cmis.CSIRO.AU/Graham.Williams/dataminer/Catalogue.html Over 60 vendors in the market today ­ A crowded market ­ Tool Vendors versus Service Providers ­ Sales of less than 30! Market Share: IBM, ISL, SAS, SGI, TMC
+
+ACSys
+IBM: Intelligent Miner
+A collection of tools to handle organisational/transactional data for Data Mining. Some of the best Data Mining research from IBM research labs, but not all of it captured in Intelligent Miner Techniques: Association, Segmentation, Time Sequence, NN, Rules Client/Server with Java-based GUI--reasonably intuitive
+
+118
+ACSys
+ISL: Clementine
+Was first with an excellent point-n-click interface for Data Mining Took the drudgery out of linking lots of tools together Under the bonnet, standard collection of techniques, including C5.0, NN, clustering, associations, etc. Newest release addressing standardisation issues
+
+119
+ACSys
+SAS: Enterprise Miner
+Integration with the SAS world is a big benefit Standard techniques: Clustering, Decision Trees, Linear and Logistic Regression, Neural Networks Still in beta and seeking stability
+
+120 121
+
+ACSys
+SGI: MineSet
+Hot on visualisations Excellent for exploring the data to understand it Contains usual collection of basic tools Allows other tools to plug-in (e.g., AutoClass from UltiMode)
+
+ACSys
+TMC: Darwin
+The "first" data mining tool to market? Early Versions ­ Connection Machine ­ Provided NN and Decision Trees Current Versions ­ Client (NT) / Server (Unix) ­ Ease-of-use ­ More model builders
+
+122
+ACSys
+Privacy and Data Mining
+Laws in many countries directly affect Data Mining, and it is worth being aware of them--penalties are often severe. The OECD Principles of Data Collection are relevant.
+124
+
+123
+ACSys
+OECD Principles of Data Collection
+Collection limitation: Data should be obtained lawfully and fairly, while some very sensitive data should not be held at all Data quality: Data should be relevant to the stated purposes, accurate, complete and up-to-date; proper precautions should be taken to ensure this accuracy Purpose specification: The purposes for which data will be used should be identified, and the data should be destroyed if it no longer serves the given purpose
+125
+
+ACSys
+OECD Principles of Data Collection
+Use limitation: Use of data for purposes other than specified is forbidden, except with the consent of the data subject or by authority of law Security safeguards: Agencies should establish procedures to guard against loss, corruption, destruction, or misuse of data Openness: It must be possible to acquire information about the collection, storage, and use of personal data
+126
+ACSys
+Further Information
+http://www.cmis.csiro.au/Graham.Williams/DataMiner Discovering Data Mining by Cabena, Hadjinian, Stadler, Verhees, and Zanasi. Prentice Hall, 1998. Data Warehousing, Data Mining, and OLAP by Berson and Smith. McGraw-Hill, 1997 Machine Learning by Mitchell. McGraw-Hill, 1997
+
+ACSys
+OECD Principles of Data Collection
+Individual participation: The data subject has a right to access and challenge the data related to him or her Accountability: A data controller should be accountable for complying with measures giving effect to all these principles
+127
+
+128
+
+

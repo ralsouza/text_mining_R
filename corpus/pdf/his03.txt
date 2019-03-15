@@ -1,0 +1,1163 @@
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Mining the Data Stream
+Graham Williams
+CSIRO Data Mining GPO Box 664, Canberra 2601, Australia
+datamining.csiro.au Graham.Williams@csiro.au
+Plenary Presentation to Hybrid Intelligent Systems 16 December 2003
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+CSIRO Data Mining
+CSIRO - Australian Government research organisation
+Applied research delivering to industry
+CSIRO Mathematical and Information Science Mathematicians, Statisticians, Computer Scientists
+CSIRO Data Mining established in 1994 Machine learning, database, visualisation, statistics
+Industry
+Government Insurance Fraud Security Science Health
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Data Streams
+Data Supply Mining The Stream
+
+Moving Forward
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Data Streams
+Data Supply Mining The Stream
+Data Mining
+Doing Data Mining Technology for Intelligent Data Mining Transactions to Systems
+
+Moving Forward
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Data Streams
+Data Supply Mining The Stream
+Data Mining
+Doing Data Mining Technology for Intelligent Data Mining Transactions to Systems
+Moving Forward
+Temporal Nature of Data Streams Ready, Efficient, Communicating Agents
+
+Moving Forward
+
+3/27/5
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Data Streams
+Data Supply Mining The Stream
+Data Mining
+Doing Data Mining Technology for Intelligent Data Mining Transactions to Systems
+Moving Forward
+Temporal Nature of Data Streams Ready, Efficient, Communicating Agents
+
+Moving Forward
+
+4/27/6
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+More Data Than We Know What To Do With
+
+Australian Health Transactions: 700 thousand per day Financial Transactions: 1 million per day? Telecom Transactions: 20 million per day?
+Health Insurance Commission: terabyte data storage Australian Taxation Office: 24 databases, multiple tables
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Drowning in the Data Stream
+
+Stream Data:
+Continuously becoming available Sequentially ordered arrival of data Generally arriving in quick succession Large amounts and perhaps limited storage Possibly distributed sources (e.g., sensor data) Foundation: database queries for data streams
+
+6/27/8
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+Examples
+
+Telecommunications
+Financial transactions
+Web clicks
+Passenger arrivals Electronic health records
+Infectious outbreaks - SARS Adverse drug reactions - interactions Insurance cost blowouts - pharmaceuticals
+
+Moving Forward
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Data Mining
+
+The non-trivial extraction of novel, implicit, and actionable knowledge from large databases
+
+8/27/10
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Data Mining
+
+The non-trivial extraction of novel, implicit, and actionable knowledge from large databases and in a timely manner.
+
+8/27/11
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Data Mining
+
+The non-trivial extraction of novel, implicit, and actionable knowledge from large databases and in a timely manner.
+Anytime Data Mining - give me the answer now.
+Data exploration Data visualisation Very large data extractions Data analysis Hypothesis generation Model building.
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Data Characteristics
+
+Administrative, transaction data
+10 to 200 features
+Multiple entities
+Typical Examples: Pathology (Health Insurance) 37 million transactions (3 years of data) 80 pathology laboratories 20 thousand doctors 3 million patients 50 features Queensland Linked Health Dataset 5 years of data 100 million (MBS), 60 million (PBS), 3 million (Hos) 1 million patients, $50 billion 80 features
+
+9/27/13
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+How to Data Mine?
+
+Moving Forward
+
+Are we currently mining data in the best possible way? Using tools and techniques developed for different tasks? So far the track record is quite good, but . . . ? Should we take a fresh look at data mining . . . ?
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Data Streams
+Data Supply Mining The Stream
+Data Mining
+Doing Data Mining Technology for Intelligent Data Mining Transactions to Systems
+Moving Forward
+Temporal Nature of Data Streams Ready, Efficient, Communicating Agents
+
+Moving Forward
+
+11/27/15
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Motor Vehicle Insurance Premium Setting
+Several million transactions annually Consider more than the traditional small number of factors Hot Spots: Cluster  Rule Induction  Interestingness (Williams, Huang, AI97)
+ClaimCost  $695
+
+Hybrid Intelligent Systems 2003
+
+Cost = $158, 000
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Motor Vehicle Insurance Premium Setting
+
+Several million transactions annually
+
+Consider more than the traditional small number of factors
+
+Hot Spots: Cluster  Rule Induction  Interestingness (Williams, Huang, AI97)
+
+.............................. ...........................
+
+ClaimCost  $695
+Cost = $158, 000
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Motor Vehicle Insurance Premium Setting
+
+Several million transactions annually
+
+Consider more than the traditional small number of factors
+
+Hot Spots: Cluster  Rule Induction  Interestingness (Williams, Huang, AI97)
+
+.............................. ...........................
+
+ClaimCost  $695
+Cost = $158, 000
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Motor Vehicle Insurance Premium Setting
+
+Several million transactions annually
+
+Consider more than the traditional small number of factors
+
+Hot Spots: Cluster  Rule Induction  Interestingness (Williams, Huang, AI97)
+
+.............................. ...........................
+
+ClaimCost  $695
+
+SumRqst  $15, 000 ClmType  6
+
+C 1 Model  C 2 [holden, ford]
+
+Cubic  2.4
+
+C1 C3 C 2 Postcode  2949
+
+C3 C4
+Cost = $158, 000
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Motor Vehicle Insurance Premium Setting
+
+Several million transactions annually
+
+Consider more than the traditional small number of factors
+
+Hot Spots: Cluster  Rule Induction  Interestingness (Williams, Huang, AI97)
+
+.............................. ...........................
+
+ClaimCost  $695
+
+SumRqst  $15, 000 ClmType  6
+
+C 1 Model  C 2 [holden, ford]
+
+Cubic  2.4
+
+C1 C3 C 2 Postcode  2949
+
+Cost = $95, 000 C3
+
+C4
+Cost = $158, 000
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Health Insurance Commission
+Universal health coverage since 1975 Terabytes of patient claims in storage in Canberra Inappropriate Provider Practices (neural networks) Public Fraud (including doctor shoppers) Hot Spots: Cluster  Rule Induction  Interestingness
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Health Insurance Commission
+
+Universal health coverage since 1975 Terabytes of patient claims in storage in Canberra Inappropriate Provider Practices (neural networks) Public Fraud (including doctor shoppers) Hot Spots: Cluster  Rule Induction  Interestingness
+
+pinB 35
+Service-Claim 30
+
+25
+
+$ 20
+15
+
+10
+
+5
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Health Insurance Commission
+
+Universal health coverage since 1975 Terabytes of patient claims in storage in Canberra Inappropriate Provider Practices (neural networks) Public Fraud (including doctor shoppers) Hot Spots: Cluster  Rule Induction  Interestingness
+
+pinB 35
+Service-Claim 30
+
+25
+
+$ 20
+15 10
+
+Christmas Savings Plan
+
+5
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Health Insurance Commission
+
+Universal health coverage since 1975 Terabytes of patient claims in storage in Canberra Inappropriate Provider Practices (neural networks) Public Fraud (including doctor shoppers) Hot Spots: Cluster  Rule Induction  Interestingness
+
+35 30 25
+$ 20
+15 10
+5
+
+pinB
+
+Service-Claim
+
+Christmas Savings Plan
+
+300
+250
+200
+$
+150
+100
+50
+
+pinaD
+
+Service-Claim
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+Hybrid Intelligent Systems 2003
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Health Insurance Commission
+
+Universal health coverage since 1975 Terabytes of patient claims in storage in Canberra Inappropriate Provider Practices (neural networks) Public Fraud (including doctor shoppers) Hot Spots: Cluster  Rule Induction  Interestingness
+
+35 30 25
+$ 20
+15 10
+5
+
+pinB
+
+Service-Claim
+
+Christmas Savings Plan
+
+300
+250
+200
+$
+150
+100
+50
+
+pinaD
+
+Service-Claim
+
+Bulk bill background
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+Hybrid Intelligent Systems 2003
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Health Insurance Commission
+
+Universal health coverage since 1975 Terabytes of patient claims in storage in Canberra Inappropriate Provider Practices (neural networks) Public Fraud (including doctor shoppers) Hot Spots: Cluster  Rule Induction  Interestingness
+
+pinB 35
+Service-Claim 30
+
+pinaD 300
+Service-Claim 250
+
+25
+
+$ 20
+15 10
+
+Christmas Savings Plan
+
+5
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+200
+$
+150
+
+100
+
+£  Regular pattern of fraud
+50
+¢¡
+
+0 12600
+
+12700
+
+12800
+
+12900
+
+13000
+
+13100
+
+13200
+
+13300
+
+13400
+
+Day of Service  Day of Claim
+
+Day of Service  Day of Claim
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Internal Fraud and Compliance
+
+Investigation of life factors as determinants of compliance
+Boosted Tree Stumps (Bartlett, Baxter, Milne, Williams, 1999)
+
+Training Data/Classification Data
+
+M1 M2
+
+MT
+
+Weighted Sum Yes/No
+
+If Age > 40 Then Non Compliant (0.3) If MStatus Separated Then Non Compliant (0.8)
+Multiple agents Simple agents Working together!
+
+14/27/27
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+2200
+
+Data Mining
+
+Moving Forward
+
+Variation in Clinical Outcomes
+GrpAB hospitals GrpCD hospitals Average State Survival times
+
+2000
+
+Survival times in days post surgery
+
+1800
+
+1600
+
+1400
+
+1/96 7/96
+
+1/97 7/97 Month/Year of Surgery
+
+1/98
+
+7/98
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+Evolving Interesting Rules
+
+Moving Forward
+
+HotSpots searches for interesting regions described by rules So, evolve R using interestingness as measure of fitness Unlike rule induction, accuracy and coverage are not the goal Interestingness components: size, statistical profile, density.
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Revolver
+
+Crossover, mutation, islands, migration strategies Fitness:
+
+fit(ri ) =
+
+Max{µri (A3),µri (A12),µri (A43)} Max {µ(A3 ),µ(A12 ),µ(A43 }
+
++
+
+ri (A65=True) ri
+
++
+
+ri (A39=Yes) ri
+
++
+
+µri (A54) µ(A54)
+
++
+
+1 (ri )
+
+µ(Att )
+µri (Att) ri ri (Cond ) (ri )
+
+mean value of the attribute over data set
+mean value over the subset ri number of records in ri number of records in ri satisfying Cond number of conditions in the rule ri
+
+17/27/30
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Evolving Interestingness
+
+Interestingness difficult to formulate!
+Evolve measure of interestingness with fitness guided by expert selection:
+
+Dataset
+
+Ruleset
+
+Hot Spots
+
+Sample
+
+Evolve
+
+s=3
+
+Human Ranking
+(q*s)
+
+p = 1000
+
+Evolve
+
+Analysis
+
+n = 1,000,000 m = Attributes
+
+Measures of Interestingness
+q=5
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Emergent Outliers
+Statistical Outliers with SmartSifter (Yamanishi, Takeuchi, Williams, Milne, 2002, 2004).
+
+Probability Denisity
+
+Model
+Tissue Pathology
+
+Current Model
+
+Chemical
+Represent patient patterns using a statistical model
+On-line unsupervised learning of the model each time a new transaction is input using a discounting learning algorithm
+Score the transaction according to how much it changes the model.
+
+19/27/32
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Emergent Outliers
+Statistical Outliers with SmartSifter (Yamanishi, Takeuchi, Williams, Milne, 2002, 2004).
+
+Probability Denisity
+
+Previous Model
+Tissue Pathology
+
+Model Change
+Current Model
+
+Chemical
+Represent patient patterns using a statistical model
+On-line unsupervised learning of the model each time a new transaction is input using a discounting learning algorithm
+Score the transaction according to how much it changes the model.
+
+19/27/33
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+Common Characteristics
+
+Moving Forward
+
+Transaction data, administrative data Patterns emerge as the data streams in Simple, conceptually independent, models Identify interesting patterns at any time, as they emerge.
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Transactions  Entities  System
+
+Health Insurance: Typical transaction processing
+
+Desire to identify fraud as it emerges
+Levels of checking: Transaction level: claim matches age and gender Patient level: childbirth less than 6 months apart System level: collusion between patients and doctor
+
+Transactions
+
+Patients
+
+System
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Transactions  Entities  System
+
+Health Insurance: Typical transaction processing
+
+Desire to identify fraud as it emerges
+Levels of checking: Transaction level: claim matches age and gender Patient level: childbirth less than 6 months apart System level: collusion between patients and doctor
+
+Transactions
+
+Patients
+
+System
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Transactions  Entities  System
+
+Health Insurance: Typical transaction processing
+
+Desire to identify fraud as it emerges
+Levels of checking: Transaction level: claim matches age and gender Patient level: childbirth less than 6 months apart System level: collusion between patients and doctor
+
+Transactions
+
+Patients
+
+System
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Transactions  Entities  System
+
+Health Insurance: Typical transaction processing
+
+Desire to identify fraud as it emerges
+Levels of checking: Transaction level: claim matches age and gender Patient level: childbirth less than 6 months apart System level: collusion between patients and doctor
+
+Transactions
+
+Patients
+
+System
+
+P
+
+P D
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Challenges for Data Mining
+For fraud, security, improving business processes: Source data generally arrives as transactions Thing of interest occurs at the entity and system level Thing of interest is usually not self revealing Patterns of interest are constantly changing Patterns of interest are generally unusual Service guarantee: rapid turnaround of service
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Challenges for Data Mining
+For fraud, security, improving business processes: Source data generally arrives as transactions Thing of interest occurs at the entity and system level Thing of interest is usually not self revealing Patterns of interest are constantly changing Patterns of interest are generally unusual Service guarantee: rapid turnaround of service Delivering results as soon as possible
+
+22/27/40
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Data Streams
+Data Supply Mining The Stream
+Data Mining
+Doing Data Mining Technology for Intelligent Data Mining Transactions to Systems
+Moving Forward
+Temporal Nature of Data Streams Ready, Efficient, Communicating Agents
+
+Moving Forward
+
+23/27/41
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+Temporal Nature of Data
+
+Moving Forward
+
+Adverse Drug Reactions Ace Inhibitor Usage  Angioedema
+Ambulatory Care Sensitive Conditions Improved Primary Care  Decrease Hospitalisation
+Hormone Replacement Therapy Increased Risk of Breast Cancer Decreased Risk of Colorectal Cancer
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+Hybrid Intelligent Systems
+
+Moving Forward
+
+Data mining systems based around agents
+Agents actively pursuing the streaming data
+Building their own models, monitoring change, communicating discoveries
+
+Hybrid Intelligent Systems 2003
+
+c
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Mining the Data Stream
+Intelligent data mining is fundamentally hybrid Streaming data, emergent patterns, dynamic monitoring Streams are fundamentally temporal in nature Requirement for good enough answers, quickly Foundational developments in data mining are there Goal is a population of simple, communicating, data mining agents, monitoring data streams for trigger events, which need to be brought to the attention of the analysts.
+
+26/27/44
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+Data Streams
+
+Data Mining
+
+Moving Forward
+
+Mining the Data Stream
+Intelligent data mining is fundamentally hybrid Streaming data, emergent patterns, dynamic monitoring Streams are fundamentally temporal in nature Requirement for good enough answers, quickly Foundational developments in data mining are there Goal is a population of simple, communicating, data mining agents, monitoring data streams for trigger events, which need to be brought to the attention of the analysts.
+
+26/27/45
+
+T HAN K YOU
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+References
+
+On-line Unsupervised Outlier Detection Using Finite Mixtures with Discounting Learning Algorithms. Data Mining and Knowledge Discovery, Volume 8, 2004.
+Temporal Sequence Associations for Rare Events. (submitted)
+A Framework for Comparison in Temporal Sequence Clustering. (submitted)
+Temporal Event Mining of Linked Medical Claims Data. (DMAK-2003)
+Evolutionary Hot Spots Data Mining: An architecture for exploring for interesting discoveries. In Methodologies for Knowledge Discovery and Data Mining. Lecture Notes in Artificial Intelligence, Volume 1574, Springer-Verlag, 1999, (PAKDD-99).
+Combining decision trees: Initial results from the MIL algorithm. Artificial Intelligence Developments and Applications, Elsevier Science Publishers, Pages 273­289.
+
+27/27/46
+
+Hybrid Intelligent Systems 2003
+
+Copyright c 2003, Graham J. Williams
+
+
