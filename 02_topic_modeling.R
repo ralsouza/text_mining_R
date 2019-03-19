@@ -1,4 +1,6 @@
 # Topic Modeling em R
+# A modelagem de tópicos - Topic Modeling - trata do problema de classificar automaticamente
+# conjuntos de documentos em temas
 
 # Obs: Caso tenha problemas com a acentuação, consulte este link:
 # https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
@@ -6,14 +8,14 @@
 # Configurando o diretório de trabalho
 # Coloque entre aspas o diretório de trabalho que você está usando no seu computador
 # Não use diretórios com espaço no nome
-setwd("Z:/Dropbox/DSA/Business-Analytics/R/Cap07")
+setwd('/home/ralsouza/Documents/r_projects/text_mining_R')
 getwd()
 
 # Pacote
 library(tm)
 
 # Carregando os arquivos
-dest <- "/Users/dmpm/Dropbox/DSA/Business-Analytics/R/Cap07/arquivos"
+dest <- "/home/ralsouza/Documents/r_projects/text_mining_R/arquivos"
 filenames <- list.files(dest, pattern = "*.txt",  full.names = TRUE)
 
 # Lendo os nomes dos arquivos em um vetor
@@ -40,6 +42,7 @@ docs <- tm_map(docs,stemDocument)
 
 # Criando a matriz termo-documento
 dtm <- DocumentTermMatrix(docs)
+inspect(dtm)
 
 # Convertendo o nome das linhas para o nome dos arquivos
 rownames(dtm) <- filenames
