@@ -174,7 +174,7 @@ m <- as.matrix(dtm)
 dim(m)
 write.csv(m, file = 'dtm.csv')
 
-#### RELACIONAMENTOS E ANÁLISE QUANTITATIVA ####
+#### 4. RELACIONAMENTOS E ANÁLISE QUANTITATIVA ####
 # Podemos iniciar a etapa de identificação de relacionamentos e uma análise quantitativa do conjunto de dados
 # Perceba que nesta altura não temos mais um corpus, pois o corpus foi convertido para uma matriz do tipo termo-documento
 # O processo do trabalho até aqui foi:
@@ -204,12 +204,127 @@ freq <- colSums(as.matrix(dtms))
 # Listar os termos que aparecem com maior frequência
 freq
 
+# Identificando termos frequentes e associações no arquivo original, antes da limpeza dos termos esparsos
+# e visualizar as palavras que aparecem com altíssima frequência
+findFreqTerms(dtm, lowfreq = 1000)
+findFreqTerms(dtm, lowfreq = 100)
+
+# Buscando associações com palavras e especificando o limite de correlação
+# Se duas palavras aparecem sempre juntas, então a correlação seria 1.0 e se elas nunca aparecem
+# a correlação seria 0.0. Assim, a correlação é uma medida de quão as palavras estão juntas no corpus.
+# De acordo com a correlação, são palavras que aparecem mais ou menos juntas 
+findAssocs(dtm, 'data', corlimit = 0.6)
+
+# Plot de correlação dos termos
+plot(dtm, terms = findFreqTerms(dtm, lowfreq = 100)[1:50], corThreshold = 0.5)
+
+# Plot da frequência das palavras
+freq <- sort(colSums(as.matrix(dtm)), decreasing = TRUE)
+head(freq, 14)
+
+# Correlações
+wf <- data.frame(word = names(freq), freq = freq)
+head(wf)
+
+# Plot com ggplot2
+subset(wf, freq > 500) %>% 
+  ggplot(aes(word, freq)) + 
+  geom_bar(stat = 'identity') +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+#### 5. VISUALIZAÇÃO DE DADOS ####
+install.packages('wordcloud')
+library(wordcloud)
+
+set.seed(142)
+wordcloud(names(freq), freq, max.words = 100)
+
+set.seed(142)
+wordcloud(names(freq), freq, min.freq = 100, colors = brewer.pal(6, 'Dark2'))
+
+set.seed(142)
+wordcloud(names(freq), freq, min.freq = 100, scale = c(5, .1), colors = brewer.pal(6, 'Dark2'))
+
+# Resultado final com resultado mais aprimorado
+set.seed(142)
+dark2 <- brewer.pal(6, 'Dark2')
+wordcloud(names(freq), freq, min.freq = 100, rot.per = 0.2, colors = dark2)
+
+# Ajustando os dados e calculando estatísticas
+words <- dtm %>% 
+  as.matrix %>% 
+  colnames %>% 
+  (function(x) x[nchar(x) < 20])
+
+# Comprimento do conjunto de dados
+length(words)
+# Palavras que ocorrem com mais frequência
+head(words, 15)
+# Resumo dos dados
+summary(nchar(words))
+# Tabela de contagem
+table(nchar(words))
+# Distribuição de frequência
+dist_tab(nchar(words))
 
 
 
+data.frame(nletters = nchar(words)) %>% 
+  ggplot(aes(x = nletters)) +
+  geom_histogram(binwidth = 1) +
+  geom_vline(xintercept = mean(nchar(words)),
+             colour = 'green', size = 1, alpha = .5) +
+  labs(x = 'Número de Letras', y = 'Número de Palavras')
+# Análise: A medida que temos mais letras, temos menos palavras com mais letras
+#          Temos menos palavras com grande comprimento, a maior parte das palavras são curtas
+#          A linha verde é a média.
 
 
 
+install.packages("stringr")
+library(stringr)
+
+# Letras que aparecem com maior frequência
+words %>%
+  str_split("") %>%
+  sapply(function(x) x[-1]) %>%
+  unlist %>%
+  dist_tab %>%
+  mutate(Letter=factor(toupper(interval),
+                       levels=toupper(interval[order(freq)]))) %>%
+  ggplot(aes(Letter, weight=percent)) +
+  geom_bar() +
+  coord_flip() +
+  labs(y="Proporção") +
+  scale_y_continuous(breaks=seq(0, 12, 2),
+                     label=function(x) paste0(x, "%"),expand=c(0,0), limits=c(0,12))
+
+
+# Heatmap: Mostra a posição da letra e a proporção, então a medida que as letras vão aparecendo dentro das palavras
+#          a posição da letra lá dentro vai mostrando o nível de intensidade
+words %>%
+  lapply(function(x) sapply(letters, gregexpr, x, fixed=TRUE)) %>%
+  unlist %>%
+  (function(x) x[x!=-1]) %>%
+  (function(x) setNames(x, gsub("\\d", "", names(x)))) %>%
+  (function(x) apply(table(data.frame(letter=toupper(names(x)),
+                                      position=unname(x))),
+                     1, function(y) y/length(x))) %>%
+  qheat(high="green", low="yellow", by.column=NULL,
+        values=TRUE, digits=3, plot=FALSE) +
+  labs(y="Letra", x="Posição") +
+  theme(axis.text.x=element_text(angle=0)) +
+  guides(fill=guide_legend(title="Proporção"))
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
