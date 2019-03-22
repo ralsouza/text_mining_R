@@ -13,8 +13,9 @@ install.packages("scales")                       # Permite incluir vírgulas em 
 install.packages("SnowballC")                    # Implementa o algoritmo de stemming de Porter para reduzir palavras a uma raiz comum
 install.packages("xlsx")
 install.packages("ptstem")                       # https://github.com/dfalbel/ptstem Ver alternativa ao fim do post: https://pt.stackoverflow.com/questions/364543/stem-para-twitter 
-
-
+install.packages("quanteda")
+install.packages('gdata')                        # Permite trabalhar com arquivos xls
+                  
 # http://bioconductor.org/
 source("http://bioconductor.org/biocLite.R")     # Biocondutor
 biocLite("Rgraphviz")                            # Plots de correlação entre palavras
@@ -30,7 +31,8 @@ library(scales)
 library(Rgraphviz)
 library(SnowballC)
 library(xlsx)
-library(ptstem)
+library(quanteda)
+library(gdata)
 
 # Checar as fontes de dados, do pacote tm
 getSources()
@@ -42,16 +44,15 @@ getReaders()
 # Organizar os documentos e diretórios para o pré-processamento
 
 # Configurar o diretório com os documentos
-dest <- '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/xlsx'
+dest <- '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/xls'
 
 # Lista com os nomes completos dos arquivos do tipo PDF
-myfiles <- list.files(path = dest, pattern = 'xlsx', full.names = TRUE)
+myfiles <- list.files(path = dest, pattern = 'xls', full.names = TRUE)
 print(myfiles)
 
 # Percorrer a lista do objeto myfiles e converter os xlsx para txt
 # lapply(myfiles, function(i) system(paste('"/usr/bin/pdftotext"', paste0('"',i,'"')), wait = FALSE))
-?read.xlsx2
-dfxlsx <- read.xlsx2(myfiles, sheetIndex = 1)
+df.xls <- read.xlsx2(myfiles, sheetIndex = 1)
 write.table(dfxlsx, '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt/jan_2018_PesquisaDeSatisfacao.txt')
 
 #### 2. CRIAÇÃO DO CORPUS E PRÉ-PROCESSAMENTO ####
@@ -85,14 +86,21 @@ docs <- tm_map(docs, stripWhitespace)
 docs <- tm_map(docs, removeWords, c('departament', 'email'))
 
 # Remover Stopwords
-stopwords('pt-br')
+stopwords('portuguese')
 # Remover as stopwords do Corpus
-docs <- tm_map(docs, removeWords, stopwords('pt-br'))
+docs <- tm_map(docs, removeWords, stopwords('portuguese'))
 
 # Stemming, para remover prefixos e sufixos, ou seja, tudo que aparecer antes ou depois da raíz da palavra será removido 
 ?stemDocument
-# corpus.temp <- tm_map(corpus, stemDocument, language = "english")  
-docs <- tm_map(docs, ptstem, algorithm = "porter")
+# corpus.temp <- tm_map(corpus, stemDocument, language = "english")
+# docs2 <- dfm_wordstem(docs, language = "pt")
+# docs2 <- tm_map(docs, dfm_wordstem, language = "pt")
+docs <- tm_map(docs, stemDocument, language = "portuguese")
+
+
+
+
+
 
 #### 3. PROCESSAMENTO ESTATÍSTICO ####
 dtm <- DocumentTermMatrix(docs)
@@ -100,7 +108,7 @@ dtm <- DocumentTermMatrix(docs)
 class(dtm)
 dtm
 # Inspecionar as primeras 5 linhas e as colunas de 1000 à 1005
-inspect(dtm[1:5, 100:200])
+inspect(dtm[1,1:2576])
 # Checar a dimensão da matriz
 dim(dtm)
 # A transposição é criada usando TermDocumentMatrix()
@@ -145,7 +153,7 @@ freq
 findFreqTerms(dtm, lowfreq = 1000)
 findFreqTerms(dtm, lowfreq = 100)
 
-findAssocs(dtm, 'infraestrutura', corlimit = 0.6)
+findAssocs(dtm, 'acess', corlimit = 0.6)
 
 # Plot de correlação dos termos - Plot com as ligações entre os termos
 dim(dtm)
