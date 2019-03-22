@@ -50,9 +50,9 @@ dest <- '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/xl
 myfiles <- list.files(path = dest, pattern = 'xls', full.names = TRUE)
 print(myfiles)
 
-# Percorrer a lista do objeto myfiles e converter os xlsx para txt
+# Percorrer a lista do objeto myfiles e converter os xls para txt
 # lapply(myfiles, function(i) system(paste('"/usr/bin/pdftotext"', paste0('"',i,'"')), wait = FALSE))
-df.xls <- read.xlsx2(myfiles, sheetIndex = 1)
+df.xls <- read.xlsx2(myfiles[3], sheetIndex = 1)
 write.table(dfxlsx, '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt/jan_2018_PesquisaDeSatisfacao.txt')
 
 #### 2. CRIAÇÃO DO CORPUS E PRÉ-PROCESSAMENTO ####
