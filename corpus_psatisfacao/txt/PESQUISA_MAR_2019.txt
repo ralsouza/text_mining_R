@@ -1,0 +1,1483 @@
+"X1" "X2" "X3" "X4" "X5" "X6" "X7" "X8" "X9" "X10" "X11" "X12" "X13" "X14" "X15" "X16" "X17" "X18" "X19" "X20" "X21" "X22" "X23" "X24" "X25" "X26" "X27" "X28" "X29"
+"1" "19411186" "LETINA HAAS" "02 URDC/SUREG: SUREG Pioneira" "14/02/2019" "11/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "Técnicos Constat" "Telefone" "CONSTAT - Full Service Ltda" "Muito Insatisfeito" "Muito Insatisfeito" "Muito Insatisfeito" "Muito Insatisfeito" "Muito Insatisfeito" "A solicitação foi atendida depois do terceiro contato. O computador não ficou funcionando depois de formatado. O atendente não foi cordial e exigiu que eu fornecesse meu login e senha de acesso, coisa que temos orientação de não informar nem para os colegas.
+Achei péssimo toda a experiência e espero não ter que necessitar do serviço tão cedo." "" "" "Infraestrutura de TI.UA.Formatação de Equipamento" "" "4-Baixa" "Técnicos Constat" "JULIANO FIUZA DA SILVA" "Formatação e reinstalação de aplicativos softwares e drivers efetuados com sucesso.
+Mapeamentos e impressoras instalados e configurados.
+Backup efetuado." "01/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Formatação e Reinstalação de S.O." "Colaboradora solicita a formatação de seu notebook conforme recomendação da TI da Sureg que de acordo com ela já tentaram solucionar o problema de lentidão e travamento
+
+Nome: Letina Haas
+COOP: 0101
+UA: 01
+Telefone: 5432818181
+IP: 10.2.12.170" "03/2019" "Infraestrutura de TI"
+"2" "19467795" "SARAH ARIANE  MOURA BASILIO" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "19/02/2019" "" "MARCIO PIRES MINUZZO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Hardware.Periférico" "11/03/2019 15:14:20" "2-Alta" "Técnicos Constat" "FRANCISCO MARCOS BORASCA GIMENEZ" "Colaboradora informa que foi executada carga no coletor e está funcionando perfeitamente. 
+" "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha coletor ponto " "Falha coletor ponto 
+
+Demanda urgente solicitada pelo Pelanda
+" "03/2019" "Infraestrutura de TI"
+"3" "19477670" "ADRIANA PIMENTEL DA SILVA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "20/02/2019" "13/03/2019" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Hardware.Desktop" "20/03/2019 13:03:26" "4-Baixa" "Técnicos Constat" "DIEGO HENRIQUE DE MELO" "realizado troca de um notebook para uma usuaria da agencia e direcionado o notebook para o colaborador do sebrae." "07/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Infra TI - Suporte Service Desk - Acionamento do técnico de campo" "ADRIANA PIMENTEL DA SILVA - Colaboradora informa que está com chuva forte na região e após escutar um estrondo a máquina parou de ligar.
+UA: 0726.30
+Telefone: 44 3524-1476
+Patrimônio: 006688" "03/2019" "Infraestrutura de TI"
+"4" "19491273" "MARCOS GUSTAVO SCHROEDER PELANDA" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "21/02/2019" "28/02/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Formatação de Equipamento" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Windows 10, programas padrão instalados." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Formatação de equipamento" "Realizar a formatação de um notebook novo que encontra-se na SUREG.
+
+" "03/2019" "Infraestrutura de TI"
+"5" "19491471" "MARCOS GUSTAVO SCHROEDER PELANDA" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "21/02/2019" "28/02/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Formatação de Equipamento" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Windows 10, programas padrão instalados." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Formatação de equipamento" "Realizar a formatação de um notebook novo que encontra-se na SUREG.
+
+
+" "03/2019" "Infraestrutura de TI"
+"6" "19493973" "RAIZZA CHRISTINA GOMES DA SILVA" "08 Terceiro: RAIZZA CHRISTINA GOMES DA SILVA" "21/02/2019" "12/03/2019" "ANDRE LACERDA CAMPOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.COOP.Aplicações Terceiros" "" "Nenhuma" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "ANDRE LACERDA CAMPOS" "Informado ao colaborador para adicionar as salas ao outlook do colaborador, para efetuarem as reservas das saslas." "01/03/2019" "08 Terceiro: RAIZZA CHRISTINA GOMES DA SILVA" "solicitação de acesso a salas" "Colaborador informa que não consegue solicitar acesso as salas.
+
+Desbloquear as salas:
+Central BRC- Sala Jalapão , Central BRC- Sala Pantanal, Central BRC- Sala Paranoá , Central BRC- Sala Araguaia Norte , Central BRC- Sala Araguaia Sul  e Central BRC- Sala Araguaia Sul
+
+incluir os integrantes:
+Vinicio Rafael Blass e Rafael Miranda Meira
+
+Cooperativa: 9000
+Número da agência: 
+Telefone com DDD:  (62) 3574-9750
+" "03/2019" "Infraestrutura de TI"
+"7" "19517943" "KLEYTON DE OLIVEIRA PEREIRA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "25/02/2019" "08/03/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Remanejo de Equipamento" "" "4-Baixa" "Técnicos Constat" "DIEGO HENRIQUE DE MELO" "Provedor desabilitou IPV6, internet aberta e  radio funcionando, testes junto aos usuarios ok." "07/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Wi-fi dos associados" "Realizar a configuração do wi-fi doa associados da UA." "03/2019" "Infraestrutura de TI"
+"8" "19527047" "MARCOS GUSTAVO SCHROEDER PELANDA" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "26/02/2019" "07/03/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Manutenção Preventiva" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Efetuado instalação do windows 10 e programas padrão." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração de notebook" "Realizar a configuração de um notebook para ficar de backup." "03/2019" "Infraestrutura de TI"
+"9" "19527066" "MARILENE TYSZKOWSKI SANTOS" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "26/02/2019" "15/03/2019" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Sistema Operacional" "22/03/2019 12:09:11" "4-Baixa" "Técnicos Constat" "DIEGO HENRIQUE DE MELO" "ao chegar para trocar a TV o som da antiga estava funcionando, segundo a  usuaria um dia apos o atendimento voltou a funcionar sozinha, deixado TV na agencia e caso volte a ocorrer usuaria ficou de abrir um novo chamado. " "08/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Colaboradora informa que a tv de senhas está sem som" "Colaboradora informa que a tv de senhas está sem som
+
+Nome: marilene tyszkowsky santos
+Cooperativa: 0726
+UA: 24
+Telefone: 44 35271000
+ip: 10.31.127.18(TV)" "03/2019" "Infraestrutura de TI"
+"10" "19527147" "MARCOS GUSTAVO SCHROEDER PELANDA" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "26/02/2019" "07/03/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Manutenção Preventiva" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Efetuado instalação do windows 10 e programas padrão." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração de notebook" "Realizar a configuração de um notebook para ficar de backup." "03/2019" "Infraestrutura de TI"
+"11" "19527152" "MARCOS GUSTAVO SCHROEDER PELANDA" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "26/02/2019" "07/03/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Manutenção Preventiva" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Efetuado instalação do windows 10 e programas padrão." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração de notebook" "Realizar a configuração de um notebook para ficar de backup." "03/2019" "Infraestrutura de TI"
+"12" "19527157" "MARCOS GUSTAVO SCHROEDER PELANDA" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "26/02/2019" "07/03/2019" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Manutenção Preventiva" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Efetuado instalação do windows 10 e programas padrão." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração de notebook" "Realizar a configuração de um notebook para ficar de backup." "03/2019" "Infraestrutura de TI"
+"13" "19531669" "TAYNAH MOREIRA NOGUEIRA" "03 Cooperativa: 3950 - Sicredi Sudoeste GO" "26/02/2019" "11/03/2019" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "OTIMO ATENDIMENTO. PARABÉNS." "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "19/03/2019 10:16:41" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "GISLAINE RODRIGUES ALVES" "Realizado contato com a colaboradora;
+Realizado acesso remoto;
+Verificado que outlook estava em modo seguro, apresentando layout simplificado;
+ao fechar e abri o outlook entrou normalmente. " "01/03/2019" "01 Central: Central Sicredi Brasil Central" "Falha de ativação Office" "colaboradora informa que seu office está desativado.
+
+UA: 08
+Coop: 3950
+Telefone: 64 99974-7461
+IP: 10.160.48.107
+Host: ua0989d083950" "03/2019" "Infraestrutura de TI"
+"14" "19538686" "JOSE APARECIDO DE OLIVEIRA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "27/02/2019" "08/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Compartilhamento de arquivos" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Colaborador após reiniciar a estação de trabalho obteve acesso ao F:\  e o mapeamento das impressoras foi efetuado com sucesso.
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "06/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha para acessar a unidade F:(\\servidor\publico) " "Colaborador informa que não esta conseguindo acesso no F:/.
+
+Nome: José Aparecido de Oliveira
+COOP: 0726
+UA: 22
+Telefone: 4435461133
+IP: 10.30.115.41 / LTPEFHV92" "03/2019" "Infraestrutura de TI"
+"15" "19538686" "JOSE APARECIDO DE OLIVEIRA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "27/02/2019" "08/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Muito Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Compartilhamento de arquivos" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Colaborador após reiniciar a estação de trabalho obteve acesso ao F:\  e o mapeamento das impressoras foi efetuado com sucesso.
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "06/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha para acessar a unidade F:(\\servidor\publico) " "Colaborador informa que não esta conseguindo acesso no F:/.
+
+Nome: José Aparecido de Oliveira
+COOP: 0726
+UA: 22
+Telefone: 4435461133
+IP: 10.30.115.41 / LTPEFHV92" "03/2019" "Infraestrutura de TI"
+"16" "19554190" "ANDERSON GIORDANI" "03 Cooperativa: 0167 - Sicredi Serrana" "28/02/2019" "12/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Acesso remoto realizado.
+
+Colaborador orientado a usar clique direito do mouse para copiar informações selecionadas em aplicações do ACClient.
+
+Ctrl+C não funciona dentro do sistemas online." "01/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha ao copiar dados do ACC " "Colaborador informa que antes de ter sua estação formatada ele conseguia copiar dados do ACC e colar em outros sistemas. Informa que agora não está conseguindo mais realizar tal processo.
+
+Nome: Anderson Giordani
+COOP: 0167
+UA: 21
+Telefone: 5434571554
+IP: 10.6.148.69 / LTD3SLJ82" "03/2019" "Infraestrutura de TI"
+"17" "19558418" "SIMONE MELLO SEVERO" "05 Centralizadora: Banco Cooperativo Sicredi" "28/02/2019" "07/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Bitlocker" "15/03/2019 10:45:21" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "JOSE ALBERTO FERREIRA DOS SANTOS" "Informado a chave do bitlocker e colaborador conseguiu logar novamente
+Validado pela colaboradora
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Bloqueio Bitlocker" "Colaboradora informa que sua estação apresentou tela azul e depois reiniciou pedindo chave do bitlocker
+
+Nome: Simone Mello Severo
+Ramal: 4878
+Torre: C
+Andar: 11
+Area: Tesouraria
+Chave:  409530-326491-299783-223234-591118-170599-720038-031845" "03/2019" "Infraestrutura de TI"
+"18" "19558594" "SIMONE MELLO SEVERO" "05 Centralizadora: Banco Cooperativo Sicredi" "28/02/2019" "07/03/2019" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE CAMPO-CAS" "HENRIQUE SCHEIDT GORGEN" "Renomeado perfil e o Outlook voltou a funcionar.
+Referente ao problema de Bitlocker será aberto chamado junto a DELL para verificação.
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Infra TI - Suporte Service Desk - Falhas no Microsoft Outlook" "Colaboradora informa que seu outlook não esta recebendo nem enviando mensagem
+
+Nome completo:Simone Mello Severo
+Torre: c
+Andar: 11
+Área: tesouraria
+Ramal/Fone: 4878
+AD/LDAP:simone_severo
+Host: lt8k6pbs2
+IP:  172.22.11.234" "03/2019" "Infraestrutura de TI"
+"19" "19563135" "ALESSANDRO CRISTIAN CARDOSO RIBEIRO" "03 Cooperativa: 0718 - Sicredi União PR/SP" "28/02/2019" "08/03/2019" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Operacional.Impressão" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- verificado que nenhuma impressora da agência estava funcionando;
+- verificado no cups que as impressoras estavam com o status parada;
+- foi necessário iniciar ambas com credencias do servidor;
+- teste realizado pelo colaborador e funcionou perfeitamente;
+- atendimento aprovado pelo colaborador;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Colaboradora não está conseguindo fazer impressão no sistema siat" "Colaboradora não está conseguindo fazer impressão no sistema siat
+
+Nome: alessandro cristian cardoso ribeiro
+Cooperativa: 0718
+UA: 12
+Telefone: 44 32428400
+IP: 10.31.15.101
+Host: AG07185V2X862
+" "03/2019" "Infraestrutura de TI"
+"20" "19564763" "ARTUR LUIZ WINCK" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "01/03/2019" "12/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Aberto o Outlook. Configuração via Auto Discover realizada com sucesso.
+Sincronizando e-mails.
+
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI." "01/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Configuração do Outlook" "Colaborador informa que foi transferido de agencia e solicita a configuração do seu e-mail
+
+Nome: Artur Luiz Winck
+COOP: 0101
+UA: 33
+Telefone: 5135511622
+IP: 10.1.4.126 / UA013491D33101" "03/2019" "Infraestrutura de TI"
+"21" "19565140" "DOUGLAS ANDRE RIBAS" "02 URDC/SUREG: SUREG Univales MT/RO" "01/03/2019" "14/03/2019" "THIAGO AUGUSTO IDEARTE" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "." "" "" "Infraestrutura de TI.Apoio.Dúvida.Software Sicredi " "" "4-Baixa" "Soluções Corporativas Enduser" "KLEBER CRISTIANO DA SILVA" "Java 8 update 201 estará disponível na Central de Software a partir de amanhã ás 10:00 horas." "12/03/2019" "01 Central: Central Sicredi Centro Norte" "01.0821 SUREG UNIVALES MT/RO   10.96.30.4 - Ativar recursos da Central de Software" "Tecnico solicita atualização do java para versão atualizada na Central de Software
+
+
+Ramal/ Telefone: 66 98435-3692
+" "03/2019" "Infraestrutura de TI"
+"22" "19566439" "SALAN DE OLIVEIRA" "02 URDC/SUREG: SUREG Sicredi Vanguarda PR/SP/RJ" "01/03/2019" "12/03/2019" "THIAGO AUGUSTO IDEARTE" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Apoio.Solicitação.Cadastro de Elementos" "" "4-Baixa" "SUPORTE INFRAESTRUTURA-APOIO" "THIAGO AUGUSTO IDEARTE" "Associado unidade 74.0710 ao grupo 0710 - SICREDI CATARATAS DO IGUACU PR ao qual o tecnico pertence.
+
+Mesmo visualizou com sucesso a unidade." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Infra TI - Rede - Inclusão de usuários no NetQoS" "tecnico solicita visualização da unidade 74.0710 para seu usuario do netqos" "03/2019" "Infraestrutura de TI"
+"23" "19567708" "ENDAYRA CORADIN BIANCHI" "03 Cooperativa: 0804 - Sicredi Sudoeste MT/PA" "01/03/2019" "12/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Link MPLS" "15/03/2019 13:27:07" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "CARLOS HENRIQUE DAVILA FORTES" "Tentativa de acesso remoto por ip e host sem sucesso
+- Solicitado para desabilitar o wifi, desconectar o cabo de rede, reconectar o cabo de rede e reiniciar a máquina
+- Máquina tentou conectar no endpoint
+- Desabilitada opção de always connect
+- Teste ok
+Validado pela colaboradora
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "01/03/2019" "01 Central: Central Sicredi Centro Norte" "Falha para conectar na rede" "ENDAYRA CORADIN BIANCHI - Colaboradora não consegue conectar na rede
+Coop: 0804
+UA: 09
+Fone: 65 999514241
+IP: 10.103.127.67
+HOST: LT2K0N862" "03/2019" "Infraestrutura de TI"
+"24" "19569056" "DANIELLE LIMA SOUZA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "01/03/2019" "12/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Atendimento Cordial e paciente. " "" "" "Infraestrutura de TI.UA.Impressora" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Acesso remoto realizado.
+
+Arquivos PRN associados ao DOSPRN.
+
+Teste ok.
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+" "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Instalação do DOSPRN" "Colaboradora solicita a instalação do DOSPRN em sua estação.
+
+Nome: Danielle Lima Souza
+COOP: 0726
+UA: 47
+Telefone: 1125926446
+IP: 10.53.199.36 / AG470726L017065" "03/2019" "Infraestrutura de TI"
+"25" "19569230" "NATIELE BOURSCHEID" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "01/03/2019" "11/03/2019" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- verificado que o programa não estava abrindo;
+- foi necessário executar com adm e funcionou normalmente;
+- foi configurado ao programa sempre que abrir, ser executado como adm;
+- atendimento aprovado pela colaboradora;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Colaboradora solicita a instalação do Dirf2019" "Colaboradora solicita a instalação do Dirf2019
+
+Nome: natiele bourscheid
+Cooperativa: 0726
+UA: 01
+Telefone: 44 36497300
+IP: 10.31.150.138
+Host: SA072616416" "03/2019" "Infraestrutura de TI"
+"26" "19569972" "NATIELE BOURSCHEID" "02 URDC/SUREG: SUREG Vale do Piquiri ABCD PR/SP" "01/03/2019" "12/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Indiferente" "Satisfeito" "Problema solucionado, porém houve um pouco de demora para atendimento." "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "Técnicos Constat" "ANDRE LUIZ FALCIONI" "Instalado versão 1.1, testes ok." "11/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha restaurar copia de segurança do aplicativo Dirf2019" "Usuária informa que não esta conseguindo restaurar a copia de segurança do aplicativo Dirf2019
+Aplicativo abre, carrega normalmente, permite a seleção do arquivo com extensão .dbk e não permite avançar 
+
+
+Natiele Bourscheid
+natiele_bourscheid
+01-Administrativo Financeiro
+0726
+44 3649 - 7300
+10.31.150.138
+SA072616416" "03/2019" "Infraestrutura de TI"
+"27" "19570639" "SARAH ARIANE  MOURA BASILIO" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "01/03/2019" "12/03/2019" "LEANDRO CASTRO FOGACA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Internet" "" "4-Baixa" "Técnicos Constat" "FRANCISCO MARCOS BORASCA GIMENEZ" "Atendimento acompanhado pelo Rafael da Sureg que conectou remotamente dispositivo Hap e executou a configuração. Testes nas redes Sicredi_Colaboradores Sicredi_Associados e Sicredi. ok. Radio da unidade ok." "01/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha de acesso" "Verificar a falha na internet aberta da UA." "03/2019" "Infraestrutura de TI"
+"28" "19571677" "RODRIGO WOLF BRUM" "05 Centralizadora: Confederação Sicredi" "01/03/2019" "12/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Estação de trabalho.Hardware.Periférico" "20/03/2019 11:06:53" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado acesso remoto
+- AJustada resolução para 1366x768 mantendo escala pelas propriedades do driver
+Validado pelo colaborador
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "01/03/2019" "05 Centralizadora: Confederação Sicredi" "Falha para manter a resolução ao estender as telas" "RODRIGO WOLF BRUM - Colaborador informa que ao conectar monitor exteno no notebook, a resolução do mesmo fica fora do padrão
+Torre: D
+Andar: 3 - Lado bogotá
+Área: Sistemas Administrativos
+IP: 172.22.23.188" "03/2019" "Infraestrutura de TI"
+"29" "19572357" "DIOGO DE OLIVEIRA BISIO" "03 Cooperativa: 0116 - Sicredi União Metropolitana RS" "01/03/2019" "12/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Criado logon.bat;
+Disponibilizado na Área de trabalho do perfil do colaborador;
+Orientei executar para mapeamento;
+Testes com sucesso, acesso ao F:\ Ok.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "01/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Configuração servidor" "Solicitação de configuração da pasta F.
+
+Diogo de Oliveira Bisio
+diogo_bisio
+17-Centro Histórico 
+0116
+(51) 3287-2800
+LT1P399S1
+10.2.8.81" "03/2019" "Infraestrutura de TI"
+"30" "19576085" "GUSTAVO JULIANO VARISCO MANTOVANI" "03 Cooperativa: 0167 - Sicredi Serrana" "01/03/2019" "12/03/2019" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "   " "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "efetuado acesso a maquina
+-instalado o silverlight
+-efetuado teste
+--funcionando
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "01/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Dificuldade no sistema PLD" "Colaborador esta com dificuldades em acessar o sistema pld
+
+Nome completo: Gustavo Juliano Varisco Mantovani
+UA: 04
+COOP: 0167
+Fone: 54 32618100
+AD/LDAP: gustavo_mantovani 
+Host: dtf3rlf82
+IP: 10.6.118.111" "03/2019" "Infraestrutura de TI"
+"31" "19582976" "VANTUIR BLUME" "02 URDC/SUREG: SUREG Pioneira" "06/03/2019" "13/03/2019" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- o colaborador não inicia o computador com o CanoaApp aberto;
+- foi verificado se a pasta sincronica estava com as permissões para os grupos, tudo ok;
+- foi verificado que no diretório inicializar do windows estava sem o canoa, foi copiado o atalho;
+- teste feito no bloco de notas e funcionou;
+- atendimento aprovado pelo colaborador;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "06/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Colaborador não está conseguindo fazer leitura de cheque " "Colaborador não está conseguindo fazer leitura de cheque 
+
+Nome: vantuir blume
+Cooperativa: 0101
+UA: 01 - 23
+Telefone: 51 35660023
+IP: 10.3.37.81
+Host: UA014228D23101" "03/2019" "Infraestrutura de TI"
+"32" "19584249" "SILVANA CRISTINA CEOLIN" "03 Cooperativa: 0818 - Sicredi Norte MT" "06/03/2019" "13/03/2019" "RODRIGO ALMEIDA BARBOSA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "18/03/2019 13:10:12" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "RODRIGO ALMEIDA BARBOSA" "- Verificado falha que ocorre no Chrome [imagem em anexo]
+- Colaboradora informa que outros usuários estão acessando o sistema corretamente, falha ocorrendo somente para a colaboradora Brenda
+- Colaboradora testou em outro computador e ocorreu o mesmo problema
+- Ao realizar teste de acesso no Internet Explorer foi exibida mensagem de que o sistema de Justificar Ponto agora é feito por https://gestaoponto.sicredi.com.br
+- Realizado tentativa de acesso ao endereço mencionando acima mas ocorre falha de token inválido
+- Colaboradora orientada a entrar em contato com o SGP através do ramal 8000 opção 1" "06/03/2019" "01 Central: Central Sicredi Centro Norte" "Falha no Quiosque" "Colaboradora informa que sua colega, Brenda Santos, não está conseguindo acessar o Justificar Ponto no Quiosque
+- Erro: [imagem em anexo]
+-----------------------
+Coop: 0818
+UA: 21
+IP: 10.152.17.103" "03/2019" "Infraestrutura de TI"
+"33" "19584981" "ANDRIGO DA ROSA MORAES" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "06/03/2019" "13/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Impressora" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ALCINDO VOLMIR BEHENCK" "entrado em contato. 
+
+problema era na hora do scanner, atualizado pelo coloborador.
+
+testes de scanner conforme informa do via skype
+
+
+[‎06/‎03/‎2019 12:16] Alcindo Volmir Behenck: 
+boa tarde Andrigo
+problema com scanner?
+[‎06/‎03/‎2019 12:17] Andrigo da Rosa Moraes: 
+boa tarde
+isso
+mudança de layout na agencia
+[‎06/‎03/‎2019 12:18] Alcindo Volmir Behenck: 
+faz scanner direto na impressora?
+outro scanner então
+[‎06/‎03/‎2019 12:18] Andrigo da Rosa Moraes: 
+isso, tua colega até cadastrou meu nome na impressora aqui certa
+porém ela aparece uma msg de hora e data errada na hora de scannear
+até questionei se nao seria configuração na propria impressora, ela disse que não
+[‎06/‎03/‎2019 12:20] Alcindo Volmir Behenck: 
+outra pessoa consegue scannear desta scanner?
+[‎06/‎03/‎2019 12:20] Andrigo da Rosa Moraes: 
+só um instante vou questionar se alguem ja conseguiu
+pq todos mudaram
+[‎06/‎03/‎2019 12:21] Alcindo Volmir Behenck: 
+no aguardo
+[‎06/‎03/‎2019 12:22] Andrigo da Rosa Moraes: 
+nao
+vou ver se tem como alterar a data e hora na impressora e ver se resolve
+[‎06/‎03/‎2019 12:25] Andrigo da Rosa Moraes: 
+alterei a hora e data na impressora
+ela realizou a tarefa do scaner porém não venho para a minha pasta
+[‎06/‎03/‎2019 12:26] Andrigo da Rosa Moraes: 
+agora venho
+desculpa só demorou mesmo
+tudo resolvido
+[‎06/‎03/‎2019 12:33] Alcindo Volmir Behenck: 
+posso encerrar o chamado
+[‎06/‎03/‎2019 12:35] Andrigo da Rosa Moraes: 
+pode
+obrigado
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+" "07/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Configuração scanner" "Solicitação de configuração do scanner.
+Impressora: lpbr01
+IP: 10.3.30.14
+
+Andrigo da Rosa Moraes
+andrigo_moraes
+12-Vinte de Setembro/Caxias do Sul
+0101
+(54) 3214-3033
+10.3.30.66
+AG12VM15" "03/2019" "Infraestrutura de TI"
+"34" "19585890" "MILENA ALVES RICCI SPEZZANO" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "06/03/2019" "13/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ALCINDO VOLMIR BEHENCK" "configurado logon.
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”" "06/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração computador novo" "Solicitação de configuração do computador novo.
+
+
+Milena Alves Ricci Spezzano
+milena_spezzano
+70-Lapa
+0726
+11 2892-2155
+LTD3RMBS2
+10.48.156.44" "03/2019" "Infraestrutura de TI"
+"35" "19586735" "IVANGELA MARCIA PALERMO" "03 Cooperativa: 0718 - Sicredi União PR/SP" "06/03/2019" "13/03/2019" "MICHAEL AZEVEDO" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "TV sendo instalada nesta data" "" "" "Infraestrutura de TI.UA.Entrega de Equipamento" "" "4-Baixa" "Técnicos Constat" "MICHAEL AZEVEDO" "TV entregue na agencia para instalação." "06/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Levar TV para sala de reunioes" "Levar TV para sala de reunioes" "03/2019" "Infraestrutura de TI"
+"36" "19587267" "LEONARDO RODRIGUES PEREIRA" "05 Centralizadora: Confederação Sicredi" "06/03/2019" "13/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação Sicredi" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado acesso remoto
+- Identificado que não consegue acessar sistemas, colaborador trocou de senha recentemente
+- Forçadas ações e políticas de usuário
+- Teste sem sucesso
+- Realizada limpeza dos navegadores
+- Teste sem sucesso
+- Orientado a resetar a senha pelo chat e tentar novamente
+Validado pelo colaborador
+
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "06/03/2019" "05 Centralizadora: Confederação Sicredi" "Falha para acessar sistemas " "LEONARDO RODRIGUES PEREIRA - Colaborador não consegue acessar sistemas após troca de senhas
+Ramal: 9553
+Torre: C
+Andar: 7
+Área: Gestão de Mudanças
+IP: 172.22.102.187" "03/2019" "Infraestrutura de TI"
+"37" "19590171" "KATIA LUISA TREIN" "05 Centralizadora: Banco Cooperativo Sicredi" "06/03/2019" "13/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado acesso remoto
+- Instalado o aplicativo conforme solicitado
+- Teste ok
+Validado pela colaboradora
+
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "06/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Instalação de Aplicação Terceira" "KATIA LUISA TREIN - Colaboradora solicita instalação do Office Timeline
+Ramal: 7195
+Torre: PUC
+Andar: 8
+Área: Digio
+IP: 172.22.205.31" "03/2019" "Infraestrutura de TI"
+"38" "19595111" "TATIANA FERREIRA" "02 URDC/SUREG: SUREG Pioneira" "07/03/2019" "14/03/2019" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Muito Insatisfeito" "Insatisfeito" "Um pré atendimento, quando se necessita atender o associado na agência não é viável, ainda mais para uma situação tão simples quanto instalar uma leitora, após a minha ligação levou uma hora para me ligarem, enquanto isto o caixa deixou de operar em sua máquina, a sorte que a agência estava fechada, mas e se estivesse aberta o que iriamos falar para o associado? Sem contar o custo de deixar um colaborador parado.
+" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Instalado Canoa 138;
+Testes efetuados com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "11/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Infra TI - Suporte Service Desk - Instalação do Canoa" "TATIANA FERREIRA - Colaboradora solicita configurar o canoa em sua máquina
+UA: 0101.42
+Telefone: 51 3552-2700
+IP: 10.1.95.96
+Hostname: AG008733" "03/2019" "Infraestrutura de TI"
+"39" "19595123" "LETICIA BERTE SIQUEIRA" "05 Centralizadora: Banco Cooperativo Sicredi" "07/03/2019" "07/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE CAMPO-CAS" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "O primeiro contato por telefone, não foi satisfatório.
+Segue registro da atendente no chamado:
+\"Usuária não explicou muito a falha apenas informou que o aparelho de HDMI não esta ligando Usuária não quis fazer teste de validação e solicitou um técnico no local com urgência pois reunião ira começar em 10 min\".
+Expliquei o que estava acontecendo, o que já havia testado e não funcionou e o que precisava que fosse resolvido. Em nenhum momento foi falado em teste de validação pela atendente para que eu negasse. Acho que precisam orientar melhor o atendente a entender a necessidade do usuário e ser mais cordial e correto na abertura do chamado." "" "" "Infraestrutura de TI.Field CAS.Erro.Hardware" "14/03/2019 15:57:22" "4-Baixa" "SUPORTE CAMPO-CAS" "HENRIQUE SCHEIDT GORGEN" "Disponibilizado notebook para apresentação de slides.
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Falha HDMI" "Usuária informa que o HDMI não esta ligando 
+
+
+Leticia Berté Siqueira
+leticia_siqueira
+4285
+Auditorio 
+13º
+C" "03/2019" "Infraestrutura de TI"
+"40" "19595271" "DIVINO ROMES DA COSTA" "03 Cooperativa: 0818 - Sicredi Norte MT" "07/03/2019" "14/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Correio Eletrônico " "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Acesso remoto realizado.
+
+Realizada remoção completa do Office atraves do desinstalador do office \"o15remove\".
+Removidas chaves de registro referentes ao Office (e versões anteriores).
+
+Realizada nova instalação do Office 365 ProPlus 64 bits.
+
+Email configurado com sucesso.
+
+
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+" "07/03/2019" "01 Central: Central Sicredi Centro Norte" "Falha no acesso ao  Microsoft Outlook" "Colaborador informa que não está conseguindo acessar o outlook. Informa que acessa normalmente pelo webmail.
+
+Nome: Divino Romes da Costa
+COOP: 0818
+UA: 15
+Telefone: 6635631939
+IP: 10.103.44.247 / AG0818150438" "03/2019" "Infraestrutura de TI"
+"41" "19595713" "ARTUR LUIZ WINCK" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "07/03/2019" "14/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ALCINDO VOLMIR BEHENCK" "acessado a máquina
+
+colocado colaboradroa como adm da máquina
+
+instalado irfanwiew
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”" "07/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Instalação de aplicação terceirao irfanview" "Colaborador a instalação da aplicação Irfanview em sua máquina.
+
+Nome: Artur Luiz Winck
+COOP: 0101
+UA: 33
+Telefone: 5135511622
+IP: 10.1.4.126 / UA013491D33101" "03/2019" "Infraestrutura de TI"
+"42" "19595744" "CLEVERSON RUFINO" "02 URDC/SUREG: SUREG Iguaçu PR/SC/SP" "07/03/2019" "14/03/2019" "THIAGO AUGUSTO IDEARTE" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Apoio.Erro Sistema.Servidor.Cups" "19/03/2019 11:56:00" "3-Médio" "SUPORTE INFRAESTRUTURA-APOIO" "THIAGO AUGUSTO IDEARTE" "Acessado servidor reinicializados serviços" "08/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "11.0740 - Limpeza de fila de impressão do CUPS" "Erro de impressão dos sistemas pelo servidor" "03/2019" "Infraestrutura de TI"
+"43" "19597492" "MICHELE NERIS DA SILVA" "05 Centralizadora: Confederação Sicredi" "07/03/2019" "14/03/2019" "RODRIGO ALMEIDA BARBOSA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Estação de trabalho.Hardware.Periférico" "21/03/2019 17:25:59" "4-Baixa" "SUPORTE CAMPO-CAS" "LUIS HENRIQUE GONCALVES AZEREDO" "Realizada substituição de mouse (usado)
+Testes ok" "07/03/2019" "05 Centralizadora: Confederação Sicredi" "Falha periférico" "Colaboradora informa que seu mouse com fio está apresentando mal contato e solicita verificação
+- De vez em quando o mouse para de funcionar
+--------------------
+Torre: D
+Andar: 3
+Ramal: 4988
+Area: SGP" "03/2019" "Infraestrutura de TI"
+"44" "19597711" "RODINEIA SELLI FAE" "03 Cooperativa: 0217 - Sicredi Norte RS/SC" "07/03/2019" "14/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "19/03/2019 13:09:50" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "CARLOS HENRIQUE DAVILA FORTES" "Encerrado os processos dos usuários presos no sistema conforme solicitado
+Validado pela colaboradora
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Suporte de TI - Atendimento Via Chat" "Requisição aberta via Chat de Atendimento
+
+Colaborador não consegue acessar o TF
+
+Coop: 34.0217
+Fone: 4935530256 
+IP: 10.5.218.121 
+Host: UA002804D340217" "03/2019" "Infraestrutura de TI"
+"45" "19597711" "RODINEIA SELLI FAE" "03 Cooperativa: 0217 - Sicredi Norte RS/SC" "07/03/2019" "14/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "19/03/2019 13:09:50" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "CARLOS HENRIQUE DAVILA FORTES" "Encerrado os processos dos usuários presos no sistema conforme solicitado
+Validado pela colaboradora
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Suporte de TI - Atendimento Via Chat" "Requisição aberta via Chat de Atendimento
+
+Colaborador não consegue acessar o TF
+
+Coop: 34.0217
+Fone: 4935530256 
+IP: 10.5.218.121 
+Host: UA002804D340217" "03/2019" "Infraestrutura de TI"
+"46" "19598760" "DIEGO SILVEIRA DE AZEVEDO" "05 Centralizadora: Confederação Sicredi" "07/03/2019" "14/03/2019" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Sistema Operacional" "22/03/2019 08:26:31" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "Efetuado acesso a maquina
+-atualizado as politicar de rede e do mcaffe e falha persiste
+-colaborador aconselhado a aguardar mais algum tempo e se caso não funcionar, verificar com gestão de identidades
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "07/03/2019" "05 Centralizadora: Confederação Sicredi" "Disco de mídia removível" "Colaborador solicitou acesso ao uso de pendrives para leitura e escrita, porem esta funcionando somente a permissão de leitura
+
+Nome completo:Diego Silveira de Azevedo
+Torre: d
+Andar: 4
+Área: desenvolvimento de negocio
+Ramal/Fone: 8846
+AD/LDAP:diego_azevedo
+Host: sc052717
+IP:  172.22.82.206" "03/2019" "Infraestrutura de TI"
+"47" "19598854" "THAISE HOFFMANN LAUER" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "07/03/2019" "08/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Indiferente" "Muito Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Sistema Operacional" "18/03/2019 12:50:16" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ALCINDO VOLMIR BEHENCK" "acessada a máquina
+
+ajustada resolução
+
+testes ok." "07/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha na resolução de tela de seu computador" "Colaboradora informa que trocou  de monitor em sua estação e agora está  icones enormes em sua tela
+
+Nome: Thaise Hoffmann Lauer
+COOP: 0101
+UA: 16
+Telefone: 5135711341
+IP: 10.3.18.107 / UA012172D160101
+" "03/2019" "Infraestrutura de TI"
+"48" "19599259" "SIMONE MELLO SEVERO" "05 Centralizadora: Banco Cooperativo Sicredi" "07/03/2019" "07/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE CAMPO-CAS" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Field CAS.Erro.Sistema Operacional" "15/03/2019 10:05:03" "4-Baixa" "SUPORTE CAMPO-CAS" "JORGE HENRIQUE PRADO DE SOUZA" "- Verificado que explorer não estava carregando;
+- Forçada a inicialização e reiniciado;
+- Normalizado acesso.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Computador com tela zul" "Computador esta com tela azul
+Usuária informa que computador liga e fica com tela azul após tela de login
+
+Simone Mello Severo
+4878
+Tesouraria
+11°
+C" "03/2019" "Infraestrutura de TI"
+"49" "19599438" "SALAN DE OLIVEIRA" "02 URDC/SUREG: SUREG Sicredi Vanguarda PR/SP/RJ" "07/03/2019" "15/03/2019" "RAFAEL DIAS DA SILVA" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Apoio.Erro Sistema.MPLS" "19/03/2019 14:18:05" "3-Médio" "SUPORTE A INFRAESTRUTURA DE TI - N2 - NOC - OPERADORA" "RAFAEL NETTO DA SILVA" "Informado para  o técnico." "08/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "[DESEMPENHO] 90.0710 AG GUARULHOS  GRS5012066 10.48.122.2 - Intermitência" "Técnico entrou em contato pois colaboradores estavam relatando quedas frequentes no link MPLS, verificado que o link possui quedas BGP.
+
+006613: Mar 7 2019 08:15:35.513 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006620: Mar 7 2019 08:30:40.565 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down Interface flap 
+006626: Mar 7 2019 08:44:38.277 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006631: Mar 7 2019 08:58:05.520 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006636: Mar 7 2019 09:10:42.516 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006641: Mar 7 2019 09:38:11.592 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006646: Mar 7 2019 10:06:48.492 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006653: Mar 7 2019 10:21:42.764 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006658: Mar 7 2019 10:48:46.188 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006663: Mar 7 2019 11:06:35.812 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification received 
+006672: Mar 7 2019 11:15:52.680 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+006679: Mar 7 2019 11:22:04.812 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification received 
+006688: Mar 7 2019 11:31:48.555 BRA: %BGP-5-ADJCHANGE: neighbor 192.168.48.113 Down BGP Notification sent 
+" "03/2019" "Infraestrutura de TI"
+"50" "19600035" "DIEGO ARAUJO AZAMBUJA" "05 Centralizadora: Confederação Sicredi" "07/03/2019" "14/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Acessado computador
+Instalado 
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "07/03/2019" "05 Centralizadora: Confederação Sicredi" "Solicitação de instalação de aplicativos" "Solicitação de instalação de aplicativos
+
+Diego Araujo Azambuja
+Fiscal
+6267
+172.22.82.252
+CF012445QD" "03/2019" "Infraestrutura de TI"
+"51" "19600282" "ALINE ARRUE BARRETO" "05 Centralizadora: Confederação Sicredi" "07/03/2019" "14/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Desinstalado WA
+Instalado Senior na máquina
+Teste ok
+Validado pela colaboradora
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "07/03/2019" "05 Centralizadora: Confederação Sicredi" "Falha no WA" "ALINE ARRUE BARRETO - Colaboradora informa que o WA falha ao abrir
+Torre: D
+Andar: 3
+Área: SGP
+Ramal: 4988
+IP: 172.22.23.173" "03/2019" "Infraestrutura de TI"
+"52" "19601065" "FRANCISCO DE ASSIS COELHO QUEIROZ" "03 Cooperativa: 3950 - Sicredi Sudoeste GO" "07/03/2019" "14/03/2019" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ARTHUR DA SILVA TRINDADE" "- Canoa reinstalado e realizado novo teste, falha continua;
+- Alterada a configuração de segurança da pasta e máquina reiniciada, falha continua;
+- Colaborador orientado a validar junto do técnico da unidade para uma melhor orientação.
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "08/03/2019" "01 Central: Central Sicredi Brasil Central" "Infra TI - Suporte Service Desk - Instalação do Canoa" "FRANCISCO DE ASSIS COELHO QUEIROZ - Colaborador informou que constantemente sua leitora para de realizar a leitura dos documentos
+UA: 08.3950
+Telefone: (64) 3667-2055 / 366
+IP: 10.160.48.123" "03/2019" "Infraestrutura de TI"
+"53" "19601541" "MARINA POLATO" "03 Cooperativa: 0725 - Sicredi Integração PR/SC" "07/03/2019" "14/03/2019" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "22/03/2019 10:51:55" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Realizado limpeza de cookies, histórico, arquivos temporários do Chrome;
+Testes realizados e acesso validado pela colaboradora.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "07/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Dificuldades ao abrir página com extratos" "Colaboradora relata dificuldades ao abrir página com extratos no chrome para impressão.
+
+Cooperativa: 0725
+Número da agência: 28
+Telefone com DDD: 41 3622-6162
+IP: 10.30.158.121
+Host: AG0725005515" "03/2019" "Infraestrutura de TI"
+"54" "19602297" "SALAN DE OLIVEIRA" "02 URDC/SUREG: SUREG Sicredi Vanguarda PR/SP/RJ" "07/03/2019" "14/03/2019" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Indiferente" "Muito Insatisfeito" "Muito Insatisfeito" "Insatisfeito" "Insatisfeito" "tudo o que ela fez já tinha feito, por isso pedir ajuda e a mesma depois de duas horas não soube contorna o problema " "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "22/03/2019 11:31:52" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Realizado limpeza de cookies, arquivos temporários, histórico de navegação e redefinido o Chrome; sem sucesso.
+Reinstalado o Chorme, sem sucesso;
+Realizado testes no Internet explorer e abriu normalmente;
+Solciitado testes em outra máquina e colaborador informou que conseguiu acessar normalmente;
+Orientado o colaborador a acionar o técnico local para verificação da máquina.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "07/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha ao acessar a rede colaborativa no Chrome" "Colaborador informa que ao acessar a rede colaborativa através do Chrome, aparece para fazer login no adfs.sicredi.com.br, porém ao inserir usuário e senha retorna para a mesma tela.
+
+Coop: 0710
+UA: 01
+IP: 10.31.62.211" "03/2019" "Infraestrutura de TI"
+"55" "19603684" "PAULO ALEXANDRE PERON" "05 Centralizadora: Confederação Sicredi" "07/03/2019" "14/03/2019" "LEANDRO CASTRO FOGACA" "SUPORTE CAMPO-CAS" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Entrega de Equipamento" "" "4-Baixa" "SUPORTE CAMPO-CAS" "LEANDRO CASTRO FOGACA" "Realiza backup do usuário do aparelho antigo para o novo e realizado as configurações de email e whatsapp." "07/03/2019" "05 Centralizadora: Confederação Sicredi" "Entrega de iPhone 8 Leasing" "Entrega de iPhone 8 Leasing" "03/2019" "Infraestrutura de TI"
+"56" "19603803" "LIVIA DE FREITAS MARIANO DUARTE" "02 URDC/SUREG: Sicredi Natal - UAD" "07/03/2019" "14/03/2019" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Operacional.Impressão" "22/03/2019 12:34:34" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK 8000" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- verificado que a impressora estava mapeada entretanto não estava habilitada;
+- foi necessário remover o dispositivo do windows e adicioná-lo novamente;
+- remapeado para porta lpt1;
+- teste feito pela colaboradora e funcionou normalmente;
+- atendimento aprovado pela colaboradora;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "01 Central: Central Sicredi Norte/Nordeste" "Colaboradora não está conseguindo fazer impressão do siat" "Colaboradora não está conseguindo fazer impressão do siat
+
+Nome: livia de freitas mariano duarte
+Cooperativa: 2207
+UA: 03
+Telefone: 84 991912341
+IP: 10.84.0.183
+Host: NNE220703-D-183" "03/2019" "Infraestrutura de TI"
+"57" "19603891" "ANJAILA GUIMARAES GOMES" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "07/03/2019" "14/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Impressora-Scanner" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado acesso remoto
+- Alterada senha da usuária no SMB
+- Teste ok
+Validado pela colaboradora
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "07/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha para escanear arquivos" "ANJAILA GUIMARAES GOMES - Falha para escanear arquivos
+Coop: 0726
+UA: 69
+Fone: 11 31430000
+IP: 10.48.146.51
+" "03/2019" "Infraestrutura de TI"
+"58" "19604078" "RICARDO ZANETTI DA ROSA" "02 URDC/SUREG: SUREG Zona Sul" "07/03/2019" "14/03/2019" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Indiferente" "Satisfeito" "Satisfeito" "Considero que se a área não era o setor correto e foi orientado a ligar para outro setor de atendimento. Isso não representa um chamado de atendimento, somente uma orientação de contato." "" "" "Infraestrutura de TI.UA.Dúvida" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "JOSE ALBERTO FERREIRA DOS SANTOS" "Colaborador orientado a entrar em contato com a Gestão de identidades
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "07/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Duvida sobre andamento de solicitação de acesso pelo IDM" "Colaborador informa que seu colega realizou algumas solicitações pelo IDM e estão um pouco demoradas para serem aprovadas. 
+
+Nome: Ricardo Zanetti da Rosa
+COOP: 0663
+UA: 03
+Telefone: 5332848604" "03/2019" "Infraestrutura de TI"
+"59" "19608298" "DIAN PAULO COSTA" "05 Centralizadora: Confederação Sicredi" "07/03/2019" "" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Estação de trabalho.Hardware.Periférico" "" "4-Baixa" "SUPORTE CAMPO-CAS" "FELIPE NEVES DA SILVA" "Como havia uma peça do fone dentro do plug P2, não podendo ser retirada, foi substituida pela Dell a placa mãe inteira." "11/03/2019" "05 Centralizadora: Confederação Sicredi" "Plug p2" "Colaborador informa que ao remover o cabo p2 do computador o plug ficou dentro da entrada, solicita verificação
+
+Nome completo:Dian Paulo Costa
+Torre: c
+Andar: 9
+Área: vmo
+Ramal/Fone: 6949
+AD/LDAP:dian_costa
+Host: 
+IP:  " "03/2019" "Infraestrutura de TI"
+"60" "19611723" "FABIANA MARIA BORTOLUZZI" "02 URDC/SUREG: SUREG Pampa Gaucho" "08/03/2019" "15/03/2019" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Domínio e agilidade." "" "" "Infraestrutura de TI.COOP.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado acesso remoto
+- Adicionado caixa de e-mail conforme solicitado
+Teste ok
+Validado pela colaboradora
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "08/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Ingresso no grupo de emails" "Colaboradora solicita que seja ingressada em um grupo de emails suregpampagauchors_ci
+
+Nome completo: Fabiana Maria Bortoluzzi
+UA: 01
+COOP: 0523
+Fone: 55 34219123
+AD/LDAP:  fabiana_bortoluzzi
+Host: 
+IP: 10.3.125.114" "03/2019" "Infraestrutura de TI"
+"61" "19612096" "DANIELLE KLAFKE SANTOS" "03 Cooperativa: 0156 - Sicredi Vale do Rio Pardo RS" "08/03/2019" "15/03/2019" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Servidor.Serviço" "20/03/2019 12:54:32" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Acessado computador
+Verificado que acesso ao servidor estava com lentidão 
+Validado com usuária 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "08/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha acesso ao serivdor" "Usuária informa que todos estão sem acesso ao servidor na UA.
+
+Danielle Klafke Santos
+danielle_santos
+15 - Vale Verde
+0156
+10.1.39.120" "03/2019" "Infraestrutura de TI"
+"62" "19621428" "CATIA FABIANE METZ" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "08/03/2019" "" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Hardware.Periférico" "" "4-Baixa" "Técnicos Constat" "JULIANO FIUZA DA SILVA" "Ponto voltou a funcionar on line. Pode ter avido alguma manutenção na rede  antes do final de semana. " "11/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Colaboradora informa que o coletor ponto está offline" "Colaboradora informa que o coletor ponto está offline
+
+Nome: catia fabiane metz
+Cooperativa: 0101
+UA: 05
+Telefone: 54 32852100
+IP: 10.3.23.5" "03/2019" "Infraestrutura de TI"
+"63" "19622180" "LUCIANO CONTI" "05 Centralizadora: Confederação Sicredi" "08/03/2019" "15/03/2019" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- criado a pasta TEMPCTA  na unidade C do computador do colaborador;
+- concedida permissões de controle total sobre a pasta para os grupos \"usuários\" e \"usuários autenticados\";
+- atendimento aprovado pelo colaborador;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "08/03/2019" "05 Centralizadora: Confederação Sicredi" "Colaborador solicita criação de pasta na unidade C" "Colaborador solicita criação de pasta na unidade C
+
+Nome: Luciano conti
+Ramal: 7364
+Torre: C
+Andar: 6
+Área: compras e logistica
+IP: 172.22.101.229
+Host: SC051012" "03/2019" "Infraestrutura de TI"
+"64" "19626056" "ALEX ZANIN" "03 Cooperativa: 0259 - Sicredi Ibiraiaras RS" "11/03/2019" "" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Atendente prestativo, resolveu o problema rápido." "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Servidor.Serviço" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ARTHUR DA SILVA TRINDADE" "- Reiniciado o winbind;
+- Realizado teste e tudo ok;
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "11/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Infra TI - Suporte Service Desk - Spectrum" "ALEX ZANIN - Colaborador informa que ninguém está conseguindo acessar o servidor da unidade
+UA: 0259.08
+Telefone: 54 3276-1193" "03/2019" "Infraestrutura de TI"
+"65" "19626399" "SILVIA DE POLLO" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Indiferente" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Chamado reaberto indevidamente.
+Informação relatada na reabertura não procede com o que está descrito no chamado.
+Para tratativas de outros tipos de falhas, é necessário entrar em contato com o suporte para abertura de um novo chamado. 
+Caso tenha mais estação de trabalho com problema favor realizar a abertura para cada uma delas, o servidor não é acessivel ao colaborador para realizar os procedimentos mencionados neste chamado.
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "11/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha para abrir o IE " "SILVIA DE POLLO - Colaboradora inofrma falha para abrir sites no IE
+Coop: 0726
+UA: 72
+Fone: 44 36498171
+IP; 10.31.136.38" "03/2019" "Infraestrutura de TI"
+"66" "19626676" "ALEXANDRE MARTINS DA SILVA" "03 Cooperativa: 3830 - Sicredi Nordeste PA" "11/03/2019" "" "RAFAEL DIAS DA SILVA" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Apoio.Erro Sistema.MPLS" "" "3-Médio" "SUPORTE INFRAESTRUTURA-APOIO" "RAFAEL DIAS DA SILVA" "Verificado que não foi possível conectar ao servidor pois o link da Sureg estava com alta utilização feito análise do link verificado ip que estava com alto consumo, informado para o técnico que efetuou ajuste e normalizou. Em anexo print." "11/03/2019" "01 Central: Central Sicredi Centro Norte" "01.3830 UA SICREDI VERDE PARÁ PARAGOMINAS 091 3729 9050 PGN5016409 10.152.37.2- análise mpls" "01.3830 UA SICREDI VERDE PARÁ PARAGOMINAS 091 3729 9050 PGN5016409 10.152.37.2
+
+Técnico entrou em contato pois colaboradores não estavam conseguindo acessar a unidade F." "03/2019" "Infraestrutura de TI"
+"67" "19627132" "RENATA RODRIGUES TOLEDO" "03 Cooperativa: 0116 - Sicredi União Metropolitana RS" "11/03/2019" "" "RODRIGO ALMEIDA BARBOSA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "O Rodrigo foi extremamente atencioso e prestativo.
+Parabéns
+ " "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Impressora-Scanner" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "RODRIGO ALMEIDA BARBOSA" "- Realizado ajustes nas configurações do scanner
+- Testes OK
+- Atendimento validado
+-------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online, através da Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI." "11/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha para digitalizar documentos" "Não está conseguindo digitalizar documentos no scanner
+--------------------
+Coop: 0116
+UA: 24
+Telefone: 51 9988 27958
+IP: 10.2.54.111" "03/2019" "Infraestrutura de TI"
+"68" "19627156" "FRANCISCA LUCILENE BARBOSA DA SILVA" "02 URDC/SUREG: Sicredi Ceará Centro Norte - UAD" "11/03/2019" "" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Testado acessos com senha nova em outro computador mesma falha ocorre
+Orientada solicitar reset de senha no chat 
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "11/03/2019" "01 Central: Central Sicredi Norte/Nordeste" "Falha acesso a sistemas após troca de senha" "Informa que após troca de senha não conseguiu mais acessar os sistemas online, MUA, cartões
+
+Francisca Lucilene Barbosa da Silva
+francisca_silva
+01-Administrativo Financeiro
+2301
+85 4012-1113" "03/2019" "Infraestrutura de TI"
+"69" "19628175" "SIMONE PIUCO" "03 Cooperativa: 0167 - Sicredi Serrana" "11/03/2019" "" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Acessado computador
+Executado logon 
+Validado com usuária 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "11/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha impressão ACC" "Informa falha na impressão dos sistemas online.
+
+Simone Piuco
+simone_piuco
+10-Bento Gonçalves
+0167
+(54) 3449-9000
+10.6.123.94
+AG011751D100167" "03/2019" "Infraestrutura de TI"
+"70" "19628636" "ELENICE MENEGATT BETINELLI" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Após instalação do Flash Player, acesso ao sicredi aprende normalizado.
+
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI." "11/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha acesso Sicredi Aoprendi" "Informa que colega não esta conseguindo acessar Sicredi Aprendi
+Eliane Rosa da Silva
+eliane_rosa
+
+Elenice Menegatt Betinelli
+elenice_menegatt
+01-C Vale Palotina
+0726
+10.31.136.31
+SR006427
+
+" "03/2019" "Infraestrutura de TI"
+"71" "19629272" "ADRIELLI MARIA MALUTA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "11/03/2019" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Internet" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizada instalação do java e do mecir pela central de software
+- Adicionado mecir na lista de sgurança do java
+- Teste ok
+Validado pela colaboradora
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço." "11/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha para acessar o CRK Mecir" "ADRIELLI MARIA MALUTA - Colaboradora informa falha para acessar o CRK Mecir, java
+Coop: 0726
+UA: 09
+Fone: 44 36251117
+IP: 10.31.146.85" "03/2019" "Infraestrutura de TI"
+"72" "19629673" "IGOR PERICLES ALGARTE CORREIA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "JOSE ALBERTO FERREIRA DOS SANTOS" "Realizado limpeza e redefinição dos navegadores e o acesso normalizou
+Validado pelo colaborador
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Rede Colaborativa em modo lista" "Colaborador informa que sua rede colaborativa está sendo apresentada em modo lista
+
+Nome: Igor Pericles Algarte Correia
+COOP: 0726
+UA: 73
+Telefone: 44999581147
+IP: 10.31.254.41 / UR015378L010726
+" "03/2019" "Infraestrutura de TI"
+"73" "19629941" "FELIPE TOCHETTO" "02 URDC/SUREG: Sicredi Vale do Cerrado - UAD" "11/03/2019" "" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Atencioso, resolveu rápido." "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Correio Eletrônico" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA DE TI - N2" "ADRIANO SANHUDO FERNANDES" "Realizado ajuste
+Validado solução pelo usuário 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "12/03/2019" "01 Central: Central Sicredi Centro Norte" "Falha envio de emails em nome do grupo" "Falha de envio de mensagens em nome do grupo
+Grupo: coop0802_comunicacao
+
+Felipe Tochetto
+felipe_tochetto
+01-SUREG
+0802
+66 3419 - 2881
+10.96.70.123
+AG0802008047" "03/2019" "Infraestrutura de TI"
+"74" "19629941" "FELIPE TOCHETTO" "02 URDC/SUREG: Sicredi Vale do Cerrado - UAD" "11/03/2019" "" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Atencioso, resolveu rápido." "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Correio Eletrônico" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA DE TI - N2" "ADRIANO SANHUDO FERNANDES" "Realizado ajuste
+Validado solução pelo usuário 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "12/03/2019" "01 Central: Central Sicredi Centro Norte" "Falha envio de emails em nome do grupo" "Falha de envio de mensagens em nome do grupo
+Grupo: coop0802_comunicacao
+
+Felipe Tochetto
+felipe_tochetto
+01-SUREG
+0802
+66 3419 - 2881
+10.96.70.123
+AG0802008047" "03/2019" "Infraestrutura de TI"
+"75" "19630382" "CAIQUE OLIVEIRA SILVA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Indiferente" "Satisfeito" "Satisfeito" "Muito Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "Efetuado acesso a maquina
+-verificado o erro (arquivo não encontrado)
+-verificado as unidades de rede, nenhuma mapeada
+-verificado o arquivo de logon, não existia
+-posto o arquivo de logon e mapeado a diebold na lpt1
+-efetuado novo teste
+--funcionando
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "11/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Dificuldade ao autenticar no caixa" "Colaborador informa que esta com dificuldades de efetuar autenticações
+
+Nome completo: Caique Oliveira Silva
+UA: 37
+COOP: 0726
+Fone: 11 40614300
+AD/LDAP:  caique_silva
+Host: cx1ua37c0726
+IP: 10.53.196.104" "03/2019" "Infraestrutura de TI"
+"76" "19631846" "JEFERSON THOMAS" "06 Colaborador sem entidade relacionada" "11/03/2019" "" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Instalado Querybuilder 5;
+Testes com o notebook na conexão cabeada efetuado com sucesso.
+Acesso ao banco de dados solicitado no Idm ok com suas credenciais.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "11/03/2019" "06 Colaborador sem entidade relacionada" "Instalação do querybuilder" "Colaborador solicita  a instalação do Querybuilder
+
+Nome: Jeferson Thomas 
+Ramal: 8707
+Torre: C
+Andar: 11
+Area: Risco Operacional e Controles Internos
+Host: SC051885L
+IP: 172.22.102.107
+" "03/2019" "Infraestrutura de TI"
+"77" "19633555" "MARCIO JOSE BORBA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "VANESSA DUARTE DE CARVALHO" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "PARABENS PELA AGILIDADE" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Impressora-Scanner" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Acessado browser da impressora 
+Ajustada configuração de emulação 
+Validado com usuário 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "11/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Impressão desconfigurada" "Usuário informa que sua impressora esta fazem as impressões dos sistemas online desconfiguradas 
+Cada mesa na UA tem um impressora.
+Impressora: LpSa01
+IP: 10.30.115.16
+
+Marcio Jose Borba
+marcio_borba
+22-Quarto Centenário
+0726
+44 3546 - 1133" "03/2019" "Infraestrutura de TI"
+"78" "19633852" "DANILO OLIVEIRA SANTOS" "03 Cooperativa: 3953 - Sicredi Planalto Central " "11/03/2019" "" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.COOP.Aplicações Terceiros" "" "Nenhuma" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "efetuado novo contato porem mesmo depois da reparação não é possível acessar a maquina remotamente, colaborador indicado a entrar em contato com o técnico de campo da cooperativa para estar verificando a instalação do office em sua maquina.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "12/03/2019" "01 Central: Central Sicredi Brasil Central" "Instalação Office" "Colaborador solicita a instalação do office em sua maquina
+
+Nome: DANILO OLIVEIRA SANTOS
+Cooperativa:  PIRES DO RIO-GO - PLANALTO CENTRAL
+Número da agência: 3953 
+Telefone com DDD: 64 3461-5652 
+IP: 10.160.3.119
+Host:(fica logo acima do IP): DT26YKSV1" "03/2019" "Infraestrutura de TI"
+"79" "19634197" "JORGE LUIS RIBEIRO DA ROSA JUNIOR" "05 Centralizadora: Banco Cooperativo Sicredi" "11/03/2019" "" "FILIPE MENDES DE MEDEIROS PFULLER" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "Nenhuma" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Acesso remoto realizado.
+Instalação realizada.
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. 
+" "11/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Instalação Tableau Desktop" "Colaborador solicita instalação do Tableau Desktop." "03/2019" "Infraestrutura de TI"
+"80" "19635117" "DIEGO ARAUJO AZAMBUJA" "05 Centralizadora: Confederação Sicredi" "11/03/2019" "" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Acesso remoto realizado.
+
+Falha de acesso a arquivo de banco de dados dentro da pasta \"C:\Arquivos de Programas RBF\PerdComp\".
+
+Adicionadas permissões de leitura/escrita a pasta \"Arquivos de Programa RBF\".
+Teste realizado com sucesso.
+
+
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. " "11/03/2019" "05 Centralizadora: Confederação Sicredi" "Falha no acesso ao sistema Perdcomp" "Colaborador informa  falha no acesso ao sistema Perdcomp. informa que apresenta tela de erro (erro numero 3051)
+
+Nome: Diego Araujo Azambuja
+Ramal: 6267
+Torre: C
+Andar: 6
+Area: Fiscal
+Host: CF012450D
+IP: 172.22.82.252
+
+" "03/2019" "Infraestrutura de TI"
+"81" "19635383" "DEBORA APARECIDA DE JESUS PAIXAO" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Internet" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "JOSE ALBERTO FERREIRA DOS SANTOS" "Realizado limpeza e redefinição do navegador com sucesso.
+Validado pela colaboradora
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha na navegação pelo Internet Explorer" "Colaboradora informa que não está conseguindo navegar pelo Internet Explorer
+
+Nome: Debora Aparecida de Jesus Paixão
+COOP: 0726
+UA: 68
+Telefone: 1137905000
+IP: 10.48.142.47 / AG0726011099" "03/2019" "Infraestrutura de TI"
+"82" "19636857" "IGOR PERICLES ALGARTE CORREIA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "11/03/2019" "" "JOSE ALBERTO FERREIRA DOS SANTOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Correio Eletrônico " "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Redefinido navegador;
+Configurado proxy;
+Limpado as senhas do cofre do Windows;
+Outlook com as caixas atualizadas com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falhas no Microsoft Outlook" "Colaborador informa falha no envio/recebimento de mensagens no outlook
+
+Nome: Igor Pericles Algarte Correia
+COOP: 0726
+UA: 73
+Telefone: 44999581147
+IP: 10.31.254.41 / UR015378L010726" "03/2019" "Infraestrutura de TI"
+"83" "19640083" "ROMUALDO DAL FIUME" "05 Centralizadora: Confederação Sicredi" "12/03/2019" "" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Muito Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ARTHUR DA SILVA TRINDADE" "- Ajustado os dispositivos da máquina;
+- Realizado novo teste, tudo ok;
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "05 Centralizadora: Confederação Sicredi" "Infra TI - Suporte Service Desk - Falha de áudio/vídeo no Skype for Business" "ROMUALDO DAL FIUME - Colaborador informa que não está conseguindo alterar o som do seu skype para o fone
+Torre: D
+Andar: 4
+Área: Desenvolvimento de negócios
+Ramal: 9929
+IP: 172.22.24.184" "03/2019" "Infraestrutura de TI"
+"84" "19640455" "BRUNA ZACOUTEGUY RAMOS" "05 Centralizadora: Administradora de Bens Sicredi" "12/03/2019" "" "LEANDRO CASTRO FOGACA" "SUPORTE CAMPO-CAS" "Interface WEB" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Field CAS.Erro.Sistema Operacional" "" "4-Baixa" "SUPORTE CAMPO-CAS" "JORGE HENRIQUE PRADO DE SOUZA" "- Desktop devolvido à usuária;
+- Mapeamento/impressora;
+- Demais ajustes;
+- Sem backup.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "05 Centralizadora: Administradora de Bens Sicredi" "Máquina lenta" "Colaboradora informa que sua máquina está apresentando lentidão." "03/2019" "Infraestrutura de TI"
+"85" "19641462" "DIVALDO CAVALCANTE MADEIRO JUNIOR" "03 Cooperativa: 2201 - Sicredi João Pessoa" "12/03/2019" "" "ANDRE LACERDA CAMPOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ANDRE LACERDA CAMPOS" "verificado que o arquivo está corrompido o mesmo foi aberto em mais de uma aplicação que visualiza fotos do windows." "12/03/2019" "01 Central: Central Sicredi Norte/Nordeste" "falha ao acessar visualizador de fotos do windows" "Colaborador informa estar com problemas ao abrir o seu visualizador de fotos do windows
+
+UA: 05
+COOP: 2201
+Fone: 8321073502
+IP: 10.83.128.80" "03/2019" "Infraestrutura de TI"
+"86" "19643280" "ANA KARINA DA SILVA CORREA SANTOS" "02 URDC/SUREG: SUREG Noroeste MT e Acre" "12/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Realizado limpeza de cookies, histórico e arquivos temporários do Chrome;
+Testes realizados e validado correção pela colaboradora.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "12/03/2019" "01 Central: Central Sicredi Centro Norte" "Tentativas excedidas de acesso a rede colaborativa" "Colaboradora relata que está ocorrendo erro de tentativas excedidas de acesso a rede colaborativa.
+
+UA: 01
+COOP: 0815
+IP: 10.96.34.200" "03/2019" "Infraestrutura de TI"
+"87" "19643381" "NIVALDO DOS SANTOS" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "12/03/2019" "" "FILIPE MENDES DE MEDEIROS PFULLER" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "Muito Satisfeito" "satisfeito pelo atendimento" "" "" "Infraestrutura de TI.UA.Impressora" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "JOSE ALBERTO FERREIRA DOS SANTOS" "Verificado que os arquivos estavam sendo enviado para uma pasta na rede
+Validado pelo colaborador
+
+“Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração de Scanner" "Coalborador solicita configuração de scanner em sua máquina.
+Informa que trocou de maquina recentemente.
+
+Nivaldo dos santos
+
+Coop: 0726
+UA: 65
+Fone: 44-36328100
+Host: DT8H4NBS2
+IP: 10.31.226.35
+
+Impressora/Scanner: 10.31.226.17" "03/2019" "Infraestrutura de TI"
+"88" "19643455" "BRUNA ROSANA BOFF RAMOS" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "12/03/2019" "" "ANDRE LACERDA CAMPOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Muito Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ANDRE LACERDA CAMPOS" "normalizado, testes ok" "12/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "falha ao imprimir" "Colaborador informa que apos a troca de fibra na agencia o seu servidor não está ativo
+
+UA: 41
+COOP: 0101
+Fone:5432445550
+Host: ag013547
+IP:10.1.94.121" "03/2019" "Infraestrutura de TI"
+"89" "19644687" "DIEGO ARAUJO AZAMBUJA" "05 Centralizadora: Confederação Sicredi" "12/03/2019" "" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado o acesso remoto;
+- realizado a instalação do sistema dctf;
+- reiniciado o computador;
+- criado o atalho do programa para área de trabalho;
+- teste feito pelo colaborador e funcionou perfeitamente;
+- atendimento aprovado pelo colaborador; 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "05 Centralizadora: Confederação Sicredi" "Colaborador solicita a instalação do aplicativo DCTF" "Colaborador solicita a instalação do aplicativo DCTF
+
+Nome: diego araujo azambuja
+Ramal: 6267
+Torre: C
+Andar:  6
+Área: fiscal
+IP: 172.22.82.252
+Host: CF012450D" "03/2019" "Infraestrutura de TI"
+"90" "19644712" "GISELE MOSCHEM HERRMANN BORDIN" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "12/03/2019" "" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito obrigado" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ALCINDO VOLMIR BEHENCK" "acessada a máquina
+
+ajustado navegador
+
+teste de acesso ok." "12/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Infra TI - Suporte Service Desk - Configuração de Navegador" "GISELE MOSCHEM HERRMANN BORDIN - Colaboradora informa qeu diversos links não estão abrindo pelo chrome
+UA: 0101.17
+Telefone: 54 3286-9900
+IP: 10.3.19.111" "03/2019" "Infraestrutura de TI"
+"91" "19647891" "TATIANA FERREIRA" "02 URDC/SUREG: SUREG Pioneira" "12/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Impressora-Scanner" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Configuração do perfil alterada;
+Testes efetuados com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha scanner" "Colaboradora informa falha no perfil do colega na scanner do Adm
+
+Coop: 0101
+UA: 01
+Tel.: 5432818100
+IP: 10.2.13.241" "03/2019" "Infraestrutura de TI"
+"92" "19648880" "ANA CRISTINA ABBADE SGOBIN" "03 Cooperativa: 0718 - Sicredi União PR/SP" "12/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Instalado Silverlight.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "12/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Instalação Silverlight" "Colaboradora solicita a instalação do Silverlight na máquina.
+
+Coop: 0718
+UA: 68
+Tel.: 19 34054186
+IP: 10.48.139.110
+" "03/2019" "Infraestrutura de TI"
+"93" "19648936" "LAURA HELENE MENESES SOUSA" "03 Cooperativa: 0806 - Sicredi Araxingu" "12/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Efetuado limpeza de cookies, histórico e arquivos temporários.
+Colaboradora testou e erro não ocorreu mais;
+Colaboradora informou que não habilita uma opção \"+\" para inserção no sistema, neste caso, orientado a verificar com equipe de CRM, pois interno do sistema.
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+" "12/03/2019" "01 Central: Central Sicredi Centro Norte" "Erro ao executar ação dentro do CRM" "Colaboradora informa que ao executar ação dentro do CRM, ocorre erro.
+
+UA: 08
+COOP: 0806
+Fone: 66 3554-1207
+IP: 10.103.71.118" "03/2019" "Infraestrutura de TI"
+"94" "19649014" "BRUNA ZACOUTEGUY RAMOS" "05 Centralizadora: Administradora de Bens Sicredi" "12/03/2019" "" "JORGE HENRIQUE PRADO DE SOUZA" "SUPORTE CAMPO-CAS" "Interface WEB" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Formatação de Equipamento" "" "4-Baixa" "SUPORTE CAMPO-CAS" "JORGE HENRIQUE PRADO DE SOUZA" "- Formatação e ajustes concluídos.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "05 Centralizadora: Administradora de Bens Sicredi" "Formatação" "- Desktop apresenta falhas;
+- Windows 8.1;
+- Sem backup." "03/2019" "Infraestrutura de TI"
+"95" "19649246" "ALINE SCHNEIDER" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "12/03/2019" "" "FILIPE MENDES DE MEDEIROS PFULLER" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "O Rapaz- analista atendeu minha demanda e foi muito educado e prestativo, sem contar a agilidade." "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Impressora-Scanner" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ARTHUR DA SILVA TRINDADE" "Acesso remoto realziado.
+
+Realizado update de senha na pagina de configuração da impressora.
+
+Teste realizado com sucesso.
+
+
+
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. " "13/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Infra TI - Suporte Service Desk - Configuração de impressora na Cooperativa" "Colaboradora informa que não consegue realizar digitalizações em impressora LPBR02.
+
+A: 0101.09
+Telefone: 51 3637-1766
+IP: 10.3.27.65" "03/2019" "Infraestrutura de TI"
+"96" "19649882" "GLAUCIA TATIANE SILVA RAMOS RECK" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "12/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Impressora-Scanner" "" "4-Baixa" "Técnicos Constat" "JULIANO FIUZA DA SILVA" "Configurações de rede da impressora do balcão foram perdidas, após reconfigurar  problema foi solucionado." "13/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha de impressão" "Colaboradora informa que não estão conseguindo realizar impressão da impressora Balcão de Atendimento, nem de documentos na máquina e sistemas online.
+
+UA: 17
+Coop: 0101
+Telefone: 5432869900
+IP: 10.3.19.76
+Host: AG17VM16
+
+" "03/2019" "Infraestrutura de TI"
+"97" "19650971" "ANA LUCIA FONSECA DE OLIVEIRA" "05 Centralizadora: Administradora de Bens Sicredi" "12/03/2019" "" "LEANDRO CASTRO FOGACA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE CAMPO-CAS" "LUIS HENRIQUE GONCALVES AZEREDO" "Realizada instalação do diagnostico de segurança
+Testes ok
+" "12/03/2019" "05 Centralizadora: Administradora de Bens Sicredi" "Falha ao acessar o Internet Banking" "Colaborador informa que não está conseguindo acessar o Internet Banking." "03/2019" "Infraestrutura de TI"
+"98" "19654193" "CHARLEN FERNANDA MEINERZ" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "13/03/2019" "13/03/2019" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Satisfeita" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Redefinido navegador e configurado proxy;
+Internet Explorer funcionando.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "13/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Infra TI - Suporte Service Desk - Configuração de Navegador" "Colaborador(a) informa que o navegador está apresentando falha.
+
+Coop: 0726
+UA: 04
+Tel.: 44 36481219
+IP/Hostname: 10.31.139.57" "03/2019" "Infraestrutura de TI"
+"99" "19654428" "JANAINA AULER" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "13/03/2019" "" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "Efetuado acesso a maquina
+-Efetuado a configuração dos emails como solicitado
+-efetuado teste
+--funcionando
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "13/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Dificuldades no outlook" "Colaboradora informa que em sua maquina não esta aparecendo a pasta de emails não lidos no outlook
+
+Nome completo: Janaina Auler
+UA: 09
+COOP: 0101
+Fone: 51 36371766
+AD/LDAP:  janaina_auler
+Host: ua014853d090101
+IP: 10.3.27.71" "03/2019" "Infraestrutura de TI"
+"100" "19656155" "JOSE CLAUDIO PEREIRA DIAS" "05 Centralizadora: TERCEIROS" "13/03/2019" "" "ANDRE LACERDA CAMPOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Colaborador Se dispôs a resolver o problema. " "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ANDRE LACERDA CAMPOS" "colaborador informa estar ok." "15/03/2019" "05 Centralizadora: TERCEIROS" "Falha ao acessar no idm" "Colaborador informa que não conseguem acessar o idm
+
+
+Andar: 1
+Área: suporte
+Ramal/Fone: 5152
+IP: 172.22.208.174" "03/2019" "Infraestrutura de TI"
+"101" "19657976" "DANIELA DA SILVA SPIZZIRRI" "05 Centralizadora: TERCEIROS" "13/03/2019" "" "FILIPE MENDES DE MEDEIROS PFULLER" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Sistema Operacional" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "JOSE ALBERTO FERREIRA DOS SANTOS" "Realizado contato com a colaboradora que informa que sua maquina está funcionando normalmente
+Colaboradora autoriza o encerramento do chamado
+
+Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.”
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "13/03/2019" "05 Centralizadora: TERCEIROS" "Infra TI - Suporte Service Desk - Lentidão/travamento" "Colaborador informa que sua máquina esta muito lenta/travando e solicita verificação.
+
+Daniela da silva spizzirri
+Hostname:cfs015557d
+Ramal/ Telefone: 5008
+UA: Centro 
+COOP: 0116
+Ip:172.22.213.141" "03/2019" "Infraestrutura de TI"
+"102" "19658673" "BEATRIZ ROCHA" "03 Cooperativa: 0228 - Sicredi Integração de Estados RS/SC" "13/03/2019" "" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado configuração do canoa na pasta sincronica
+-Teste sem sucesso no acc
+- Teste com sucesso no bloco de notas
+- Realizado teste em outra máquina funcionou ok
+- Realizado teste na máquina de volta e funcionou também
+Validado pela colaboradora
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço.
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "13/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha na leitura do canoa" "Requisição aberta via Chat de Atendimento
+
+Colaboradora informa falha na leitura do canoa no ACC
+
+COOP: 0228 
+UA: 94
+Fone: 47-3356-1542
+Login de usuario : rocha_beatriz
+IP: 10.16.70.125
+Host: AG0228JJ5BYR2" "03/2019" "Infraestrutura de TI"
+"103" "19659144" "ADRIANA PAPKE ANDRIOLLI" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "13/03/2019" "" "LEANDRO CASTRO FOGACA" "Técnicos Constat" "Interface WEB" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Remanejo de Equipamento" "" "2-Alta" "Técnicos Constat" "DIEGO HENRIQUE DE MELO" "realizado troca do Digieye e validação junto ao CMP, conversado com Gabriel." "13/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Troca de Digieye" "Realizar a troca do Digieye da UA." "03/2019" "Infraestrutura de TI"
+"104" "19659614" "AMANDA DA SILVA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "13/03/2019" "" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ARTHUR DA SILVA TRINDADE" "- Navegador redefinido e testado;
+- Tudo ok;
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "13/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Infra TI - Suporte Service Desk - Configuração de Navegador" "AMANDA DA SILVA - Colaboradora informa que não está conseguindo acessar o SIS da sua máquina
+UA: 0726.06
+Telefone: 44 3622-4555
+IP: 10.31.140.125
+Hostname: AG0726017063" "03/2019" "Infraestrutura de TI"
+"105" "19661567" "GUSTAVO BITENCOURT" "05 Centralizadora: Confederação Sicredi" "13/03/2019" "" "ANDRE LACERDA CAMPOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ANDRE LACERDA CAMPOS" "Orientado conforme o email de instrução no pedido de acesso de dispositivos removiveis, pois está bloqueado." "13/03/2019" "05 Centralizadora: Confederação Sicredi" "Falha ao extrair arquivos de CO" "Colaborador informa não conseguir arquivos de CO
+
+Torre: C
+Andar: 6
+Área: contas a pagar
+Ramal/Fone: 7643
+Host:  CF018578D
+IP: 172.22.6.187" "03/2019" "Infraestrutura de TI"
+"106" "19663021" "EDINARA MILENE DA SILVA" "05 Centralizadora: Confederação Sicredi" "13/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "ATENDENDE MUITO SIMPATICO E PRESTATIVO." "" "" "Infraestrutura de TI.Service Desk CAS.Erro Sistema.Sistema Operacional" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Colaborador com permissão no IDM/AD
+Excluído senha do NAS01 salva no cofre do windows;
+Reiniciado a máquina;
+Mapeamento do diretório efetuado com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "13/03/2019" "05 Centralizadora: Confederação Sicredi" "Infra TI - Suporte Service Desk - Falha mapeamento de rede (CAS)" "Colaborador(a) sinaliza dificuldade para mapear o caminho (caminho completo da pasta). para novo colaborador terceiro caio julius neves
+
+Cas centro
+Andar: 3
+Área:  GOC
+Ramal: 7961
+IP/Hostname: 172.22.211.172" "03/2019" "Infraestrutura de TI"
+"107" "19664352" "LEONARDO SILVEIRA SILVA" "05 Centralizadora: Banco Cooperativo Sicredi" "13/03/2019" "" "FILIPE MENDES DE MEDEIROS PFULLER" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Instalado Checkpoint VPN via central de software 
+Configurado conexão conforme manual da ferramenta 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+" "13/03/2019" "05 Centralizadora: Banco Cooperativo Sicredi" "Instalação Checkpoint VPN" "Colaborador solicita instalação e configuração para acesso VPN (Checkpoint).
+Informa que já solicitou e recebeu confirmação de liberação para acesso.
+
+Leonardo Silveira Silva
+Área: Cambio
+Ramal: 9567
+HOST: Lthjxrbs2
+IP: 172.22.11.18" "03/2019" "Infraestrutura de TI"
+"108" "19665423" "ALCEU DEMARTINI DE ALBUQUERQUE" "05 Centralizadora: Confederação Sicredi" "13/03/2019" "" "HENRIQUE SCHEIDT GORGEN" "SUPORTE CAMPO-CAS" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Manutenção Preventiva" "" "4-Baixa" "SUPORTE CAMPO-CAS" "HENRIQUE SCHEIDT GORGEN" "Preventiva realizada.
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "13/03/2019" "05 Centralizadora: Confederação Sicredi" "Checagem preventiva semestral" "Checagem preventiva semestral notebook e iPhone.
+" "03/2019" "Infraestrutura de TI"
+"109" "19666858" "JONAS ANDRE FRIELINK" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "13/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Criado atalho.rdp da área de trabalho remota utilizando hostname de destino, o autenticando com usuário do colaborador;
+Adicionado usuário do colaborador com permissão de acesso remoto;
+Testes de conexão remota efetuado com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Configuração remota" "Colaborador solicita configuração para acesso remoto do notebook em um Desktop
+
+Coop: 0101
+UA: 23
+Tel.: 54 991737677
+IP desktop: 10.3.37.74
+Hostname desk:  AG0101012352
+Ip notebook: 10.3.37.46
+hostname notebook: AG0101000323" "03/2019" "Infraestrutura de TI"
+"110" "19668183" "LETICIA DE PAULI MANSANO" "03 Cooperativa: 0718 - Sicredi União PR/SP" "13/03/2019" "" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA DE TI - N2" "ADRIANO SANHUDO FERNANDES" "- conforme a conversa em anexo com a colaboradora, a mesma informou que o problema já foi resolvido;
+- atendimento aprovado pela colaboradora;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Colaboradora tem o icone para fazer ligação do skype" "Colaboradora tem o icone para fazer ligação do skype
+
+Nome: Leticia de Pauli Mansano
+Cooperativa: 0718
+Número da agência: 89
+Telefone com DDD: 19 36082520
+IP: (Ex.: 10.xx.xx.xx): 10.53.192.120
+Host:(fica logo acima do IP): UA19614D890718" "03/2019" "Infraestrutura de TI"
+"111" "19671601" "ELIZA MARIA ECKSTEIN" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "14/03/2019" "" "CARLOS HENRIQUE DAVILA FORTES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "CARLOS HENRIQUE DAVILA FORTES" "Realizado acesso remoto
+- Ajustado atalho do IE que não estava sendo localizado
+- Teste ok
+Validado pela colaboradora
+
+----------------------------------
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa > Aplicativos > Suporte ao Colaborador > Chat Suporte > Suporte de TI e Sistemas Corporativos > Suporte de TI. 
+Abraço.
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha para abrir o IE" "Requisição aberta via Chat de Atendimento
+
+coop 0726
+UA 26
+Fone 45- 3245 1272
+login eliza_eckstein
+IP 10.31.129.29
+Host LTPEFAP90" "03/2019" "Infraestrutura de TI"
+"112" "19671947" "LISANGELA AZEVEDO GONCALVES" "03 Cooperativa: 0116 - Sicredi União Metropolitana RS" "14/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Silverlight instalado;
+Acesso ao Pld funcionando.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "15/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Falha de acesso Pld" "Colaboradora informa falha no acesso ao Pld pois pede a instalação do Silverlight, tanto no IE quanto no Chrome.
+
+Coop: 0116
+Ua:08
+Tel.: 33584263
+IP: 10.3.14.41
+Host: LT63HN5V2" "03/2019" "Infraestrutura de TI"
+"113" "19672260" "ANDREIA BARRETO ROMANINI" "03 Cooperativa: 0718 - Sicredi União PR/SP" "14/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Efetuado limpeza de cookies e arquivos temporários do Chrome, layout normalizado, validado pela colaboradora.
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+" "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Layout rede colaborativa" "Colaboradora informa que layout da rede colaborativa está desconfigurado
+
+UA: 57
+COOP: 0718
+Fone: 4332328710
+IP: 10.31.76.65" "03/2019" "Infraestrutura de TI"
+"114" "19672502" "SANDRA SUELI KOMARCHESQUI LEIBANTI" "03 Cooperativa: 0718 - Sicredi União PR/SP" "14/03/2019" "" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Indiferente" "Muito Satisfeito" "Satisfeito" "Funcionou uso de skipe com imputação do  zero antes  ate 16h 
+voltou a não completar ligação " "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "Efetuado acesso a maquina
+-verificado que teclado aparece para a colaboradora
+-informado que antes do numero a ser ligado deve ser colocado um 0
+-efetuado teste
+--funcionando
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Dificuldades em ligações via skype" "Colaboradora informa que não esta conseguindo efetuar ligações pelo skype
+
+Nome completo: Sandra Sueli Komarchesqui Leibanti
+UA: 62
+COOP: 0718
+Fone: 43 33053000
+AD/LDAP:  sandra_leibanti
+Host: ag07187mrq2k2
+IP: 10.31.130.47" "03/2019" "Infraestrutura de TI"
+"115" "19672515" "DENISE BARAUNA DA FONSECA" "03 Cooperativa: 0718 - Sicredi União PR/SP" "14/03/2019" "" "RENAN BEIS WILHELM" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "ÓTIMO ANALISTA, EDUCADO E PRESTOU O SERVIÇO ATENCIOSAMENTE." "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Hardware.Periférico" "" "4-Baixa" "Técnicos Constat" "LUIZ HENRIQUE DE FREITAS" "Verificado e efetuado reparo no cabo.
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha de comunicação em um ponto de rede na agência." "Colaboradora reportou na Requisição 19666343 falha em um ATM na agência.
+Onde foi orientada para contatar a Infra da agência conforme os registros no atendimento.
+
+UA: 64
+COOP: 0718
+Fone:  44 3445-8100
+AD/LDAP: denise_fonseca
+Host: 
+IP: " "03/2019" "Infraestrutura de TI"
+"116" "19672607" "CAMILA MARIANA BENETTI" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "14/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Impressora" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Instalado a impressora LpSa06 na máquina;
+Configurado logon.bat no inicializar do Windows e mapeado impressão para a porta LPT2;
+Testes realizados e validado pela colaboradora.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Configuração de impressora na Cooperativa" "colaboradora solicita consifuração da impressora em sua máquina.
+
+UA: 55
+COOP: 0726
+Fone: 44 3575-0250
+IP: 10.31.211.35" "03/2019" "Infraestrutura de TI"
+"117" "19677451" "LUCAS ARAUJO MUSSATO" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "14/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito bom, sanou todas as duvidas que eu tinha em relação ao assunto. " "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "colaborador informou que começou suas atividades hoje 14/03
+Informado que pode levar até 72 horas uteis para replicação dos acessos.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Dificuldades ao acessar o Skype" "Colaborador informa dificuldades ao acessar o Skype.
+
+UA: 55
+COOP: 0726
+Fone: 
+IP: 10.31.211.35" "03/2019" "Infraestrutura de TI"
+"118" "19680569" "BRUNA LEANDRO BARBOSA DOS SANTOS" "03 Cooperativa: 0718 - Sicredi União PR/SP" "14/03/2019" "" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Software.Aplicação Sicredi" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- verificado que a colaboradora estava com erro dentro do sisteam do quiosque;
+- foi solicitado a mesma entrar em contato com a equipe do SGP;
+- atendimento aprovado pela colaboradora;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Colaboradora informa que está com problema em utilizar o quiosque" "Colaboradora informa que está com problema em utilizar o quiosque
+
+Nome: bruna leandro barbosa dos santos
+Cooperativa: 0718
+UA: 68
+Telefone: 19 993505466
+IP: 10.48.139.101" "03/2019" "Infraestrutura de TI"
+"119" "19681339" "ANA PAULA WORST DE MELLO" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "14/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Disponibilizado Atalho na área de trabalho;
+Testes efetuados com sucesso.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "14/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Infra TI - Suporte Service Desk - Instalação de aplicação terceira" "Colaborador(a) solicita a instalação do DigiEye
+
+IP: 10.1.47.122
+Coop: 0101
+Ua: 36" "03/2019" "Infraestrutura de TI"
+"120" "19684689" "ELENICE MENEGATT BETINELLI" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "15/03/2019" "" "FILIPE MENDES DE MEDEIROS PFULLER" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.UA.Impressora" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "FILIPE MENDES DE MEDEIROS PFULLER" "Acesso remoto realizado.
+
+Impressora LPSA01 mapeada em LPT2;
+Autenticadora mapeada em LPT1;
+
+Teste realizado com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. " "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Instalação de impressora" "Colaboradora solicita instalação de impressora para impressões via SIAT.
+
+Elenice Menegatt
+Coop: 0726
+UA: 72
+Fone: 44-36498170
+IP: 10.31.136.39" "03/2019" "Infraestrutura de TI"
+"121" "19684801" "RENATA PRADIER FARIAS" "05 Centralizadora: Confederação Sicredi" "15/03/2019" "" "GISLAINE RODRIGUES ALVES" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realizado acesso remoto;
+Instalado a aplicação;
+Dado permissão na pasta da aplicação que foi criada no C:;
+Testes realizados e validado pela colaboradora.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "15/03/2019" "05 Centralizadora: Confederação Sicredi" "Instalação IRPF" "Colaboradora solicita instalação da aplicação IRPF.
+Disponibilizou o instalador.
+
+Torre: C
+Andar: 6 
+Área: Contas
+Ramal/Fone: 4286
+IP: 172.22.101.71" "03/2019" "Infraestrutura de TI"
+"122" "19684812" "ALFREDO LUCIANO PEREIRA DA ROCHA" "03 Cooperativa: 0725 - Sicredi Integração PR/SC" "15/03/2019" "" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "VANESSA DUARTE DE CARVALHO" "Feito contato com Luciano o mesmo informou que a falha ocorre em qualquer computador com login do colega Everton Felipe Ferreira de Lima e que outro usuário no computador dele consegue utilizar normalmente o sistema
+Acessado computador verificado que MUA esta na ultima versão disponível pela central de software 
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço
+" "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Infra TI - Suporte Service Desk - Falha no MUA" "ALFREDO LUCIANO PEREIRA DA ROCHA - Solicitante informa que o colaborador Everton Felipe Ferreira de Lima está apresentando várias falhas ao acessar o MUA
+UA: 0725.03
+Telefone: 42 3532-2528
+IP: 10.30.153.116
+Hostname: UA00397B030725" "03/2019" "Infraestrutura de TI"
+"123" "19684984" "RODRIGO CHRISTOFOLETTI DA SILVA" "03 Cooperativa: 0718 - Sicredi União PR/SP" "15/03/2019" "" "RODRIGO ALMEIDA BARBOSA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Chat" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Parabéns, recebi toda orientação e resolverão meu problema! Gratidao" "" "" "Infraestrutura de TI.Service Desk UA.Erro Sistema.Servidor.Serviço" "" "3-Médio" "Técnicos Constat" "FABRICIO MATHIAS GRANZIERA" "Erro de lentidão em mais de um PC, realizado comandos no servidor via putty para limpeza de memória cache e zipou normalmente os arquivos." "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Suporte de TI - Atendimento Via Chat" "Colaborador está tentando zipar arquivos que estão no servidor\publico mas ação não conclui e trava o computador.
+- Falha ocorre para outros colaboradores também
+---------------
+Coop: 0718 
+UA: 67 
+Telefone: 0800-7480718
+IP: 10.48.138.240" "03/2019" "Infraestrutura de TI"
+"124" "19685008" "MARINA KORNALEWSKI DE FREITAS" "05 Centralizadora: Confederação Sicredi" "15/03/2019" "" "GABRIEL SIGNORI DA CRUZ" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Impressora" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL SIGNORI DA CRUZ" "Efetuado acesso a maquina
+-efetuado a instalação da impressora solicitada
+-efetuado teste
+--funcionando
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a).
+" "15/03/2019" "05 Centralizadora: Confederação Sicredi" "Instalação de impressora" "Colaboradora solicita a instalação da impressora em sua maquina
+
+Nome completo:Marina Kornalewski de Freitas
+Torre: centro
+Andar: 3
+Área: gerencia de analise de credito
+Ramal/Fone: 8976
+AD/LDAP:marina_freitas
+Host: dting76w1
+IP:  172.22.211.209" "03/2019" "Infraestrutura de TI"
+"125" "19685140" "MARINA DOS SANTOS GONCALVES" "05 Centralizadora: TERCEIROS" "15/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Atendimento excelente da colega Gislaine e também do Gabriel que foi quem iniciou o atendimento. " "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GISLAINE RODRIGUES ALVES" "Realiazado acesso remoto;
+Configurado o Cisco com o ramal ACN-5142;
+Testes realizados e validado pela colaboradora.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço." "15/03/2019" "05 Centralizadora: TERCEIROS" "Infra TI - Telecomunicações - Instalação Cisco IP Communicator" "Colaboradora solicita configurar seu ramal em uma nova máquina.
+
+IP: 172.22.208.155
+Suporte ao colaborador 
+Cas centro
+1 andar
+Ramal: p/ contato: 6253" "03/2019" "Infraestrutura de TI"
+"126" "19686063" "WIVIANY ANTONIA DOS SANTOS LOBO" "03 Cooperativa: 3953 - Sicredi Planalto Central " "15/03/2019" "" "ARTHUR DA SILVA TRINDADE" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Satisfeito" "Muito Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ARTHUR DA SILVA TRINDADE" "- forçada as políticas, máquina reiniciada;
+- Realizado novo teste, tudo ok;
+
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "15/03/2019" "01 Central: Central Sicredi Brasil Central" "Infra TI - Suporte Service Desk - Falha ao iniciar ACC" "WIVIANY ANTONIA DOS SANTOS LOBO - Colaboradora informa que não está conseguindo abrir o Acclient em sua máquina
+UA: 3953.09
+Telefone: 62 3332-2096
+IP: 10.160.13.118
+Hostname: DTFZXBLZ1" "03/2019" "Infraestrutura de TI"
+"127" "19686383" "RODRIGO HENRIQUE DE OLIVEIRA ROCHA" "03 Cooperativa: 0726 - Sicredi Vale do Piquiri ABCD PR/SP" "15/03/2019" "" "ANDRE LACERDA CAMPOS" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação de terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "ANDRE LACERDA CAMPOS" "testes ok via siat e canoa." "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Falha ao utilizar a leitora de cheques" "Colaborador informa estar com problemas ao utilizar a leitora de cheques
+
+Cooperativa: 0726
+Número da agência: 17
+Telefone com DDD (caso não tiver informar um próximo): 4435223531
+Host:(fica logo acima do IP): AG0726019504
+
+
+" "03/2019" "Infraestrutura de TI"
+"128" "19687183" "SALAN DE OLIVEIRA" "02 URDC/SUREG: SUREG Sicredi Vanguarda PR/SP/RJ" "15/03/2019" "" "THIAGO AUGUSTO IDEARTE" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Apoio.Solicitação.Cadastro de Elementos" "" "4-Baixa" "SUPORTE INFRAESTRUTURA-APOIO" "THIAGO AUGUSTO IDEARTE" "Unidade cadastrada com sucesso e associada ao grupo do tecnico." "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Infra TI - Cadastro de UA no NetQos" "Tecmico solicita cadastro da UA 81.0710 no sistema netqos
+
+81.0710 AG SÃO JOSE DOS CAMPOS SÃO JOSÉ DOS CAMPOS (12) 2139-2210 SJC5011862 10.48.85.4" "03/2019" "Infraestrutura de TI"
+"129" "19687528" "MONIQUE DOS SANTOS" "02 URDC/SUREG: Sureg Valor Sustentável PR/SP" "15/03/2019" "" "IVAN PABLO DA SILVA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Service Desk COOP.Erro Sistema.Software.Aplicação Sicredi" "" "3-Médio" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "IVAN PABLO DA SILVA" "- Realizado acesso remoto;
+- verificado que ao tentar acessar a internet solicitava a colaboradora usuário e senha;
+- foi verificado que no cofre windows tinha registro do proxy;
+- foi necessário remover este registro e reiniciar o computador;
+- teste feito pela colaboradora e funcionou normalmente;
+- atendimento aprovado pela colaboradora;
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "15/03/2019" "01 Central: Central Sicredi PR/SP/RJ" "Colaboradora não está conseguindo acessar internet, sistemas, entre outras coisas" "Colaboradora não está conseguindo acessar internet, sistemas, entre outras coisas
+
+Nome: monique dos santos
+Cooperativa: 0736
+UA: 01
+Telefone: 43 34324824
+IP: 10.30.211.108
+Host: DTCX7MBS2" "03/2019" "Infraestrutura de TI"
+"130" "19688702" "PATRICK DE OLIVEIRA CORREA" "05 Centralizadora: Confederação Sicredi" "15/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.CAS.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Instalação efetuada com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "15/03/2019" "05 Centralizadora: Confederação Sicredi" "Infra TI - Suporte Service Desk - Instalação de aplicação terceira" "Colaborador(a) solicita a instalação do CAT em sua máquina.
+
+IP: 172.22.23.221
+Torre: D
+3 andar 
+Área: SGP
+Ramal: 6218" "03/2019" "Infraestrutura de TI"
+"131" "19692663" "RAFAEL PORTELA DIPP" "05 Centralizadora: TERCEIROS" "15/03/2019" "" "THIAGO AUGUSTO IDEARTE" "SUPORTE INFRAESTRUTURA-APOIO" "Telefone" "CONSTAT - Full Service Ltda" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "Muito Satisfeito" "" "" "" "Infraestrutura de TI.Apoio.Solicitação.AD.Adição de Grupo" "" "4-Baixa" "SUPORTE INFRAESTRUTURA-APOIO" "THIAGO AUGUSTO IDEARTE" "Adicionado grupo de exceção com sucesso" "15/03/2019" "05 Centralizadora: TERCEIROS" "Infra TI - Suporte Apoio - Adição de totens no domínio" "Solicita adição no grupo de exceção o host filam0247162" "03/2019" "Infraestrutura de TI"
+"132" "19693144" "ANA PAULA WORST DE MELLO" "03 Cooperativa: 0101 - Sicredi Pioneira RS" "15/03/2019" "" "GABRIEL ZANIRATI FERREIRA" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "Telefone" "CONSTAT - Full Service Ltda" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "Satisfeito" "" "" "" "Infraestrutura de TI.UA.Aplicações Terceiros" "" "4-Baixa" "SUPORTE A INFRAESTRUTURA - CONSTAT - SERVICE DESK" "GABRIEL ZANIRATI FERREIRA" "Acesso permitido com sucesso.
+
+Lembramos que quando precisar contatar nossa equipe, estamos disponíveis também no Chat de Atendimento Online. 
+Na Rede Colaborativa>Aplicativos>Suporte ao Colaborador>Chat Suporte>Suporte de TI e Sistemas Corporativos>Suporte de TI. Abraço.
+
+É importante que após o recebimento desta notificação em seu e-mail você preencha a nossa pesquisa de satisfação com relação ao atendimento prestado. Obrigado (a)." "15/03/2019" "01 Central: Central Sicredi Sul/Sudeste" "Configuração remota" "Colaboradora solicita permitir que a estação de trabalho tenha permissão para acesso remoto.
+
+IP: 10.1.47.30
+Coop:  0101
+UA: 36
+Tel.: 51 35797300" "03/2019" "Infraestrutura de TI"
+"133" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" ""

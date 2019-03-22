@@ -15,6 +15,8 @@ install.packages("xlsx")
 install.packages("ptstem")                       # https://github.com/dfalbel/ptstem Ver alternativa ao fim do post: https://pt.stackoverflow.com/questions/364543/stem-para-twitter 
 install.packages("quanteda")
 install.packages('gdata')                        # Permite trabalhar com arquivos xls
+install.packages('devtools')
+devtools::install_github("dfalbel/rslp")
                   
 # http://bioconductor.org/
 source("http://bioconductor.org/biocLite.R")     # Biocondutor
@@ -47,13 +49,20 @@ getReaders()
 dest <- '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/xls'
 
 # Lista com os nomes completos dos arquivos do tipo PDF
-myfiles <- list.files(path = dest, pattern = 'xls', full.names = TRUE)
+filenames <- sub('*.xls', '',list.files(path = dest, pattern = 'xls', full.names = FALSE))
 print(myfiles)
 
+# Novo diretório
+new.folder <- '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt'
+
 # Percorrer a lista do objeto myfiles e converter os xls para txt
-# lapply(myfiles, function(i) system(paste('"/usr/bin/pdftotext"', paste0('"',i,'"')), wait = FALSE))
-df.xls <- read.xlsx2(myfiles[3], sheetIndex = 1)
-write.table(dfxlsx, '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt/jan_2018_PesquisaDeSatisfacao.txt')
+for(i in 1:length(myfiles)){
+  # Atribui os dados
+  df_xls <- read.xlsx2(myfiles[i], sheetIndex = 1, header = FALSE, startRow = 2)
+  # Seleciona o nome do arquivo
+  nome_novo <- filenames[i]
+  write.table(df_xls, paste0('/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt/',nome_novo, '.txt'))
+}
 
 #### 2. CRIAÇÃO DO CORPUS E PRÉ-PROCESSAMENTO ####
 getwd()
@@ -91,14 +100,11 @@ stopwords('portuguese')
 docs <- tm_map(docs, removeWords, stopwords('portuguese'))
 
 # Stemming, para remover prefixos e sufixos, ou seja, tudo que aparecer antes ou depois da raíz da palavra será removido 
-?stemDocument
+?rslp
 # corpus.temp <- tm_map(corpus, stemDocument, language = "english")
 # docs2 <- dfm_wordstem(docs, language = "pt")
 # docs2 <- tm_map(docs, dfm_wordstem, language = "pt")
-docs <- tm_map(docs, stemDocument, language = "portuguese")
-
-
-
+docs <- tm_map(docs, rslp)
 
 
 

@@ -11,11 +11,6 @@ for(i in 1:length(myfiles)){
   df_xls <- read.xlsx2(myfiles[i], sheetIndex = 1, header = FALSE, startRow = 2)
   # Seleciona o nome do arquivo
   nome_novo <- filenames[i]
-  # Altera o nome do data frame para o respectivo nome xls
-  assign(nome_novo, df_xls)
-  
-  write.table(dfxlsx, '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt/jan_2018_PesquisaDeSatisfacao.txt')
+  write.table(df_xls, paste0('/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/txt/',nome_novo, '.txt'))
 }
 
-
-?write.table
