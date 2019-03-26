@@ -49,7 +49,7 @@ getReaders()
 dest <- '/home/ralsouza/Documents/r_projects/text_mining_R/corpus_psatisfacao/xls'
 
 # Lista com os nomes completos dos arquivos do tipo PDF
-filenames <- sub('*.xls', '',list.files(path = dest, pattern = 'xls', full.names = FALSE))
+myfiles <- sub('*.xls', '',list.files(path = dest, pattern = 'xls', full.names = FALSE))
 print(myfiles)
 
 # Novo diretório
